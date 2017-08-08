@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" confirmationNeeded="false" name="Default">
+  <contextParameter comment="" name="framework" prompt="framework?" promptNeeded="false" type="id_Object" value=""/>
+  <contextParameter comment="" name="debug" prompt="debug?" promptNeeded="false" type="id_Boolean" value="false"/>
+  <contextParameter comment="" name="enableJobExecutionReporting" prompt="enableJobExecutionReporting?" promptNeeded="false" type="id_Boolean" value="true"/>
+  <contextParameter comment="" name="enableEmailOnError" prompt="enableEmailOnError?" promptNeeded="false" type="id_Boolean" value="true"/>
+  <contextParameter comment="" name="enableEmailOnSuccess" prompt="enableEmailOnSuccess?" promptNeeded="false" type="id_Boolean" value="false"/>
+  <contextParameter comment="" name="enableShowContext" prompt="enableShowContext?" promptNeeded="false" type="id_Boolean" value="true"/>
+  <contextParameter comment="" name="enableLockFile" prompt="enableLockFile?" promptNeeded="false" type="id_Boolean" value="true"/>
+  <contextParameter comment="" name="deleteLockFileInHandledError" prompt="deleteLockFileInHandledError?" promptNeeded="false" type="id_Boolean" value="true"/>
+  <contextParameter comment="" name="confirmExecution" prompt="confirmExecution?" promptNeeded="false" type="id_Boolean" value="false"/>
+  <contextParameter comment="" name="confirmExecutionMessage" prompt="confirmExecutionMessage?" promptNeeded="false" type="id_String" value="&quot;You are exeucting the Job %s in the %s Context.\n\nAre you sure you want to continue?&quot;"/>
+  <contextParameter comment="" name="enableErrorOnLockFileExists" prompt="enableErrorOnLockFileExists?" promptNeeded="false" type="id_Boolean" value="true"/>
+  <contextParameter comment="" name="localiseArchiveDir" prompt="localiseArchiveDir?" promptNeeded="false" type="id_Boolean" value="true"/>
+  <contextParameter comment="" name="localiseReportingDir" prompt="localiseReportingDir?" promptNeeded="false" type="id_Boolean" value="true"/>
+  <contextParameter comment="" name="attachExecutionReportOnError" prompt="attachExecutionReportOnError?" promptNeeded="false" type="id_Boolean" value="true"/>
+  <contextParameter comment="" name="attachExecutionReportOnSuccess" prompt="attachExecutionReportOnSuccess?" promptNeeded="false" type="id_Boolean" value="true"/>
+  <contextParameter comment="" name="archiveDirRetentionDays" prompt="archiveDirRetentionDays?" promptNeeded="false" type="id_Integer" value="-1"/>
+  <contextParameter comment="" name="outputDirRetentionDays" prompt="outputDirRetentionDays?" promptNeeded="false" type="id_Integer" value="-1"/>
+  <contextParameter comment="" name="reportingDirRetentionDays" prompt="reportingDirRetentionDays?" promptNeeded="false" type="id_Integer" value="90"/>
+  <contextParameter comment="" name="tmpDirRetentionDays" prompt="tmpDirRetentionDays?" promptNeeded="false" type="id_Integer" value="7"/>
+  <contextParameter comment="" name="workingDirRetentionDays" prompt="workingDirRetentionDays?" promptNeeded="false" type="id_Integer" value="90"/>
+  <contextParameter comment="" name="logDirRetentionDays" prompt="logDirRetentionDays?" promptNeeded="false" type="id_Integer" value="30"/>
+  <contextParameter comment="" name="documentationURL" prompt="documentationURL?" promptNeeded="false" type="id_String" value="talendframework.com"/>
+  <contextParameter comment="" name="isHeadless" prompt="isHeadless?" promptNeeded="false" type="id_Boolean" value="false"/>
+  <contextParameter comment="" name="processingErrorRecipient" prompt="processingErrorRecipient?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter comment="" name="systemErrorRecipient" prompt="systemErrorRecipient?" promptNeeded="false" type="id_String" value=""/>
+</talendfile:ContextType>

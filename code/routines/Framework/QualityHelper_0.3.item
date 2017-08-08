@@ -1,0 +1,93 @@
+package routines;
+
+/*
+ * user specification: the function's comment should contain keys as follows: 1. write about the function's comment.but
+ * it must be before the "{talendTypes}" key.
+ * 
+ * 2. {talendTypes} 's value must be talend Type, it is required . its value should be one of: String, char | Character,
+ * long | Long, int | Integer, boolean | Boolean, byte | Byte, Date, double | Double, float | Float, Object, short |
+ * Short
+ * 
+ * 3. {Category} define a category for the Function. it is required. its value is user-defined .
+ * 
+ * 4. {param} 's format is: {param} <type>[(<default value or closed list values>)] <name>[ : <comment>]
+ * 
+ * <type> 's value should be one of: string, int, list, double, object, boolean, long, char, date. <name>'s value is the
+ * Function's parameter name. the {param} is optional. so if you the Function without the parameters. the {param} don't
+ * added. you can have many parameters for the Function.
+ * 
+ * 5. {example} gives a example for the Function. it is optional.
+ */
+public class QualityHelper {
+	static java.math.BigDecimal oneHundred = new java.math.BigDecimal(100);
+
+	/**
+	 * 
+	 * @param actual
+	 * @param target
+	 * @param percentageThreshold
+	 * @param debug
+	 * @return
+	 */
+	public static Boolean isThresholdMet(int actual, int target, java.math.BigDecimal percentageThreshold, boolean debug) {
+		if(percentageThreshold == null ||
+		   percentageThreshold.compareTo(java.math.BigDecimal.ZERO) < 1 ||
+		   percentageThreshold.compareTo(oneHundred) > 0) {
+			if(debug) System.err.println(String.format("QualityHelper.isThresholdMet: percentageThreshold: invalid: %f", percentageThreshold));
+			return false;
+		}
+
+		// This is absolute. We do not need to worry about minor rounding issues causing a return of true.
+		else if(actual != target &&
+			percentageThreshold.compareTo(oneHundred) == 0) {
+			
+			if(debug) System.err.println("QualityHelper.isThresholdMet: actual: " + actual +
+					   " target: " + target +
+					   " absoluteDiff: " + (actual - target) +
+					   " percentageThreshold: " + percentageThreshold);
+			
+			return false;
+		}
+		// This is absolute.
+		else if(actual == target &&
+			percentageThreshold.compareTo(oneHundred) == 0) {
+			
+			if(debug) System.err.println("QualityHelper.isThresholdMet: actual: " + actual +
+					   " target: " + target +
+					   " absoluteDiff: " + (actual - target) +
+					   " percentageThreshold: " + percentageThreshold +
+					   " percentage reached: 100");
+			
+			return true;
+		}
+		else {
+			java.math.BigDecimal percentageReached = new java.math.BigDecimal(actual).divide(new java.math.BigDecimal(target), 6, java.math.RoundingMode.HALF_DOWN).multiply(oneHundred);
+			
+			if(debug) System.err.println("QualityHelper.isThresholdMet: actual: " + actual +
+							   " target: " + target +
+							   " absoluteDiff: " + (actual - target) +
+							   " percentageThreshold: " + percentageThreshold +
+							   " percentageReached: " + percentageReached);
+
+			/*
+			System.err.println("actual: " + new java.math.BigDecimal(actual));
+			System.err.println("target: " + new java.math.BigDecimal(target));
+			System.err.println("actual/target: " + new java.math.BigDecimal(actual).divide(new java.math.BigDecimal(target), 6, java.math.RoundingMode.HALF_DOWN));
+			*/
+
+			if(percentageReached.compareTo(percentageThreshold) < 0) return false;
+			else return true;
+		}
+	}
+	
+	/**
+	 * 
+	 * @param value
+	 * @param target
+	 * @param percentageThreshold
+	 * @return
+	 */
+	public static Boolean isThresholdMet(int value, int target, java.math.BigDecimal percentageThreshold) {
+		return isThresholdMet(value, target, percentageThreshold, false);
+	}
+}

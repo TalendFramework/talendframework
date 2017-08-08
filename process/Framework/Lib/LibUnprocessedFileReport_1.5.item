@@ -1,0 +1,581 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="Default">
+  <context confirmationNeeded="false" name="Default">
+    <contextParameter comment="" name="framework" prompt="framework?" promptNeeded="false" repositoryContextId="_BS45gDYFEeW39qpAM_5fZw" type="id_Object" value=""/>
+    <contextParameter comment="" name="outputDir" prompt="outputDir?" promptNeeded="false" repositoryContextId="_Zid7kDYIEeW39qpAM_5fZw" type="id_String" value="#BASEDIR/#JOBNAME/output"/>
+    <contextParameter comment="" name="reportingDir" prompt="reportingDir?" promptNeeded="false" repositoryContextId="_Zid7kDYIEeW39qpAM_5fZw" type="id_String" value="#BASEDIR/reporting"/>
+    <contextParameter comment="" name="tmpDir" prompt="tmpDir?" promptNeeded="false" repositoryContextId="_Zid7kDYIEeW39qpAM_5fZw" type="id_String" value="#BASEDIR/#JOBNAME/tmp"/>
+    <contextParameter comment="" name="logDir" prompt="logDir?" promptNeeded="false" repositoryContextId="_Zid7kDYIEeW39qpAM_5fZw" type="id_String" value="#BASEDIR/#JOBNAME/log"/>
+    <contextParameter comment="" name="archiveDir" prompt="archiveDir?" promptNeeded="false" repositoryContextId="_Zid7kDYIEeW39qpAM_5fZw" type="id_String" value="#BASEDIR/archive"/>
+    <contextParameter comment="" name="inputDir" prompt="inputDir?" promptNeeded="false" repositoryContextId="_Zid7kDYIEeW39qpAM_5fZw" type="id_String" value="#BASEDIR/#JOBNAME/input"/>
+    <contextParameter comment="" name="binDir" prompt="binDir?" promptNeeded="false" repositoryContextId="_Zid7kDYIEeW39qpAM_5fZw" type="id_String" value="#BASEDIR/bin"/>
+    <contextParameter comment="" name="workingDir" prompt="workingDir?" promptNeeded="false" repositoryContextId="_Zid7kDYIEeW39qpAM_5fZw" type="id_String" value="#BASEDIR/#JOBNAME/working"/>
+    <contextParameter comment="" name="paramDir" prompt="paramDir?" promptNeeded="false" repositoryContextId="_Zid7kDYIEeW39qpAM_5fZw" type="id_String" value="#BASEDIR/#JOBNAME/param"/>
+    <contextParameter comment="" name="databaseDir" prompt="databaseDir?" promptNeeded="false" repositoryContextId="_Zid7kDYIEeW39qpAM_5fZw" type="id_String" value="#BASEDIR/#JOBNAME/database"/>
+    <contextParameter comment="" name="libDir" prompt="libDir?" promptNeeded="false" repositoryContextId="_Zid7kDYIEeW39qpAM_5fZw" type="id_String" value="#BASEDIR/#JOBNAME/lib"/>
+    <contextParameter comment="" name="debug" prompt="debug?" promptNeeded="false" repositoryContextId="_BS45gDYFEeW39qpAM_5fZw" type="id_Boolean" value="false"/>
+    <contextParameter comment="" name="targetDir" prompt="targetDir?" promptNeeded="false" repositoryContextId="_Zid7kDYIEeW39qpAM_5fZw" type="id_String" value="#BASEDIR/#JOBNAME/target"/>
+    <contextParameter comment="" name="gLibDir" prompt="gLibDir?" promptNeeded="false" repositoryContextId="_Zid7kDYIEeW39qpAM_5fZw" type="id_String" value="#BASEDIR/lib"/>
+    <contextParameter comment="" name="enableJobExecutionReporting" prompt="enableJobExecutionReporting?" promptNeeded="false" repositoryContextId="_BS45gDYFEeW39qpAM_5fZw" type="id_Boolean" value="true"/>
+    <contextParameter comment="" name="enableEmailOnError" prompt="enableEmailOnError?" promptNeeded="false" repositoryContextId="_BS45gDYFEeW39qpAM_5fZw" type="id_Boolean" value="true"/>
+    <contextParameter comment="" name="enableEmailOnSuccess" prompt="enableEmailOnSuccess?" promptNeeded="false" repositoryContextId="_BS45gDYFEeW39qpAM_5fZw" type="id_Boolean" value="false"/>
+    <contextParameter comment="" name="enableShowContext" prompt="enableShowContext?" promptNeeded="false" repositoryContextId="_BS45gDYFEeW39qpAM_5fZw" type="id_Boolean" value="true"/>
+    <contextParameter comment="" name="lockDir" prompt="lockDir?" promptNeeded="false" repositoryContextId="_Zid7kDYIEeW39qpAM_5fZw" type="id_String" value="#BASEDIR/lock"/>
+    <contextParameter comment="" name="deleteLockFileInHandledError" prompt="deleteLockFileInHandledError?" promptNeeded="false" repositoryContextId="_BS45gDYFEeW39qpAM_5fZw" type="id_Boolean" value="true"/>
+    <contextParameter comment="" name="enableLockFile" prompt="enableLockFile?" promptNeeded="false" repositoryContextId="_BS45gDYFEeW39qpAM_5fZw" type="id_Boolean" value="true"/>
+    <contextParameter comment="" name="confirmExecution" prompt="confirmExecution?" promptNeeded="false" repositoryContextId="_BS45gDYFEeW39qpAM_5fZw" type="id_Boolean" value="false"/>
+    <contextParameter comment="" name="confirmExecutionMessage" prompt="confirmExecutionMessage?" promptNeeded="false" repositoryContextId="_BS45gDYFEeW39qpAM_5fZw" type="id_String" value="&quot;You are exeucting the Job %s in the %s Context.\n\nAre you sure you want to continue?&quot;"/>
+    <contextParameter comment="" name="enableErrorOnLockFileExists" prompt="enableErrorOnLockFileExists?" promptNeeded="false" repositoryContextId="_BS45gDYFEeW39qpAM_5fZw" type="id_Boolean" value="true"/>
+    <contextParameter comment="" name="localiseArchiveDir" prompt="localiseArchiveDir?" promptNeeded="false" repositoryContextId="_BS45gDYFEeW39qpAM_5fZw" type="id_Boolean" value="true"/>
+    <contextParameter comment="" name="localiseReportingDir" prompt="localiseReportingDir?" promptNeeded="false" repositoryContextId="_BS45gDYFEeW39qpAM_5fZw" type="id_Boolean" value="true"/>
+    <contextParameter comment="" name="baseDir" prompt="baseDir?" promptNeeded="false" repositoryContextId="_Zid7kDYIEeW39qpAM_5fZw" type="id_String" value="#HOME/project/talend/#CONTEXTSTR/#PROJECTNAME"/>
+    <contextParameter comment="" name="statsDir" prompt="statsDir?" promptNeeded="false" repositoryContextId="_Zid7kDYIEeW39qpAM_5fZw" type="id_String" value="#BASEDIR/#JOBNAME/stats"/>
+    <contextParameter comment="" name="contextDir" prompt="contextDir?" promptNeeded="false" repositoryContextId="_Zid7kDYIEeW39qpAM_5fZw" type="id_String" value="#BASEDIR/context"/>
+    <contextParameter comment="" name="attachExecutionReportOnError" prompt="attachExecutionReportOnError?" promptNeeded="false" repositoryContextId="_BS45gDYFEeW39qpAM_5fZw" type="id_Boolean" value="true"/>
+    <contextParameter comment="" name="attachExecutionReportOnSuccess" prompt="attachExecutionReportOnSuccess?" promptNeeded="false" repositoryContextId="_BS45gDYFEeW39qpAM_5fZw" type="id_Boolean" value="true"/>
+    <contextParameter comment="" name="checkpointDir" prompt="checkpointDir?" promptNeeded="false" repositoryContextId="_Zid7kDYIEeW39qpAM_5fZw" type="id_String" value="#BASEDIR/#JOBNAME/checkpoint"/>
+    <contextParameter comment="" name="archiveDirRetentionDays" prompt="archiveDirRetentionDays?" promptNeeded="false" repositoryContextId="_BS45gDYFEeW39qpAM_5fZw" type="id_Integer" value="-1"/>
+    <contextParameter comment="" name="reportingDirRetentionDays" prompt="reportingDirRetentionDays?" promptNeeded="false" repositoryContextId="_BS45gDYFEeW39qpAM_5fZw" type="id_Integer" value="90"/>
+    <contextParameter comment="" name="outputDirRetentionDays" prompt="outputDirRetentionDays?" promptNeeded="false" repositoryContextId="_BS45gDYFEeW39qpAM_5fZw" type="id_Integer" value="-1"/>
+    <contextParameter comment="" name="tmpDirRetentionDays" prompt="tmpDirRetentionDays?" promptNeeded="false" repositoryContextId="_BS45gDYFEeW39qpAM_5fZw" type="id_Integer" value="7"/>
+    <contextParameter comment="" name="workingDirRetentionDays" prompt="workingDirRetentionDays?" promptNeeded="false" repositoryContextId="_BS45gDYFEeW39qpAM_5fZw" type="id_Integer" value="90"/>
+    <contextParameter comment="" name="logDirRetentionDays" prompt="logDirRetentionDays?" promptNeeded="false" repositoryContextId="_BS45gDYFEeW39qpAM_5fZw" type="id_Integer" value="30"/>
+    <contextParameter comment="" name="unprocessedFilePattern" prompt="unprocessedFilePattern?" promptNeeded="false" type="id_String" value="&quot;*.csv&quot;"/>
+    <contextParameter comment="" name="documentationURL" prompt="documentationURL?" promptNeeded="false" repositoryContextId="_BS45gDYFEeW39qpAM_5fZw" type="id_String" value="talendframework.com"/>
+    <contextParameter comment="" name="isHeadless" prompt="isHeadless?" promptNeeded="false" repositoryContextId="_BS45gDYFEeW39qpAM_5fZw" type="id_Boolean" value="false"/>
+    <contextParameter comment="" name="systemErrorRecipient" prompt="systemErrorRecipient?" promptNeeded="false" repositoryContextId="_BS45gDYFEeW39qpAM_5fZw" type="id_String" value=""/>
+    <contextParameter comment="" name="processingErrorRecipient" prompt="processingErrorRecipient?" promptNeeded="false" repositoryContextId="_BS45gDYFEeW39qpAM_5fZw" type="id_String" value=""/>
+  </context>
+  <context confirmationNeeded="false" name="Dev">
+    <contextParameter comment="" name="framework" prompt="framework?" promptNeeded="false" repositoryContextId="_BS45gDYFEeW39qpAM_5fZw" type="id_Object" value=""/>
+    <contextParameter comment="" name="outputDir" prompt="outputDir?" promptNeeded="false" repositoryContextId="_Zid7kDYIEeW39qpAM_5fZw" type="id_String" value="#BASEDIR/#JOBNAME/output"/>
+    <contextParameter comment="" name="reportingDir" prompt="reportingDir?" promptNeeded="false" repositoryContextId="_Zid7kDYIEeW39qpAM_5fZw" type="id_String" value="#BASEDIR/reporting"/>
+    <contextParameter comment="" name="tmpDir" prompt="tmpDir?" promptNeeded="false" repositoryContextId="_Zid7kDYIEeW39qpAM_5fZw" type="id_String" value="#BASEDIR/#JOBNAME/tmp"/>
+    <contextParameter comment="" name="logDir" prompt="logDir?" promptNeeded="false" repositoryContextId="_Zid7kDYIEeW39qpAM_5fZw" type="id_String" value="#BASEDIR/#JOBNAME/log"/>
+    <contextParameter comment="" name="archiveDir" prompt="archiveDir?" promptNeeded="false" repositoryContextId="_Zid7kDYIEeW39qpAM_5fZw" type="id_String" value="#BASEDIR/archive"/>
+    <contextParameter comment="" name="inputDir" prompt="inputDir?" promptNeeded="false" repositoryContextId="_Zid7kDYIEeW39qpAM_5fZw" type="id_String" value="#BASEDIR/#JOBNAME/input"/>
+    <contextParameter comment="" name="binDir" prompt="binDir?" promptNeeded="false" repositoryContextId="_Zid7kDYIEeW39qpAM_5fZw" type="id_String" value="#BASEDIR/bin"/>
+    <contextParameter comment="" name="workingDir" prompt="workingDir?" promptNeeded="false" repositoryContextId="_Zid7kDYIEeW39qpAM_5fZw" type="id_String" value="#BASEDIR/#JOBNAME/working"/>
+    <contextParameter comment="" name="paramDir" prompt="paramDir?" promptNeeded="false" repositoryContextId="_Zid7kDYIEeW39qpAM_5fZw" type="id_String" value="#BASEDIR/#JOBNAME/param"/>
+    <contextParameter comment="" name="databaseDir" prompt="databaseDir?" promptNeeded="false" repositoryContextId="_Zid7kDYIEeW39qpAM_5fZw" type="id_String" value="#BASEDIR/#JOBNAME/database"/>
+    <contextParameter comment="" name="libDir" prompt="libDir?" promptNeeded="false" repositoryContextId="_Zid7kDYIEeW39qpAM_5fZw" type="id_String" value="#BASEDIR/#JOBNAME/lib"/>
+    <contextParameter comment="" name="debug" prompt="debug?" promptNeeded="false" repositoryContextId="_BS45gDYFEeW39qpAM_5fZw" type="id_Boolean" value="false"/>
+    <contextParameter comment="" name="targetDir" prompt="targetDir?" promptNeeded="false" repositoryContextId="_Zid7kDYIEeW39qpAM_5fZw" type="id_String" value="#BASEDIR/#JOBNAME/target"/>
+    <contextParameter comment="" name="gLibDir" prompt="gLibDir?" promptNeeded="false" repositoryContextId="_Zid7kDYIEeW39qpAM_5fZw" type="id_String" value="#BASEDIR/lib"/>
+    <contextParameter comment="" name="enableJobExecutionReporting" prompt="enableJobExecutionReporting?" promptNeeded="false" repositoryContextId="_BS45gDYFEeW39qpAM_5fZw" type="id_Boolean" value="true"/>
+    <contextParameter comment="" name="enableEmailOnError" prompt="enableEmailOnError?" promptNeeded="false" repositoryContextId="_BS45gDYFEeW39qpAM_5fZw" type="id_Boolean" value="true"/>
+    <contextParameter comment="" name="enableEmailOnSuccess" prompt="enableEmailOnSuccess?" promptNeeded="false" repositoryContextId="_BS45gDYFEeW39qpAM_5fZw" type="id_Boolean" value="false"/>
+    <contextParameter comment="" name="enableShowContext" prompt="enableShowContext?" promptNeeded="false" repositoryContextId="_BS45gDYFEeW39qpAM_5fZw" type="id_Boolean" value="true"/>
+    <contextParameter comment="" name="lockDir" prompt="lockDir?" promptNeeded="false" repositoryContextId="_Zid7kDYIEeW39qpAM_5fZw" type="id_String" value="#BASEDIR/lock"/>
+    <contextParameter comment="" name="deleteLockFileInHandledError" prompt="deleteLockFileInHandledError?" promptNeeded="false" repositoryContextId="_BS45gDYFEeW39qpAM_5fZw" type="id_Boolean" value="true"/>
+    <contextParameter comment="" name="enableLockFile" prompt="enableLockFile?" promptNeeded="false" repositoryContextId="_BS45gDYFEeW39qpAM_5fZw" type="id_Boolean" value="true"/>
+    <contextParameter comment="" name="confirmExecution" prompt="confirmExecution?" promptNeeded="false" repositoryContextId="_BS45gDYFEeW39qpAM_5fZw" type="id_Boolean" value="false"/>
+    <contextParameter comment="" name="confirmExecutionMessage" prompt="confirmExecutionMessage?" promptNeeded="false" repositoryContextId="_BS45gDYFEeW39qpAM_5fZw" type="id_String" value="&quot;You are exeucting the Job %s in the %s Context.\n\nAre you sure you want to continue?&quot;"/>
+    <contextParameter comment="" name="enableErrorOnLockFileExists" prompt="enableErrorOnLockFileExists?" promptNeeded="false" repositoryContextId="_BS45gDYFEeW39qpAM_5fZw" type="id_Boolean" value="true"/>
+    <contextParameter comment="" name="localiseArchiveDir" prompt="localiseArchiveDir?" promptNeeded="false" repositoryContextId="_BS45gDYFEeW39qpAM_5fZw" type="id_Boolean" value="true"/>
+    <contextParameter comment="" name="localiseReportingDir" prompt="localiseReportingDir?" promptNeeded="false" repositoryContextId="_BS45gDYFEeW39qpAM_5fZw" type="id_Boolean" value="true"/>
+    <contextParameter comment="" name="baseDir" prompt="baseDir?" promptNeeded="false" repositoryContextId="_Zid7kDYIEeW39qpAM_5fZw" type="id_String" value="#HOME/project/talend/#CONTEXTSTR/#PROJECTNAME"/>
+    <contextParameter comment="" name="statsDir" prompt="statsDir?" promptNeeded="false" repositoryContextId="_Zid7kDYIEeW39qpAM_5fZw" type="id_String" value="#BASEDIR/#JOBNAME/stats"/>
+    <contextParameter comment="" name="contextDir" prompt="contextDir?" promptNeeded="false" repositoryContextId="_Zid7kDYIEeW39qpAM_5fZw" type="id_String" value="#BASEDIR/context"/>
+    <contextParameter comment="" name="attachExecutionReportOnError" prompt="attachExecutionReportOnError?" promptNeeded="false" repositoryContextId="_BS45gDYFEeW39qpAM_5fZw" type="id_Boolean" value="true"/>
+    <contextParameter comment="" name="attachExecutionReportOnSuccess" prompt="attachExecutionReportOnSuccess?" promptNeeded="false" repositoryContextId="_BS45gDYFEeW39qpAM_5fZw" type="id_Boolean" value="true"/>
+    <contextParameter comment="" name="checkpointDir" prompt="checkpointDir?" promptNeeded="false" repositoryContextId="_Zid7kDYIEeW39qpAM_5fZw" type="id_String" value="#BASEDIR/#JOBNAME/checkpoint"/>
+    <contextParameter comment="" name="archiveDirRetentionDays" prompt="archiveDirRetentionDays?" promptNeeded="false" repositoryContextId="_BS45gDYFEeW39qpAM_5fZw" type="id_Integer" value="-1"/>
+    <contextParameter comment="" name="reportingDirRetentionDays" prompt="reportingDirRetentionDays?" promptNeeded="false" repositoryContextId="_BS45gDYFEeW39qpAM_5fZw" type="id_Integer" value="90"/>
+    <contextParameter comment="" name="outputDirRetentionDays" prompt="outputDirRetentionDays?" promptNeeded="false" repositoryContextId="_BS45gDYFEeW39qpAM_5fZw" type="id_Integer" value="-1"/>
+    <contextParameter comment="" name="tmpDirRetentionDays" prompt="tmpDirRetentionDays?" promptNeeded="false" repositoryContextId="_BS45gDYFEeW39qpAM_5fZw" type="id_Integer" value="7"/>
+    <contextParameter comment="" name="workingDirRetentionDays" prompt="workingDirRetentionDays?" promptNeeded="false" repositoryContextId="_BS45gDYFEeW39qpAM_5fZw" type="id_Integer" value="90"/>
+    <contextParameter comment="" name="logDirRetentionDays" prompt="logDirRetentionDays?" promptNeeded="false" repositoryContextId="_BS45gDYFEeW39qpAM_5fZw" type="id_Integer" value="30"/>
+    <contextParameter comment="" name="unprocessedFilePattern" prompt="unprocessedFilePattern?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="documentationURL" prompt="documentationURL?" promptNeeded="false" repositoryContextId="_BS45gDYFEeW39qpAM_5fZw" type="id_String" value="talendframework.com"/>
+    <contextParameter comment="" name="isHeadless" prompt="isHeadless?" promptNeeded="false" repositoryContextId="_BS45gDYFEeW39qpAM_5fZw" type="id_Boolean" value="false"/>
+    <contextParameter comment="" name="systemErrorRecipient" prompt="systemErrorRecipient?" promptNeeded="false" repositoryContextId="_BS45gDYFEeW39qpAM_5fZw" type="id_String" value=""/>
+    <contextParameter comment="" name="processingErrorRecipient" prompt="processingErrorRecipient?" promptNeeded="false" repositoryContextId="_BS45gDYFEeW39qpAM_5fZw" type="id_String" value=""/>
+  </context>
+  <context confirmationNeeded="false" name="Prod">
+    <contextParameter comment="" name="framework" prompt="framework?" promptNeeded="false" repositoryContextId="_BS45gDYFEeW39qpAM_5fZw" type="id_Object" value=""/>
+    <contextParameter comment="" name="outputDir" prompt="outputDir?" promptNeeded="false" repositoryContextId="_Zid7kDYIEeW39qpAM_5fZw" type="id_String" value="#BASEDIR/#JOBNAME/output"/>
+    <contextParameter comment="" name="reportingDir" prompt="reportingDir?" promptNeeded="false" repositoryContextId="_Zid7kDYIEeW39qpAM_5fZw" type="id_String" value="#BASEDIR/reporting"/>
+    <contextParameter comment="" name="tmpDir" prompt="tmpDir?" promptNeeded="false" repositoryContextId="_Zid7kDYIEeW39qpAM_5fZw" type="id_String" value="#BASEDIR/#JOBNAME/tmp"/>
+    <contextParameter comment="" name="logDir" prompt="logDir?" promptNeeded="false" repositoryContextId="_Zid7kDYIEeW39qpAM_5fZw" type="id_String" value="#BASEDIR/#JOBNAME/log"/>
+    <contextParameter comment="" name="archiveDir" prompt="archiveDir?" promptNeeded="false" repositoryContextId="_Zid7kDYIEeW39qpAM_5fZw" type="id_String" value="#BASEDIR/archive"/>
+    <contextParameter comment="" name="inputDir" prompt="inputDir?" promptNeeded="false" repositoryContextId="_Zid7kDYIEeW39qpAM_5fZw" type="id_String" value="#BASEDIR/#JOBNAME/input"/>
+    <contextParameter comment="" name="binDir" prompt="binDir?" promptNeeded="false" repositoryContextId="_Zid7kDYIEeW39qpAM_5fZw" type="id_String" value="#BASEDIR/bin"/>
+    <contextParameter comment="" name="workingDir" prompt="workingDir?" promptNeeded="false" repositoryContextId="_Zid7kDYIEeW39qpAM_5fZw" type="id_String" value="#BASEDIR/#JOBNAME/working"/>
+    <contextParameter comment="" name="paramDir" prompt="paramDir?" promptNeeded="false" repositoryContextId="_Zid7kDYIEeW39qpAM_5fZw" type="id_String" value="#BASEDIR/#JOBNAME/param"/>
+    <contextParameter comment="" name="databaseDir" prompt="databaseDir?" promptNeeded="false" repositoryContextId="_Zid7kDYIEeW39qpAM_5fZw" type="id_String" value="#BASEDIR/#JOBNAME/database"/>
+    <contextParameter comment="" name="libDir" prompt="libDir?" promptNeeded="false" repositoryContextId="_Zid7kDYIEeW39qpAM_5fZw" type="id_String" value="#BASEDIR/#JOBNAME/lib"/>
+    <contextParameter comment="" name="debug" prompt="debug?" promptNeeded="false" repositoryContextId="_BS45gDYFEeW39qpAM_5fZw" type="id_Boolean" value="false"/>
+    <contextParameter comment="" name="targetDir" prompt="targetDir?" promptNeeded="false" repositoryContextId="_Zid7kDYIEeW39qpAM_5fZw" type="id_String" value="#BASEDIR/#JOBNAME/target"/>
+    <contextParameter comment="" name="gLibDir" prompt="gLibDir?" promptNeeded="false" repositoryContextId="_Zid7kDYIEeW39qpAM_5fZw" type="id_String" value="#BASEDIR/lib"/>
+    <contextParameter comment="" name="enableJobExecutionReporting" prompt="enableJobExecutionReporting?" promptNeeded="false" repositoryContextId="_BS45gDYFEeW39qpAM_5fZw" type="id_Boolean" value="true"/>
+    <contextParameter comment="" name="enableEmailOnError" prompt="enableEmailOnError?" promptNeeded="false" repositoryContextId="_BS45gDYFEeW39qpAM_5fZw" type="id_Boolean" value="true"/>
+    <contextParameter comment="" name="enableEmailOnSuccess" prompt="enableEmailOnSuccess?" promptNeeded="false" repositoryContextId="_BS45gDYFEeW39qpAM_5fZw" type="id_Boolean" value="false"/>
+    <contextParameter comment="" name="enableShowContext" prompt="enableShowContext?" promptNeeded="false" repositoryContextId="_BS45gDYFEeW39qpAM_5fZw" type="id_Boolean" value="true"/>
+    <contextParameter comment="" name="lockDir" prompt="lockDir?" promptNeeded="false" repositoryContextId="_Zid7kDYIEeW39qpAM_5fZw" type="id_String" value="#BASEDIR/lock"/>
+    <contextParameter comment="" name="deleteLockFileInHandledError" prompt="deleteLockFileInHandledError?" promptNeeded="false" repositoryContextId="_BS45gDYFEeW39qpAM_5fZw" type="id_Boolean" value="true"/>
+    <contextParameter comment="" name="enableLockFile" prompt="enableLockFile?" promptNeeded="false" repositoryContextId="_BS45gDYFEeW39qpAM_5fZw" type="id_Boolean" value="true"/>
+    <contextParameter comment="" name="confirmExecution" prompt="confirmExecution?" promptNeeded="false" repositoryContextId="_BS45gDYFEeW39qpAM_5fZw" type="id_Boolean" value="false"/>
+    <contextParameter comment="" name="confirmExecutionMessage" prompt="confirmExecutionMessage?" promptNeeded="false" repositoryContextId="_BS45gDYFEeW39qpAM_5fZw" type="id_String" value="&quot;You are exeucting the Job %s in the %s Context.\n\nAre you sure you want to continue?&quot;"/>
+    <contextParameter comment="" name="enableErrorOnLockFileExists" prompt="enableErrorOnLockFileExists?" promptNeeded="false" repositoryContextId="_BS45gDYFEeW39qpAM_5fZw" type="id_Boolean" value="true"/>
+    <contextParameter comment="" name="localiseArchiveDir" prompt="localiseArchiveDir?" promptNeeded="false" repositoryContextId="_BS45gDYFEeW39qpAM_5fZw" type="id_Boolean" value="true"/>
+    <contextParameter comment="" name="localiseReportingDir" prompt="localiseReportingDir?" promptNeeded="false" repositoryContextId="_BS45gDYFEeW39qpAM_5fZw" type="id_Boolean" value="true"/>
+    <contextParameter comment="" name="baseDir" prompt="baseDir?" promptNeeded="false" repositoryContextId="_Zid7kDYIEeW39qpAM_5fZw" type="id_String" value="#HOME/project/talend/#CONTEXTSTR/#PROJECTNAME"/>
+    <contextParameter comment="" name="statsDir" prompt="statsDir?" promptNeeded="false" repositoryContextId="_Zid7kDYIEeW39qpAM_5fZw" type="id_String" value="#BASEDIR/#JOBNAME/stats"/>
+    <contextParameter comment="" name="contextDir" prompt="contextDir?" promptNeeded="false" repositoryContextId="_Zid7kDYIEeW39qpAM_5fZw" type="id_String" value="#BASEDIR/context"/>
+    <contextParameter comment="" name="attachExecutionReportOnError" prompt="attachExecutionReportOnError?" promptNeeded="false" repositoryContextId="_BS45gDYFEeW39qpAM_5fZw" type="id_Boolean" value="true"/>
+    <contextParameter comment="" name="attachExecutionReportOnSuccess" prompt="attachExecutionReportOnSuccess?" promptNeeded="false" repositoryContextId="_BS45gDYFEeW39qpAM_5fZw" type="id_Boolean" value="true"/>
+    <contextParameter comment="" name="checkpointDir" prompt="checkpointDir?" promptNeeded="false" repositoryContextId="_Zid7kDYIEeW39qpAM_5fZw" type="id_String" value="#BASEDIR/#JOBNAME/checkpoint"/>
+    <contextParameter comment="" name="archiveDirRetentionDays" prompt="archiveDirRetentionDays?" promptNeeded="false" repositoryContextId="_BS45gDYFEeW39qpAM_5fZw" type="id_Integer" value="-1"/>
+    <contextParameter comment="" name="reportingDirRetentionDays" prompt="reportingDirRetentionDays?" promptNeeded="false" repositoryContextId="_BS45gDYFEeW39qpAM_5fZw" type="id_Integer" value="90"/>
+    <contextParameter comment="" name="outputDirRetentionDays" prompt="outputDirRetentionDays?" promptNeeded="false" repositoryContextId="_BS45gDYFEeW39qpAM_5fZw" type="id_Integer" value="-1"/>
+    <contextParameter comment="" name="tmpDirRetentionDays" prompt="tmpDirRetentionDays?" promptNeeded="false" repositoryContextId="_BS45gDYFEeW39qpAM_5fZw" type="id_Integer" value="7"/>
+    <contextParameter comment="" name="workingDirRetentionDays" prompt="workingDirRetentionDays?" promptNeeded="false" repositoryContextId="_BS45gDYFEeW39qpAM_5fZw" type="id_Integer" value="90"/>
+    <contextParameter comment="" name="logDirRetentionDays" prompt="logDirRetentionDays?" promptNeeded="false" repositoryContextId="_BS45gDYFEeW39qpAM_5fZw" type="id_Integer" value="30"/>
+    <contextParameter comment="" name="unprocessedFilePattern" prompt="unprocessedFilePattern?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="documentationURL" prompt="documentationURL?" promptNeeded="false" repositoryContextId="_BS45gDYFEeW39qpAM_5fZw" type="id_String" value="talendframework.com"/>
+    <contextParameter comment="" name="isHeadless" prompt="isHeadless?" promptNeeded="false" repositoryContextId="_BS45gDYFEeW39qpAM_5fZw" type="id_Boolean" value="false"/>
+    <contextParameter comment="" name="systemErrorRecipient" prompt="systemErrorRecipient?" promptNeeded="false" repositoryContextId="_BS45gDYFEeW39qpAM_5fZw" type="id_String" value=""/>
+    <contextParameter comment="" name="processingErrorRecipient" prompt="processingErrorRecipient?" promptNeeded="false" repositoryContextId="_BS45gDYFEeW39qpAM_5fZw" type="id_String" value=""/>
+  </context>
+  <context confirmationNeeded="false" name="Test">
+    <contextParameter comment="" name="framework" prompt="framework?" promptNeeded="false" repositoryContextId="_BS45gDYFEeW39qpAM_5fZw" type="id_Object" value=""/>
+    <contextParameter comment="" name="outputDir" prompt="outputDir?" promptNeeded="false" repositoryContextId="_Zid7kDYIEeW39qpAM_5fZw" type="id_String" value="#BASEDIR/#JOBNAME/output"/>
+    <contextParameter comment="" name="reportingDir" prompt="reportingDir?" promptNeeded="false" repositoryContextId="_Zid7kDYIEeW39qpAM_5fZw" type="id_String" value="#BASEDIR/reporting"/>
+    <contextParameter comment="" name="tmpDir" prompt="tmpDir?" promptNeeded="false" repositoryContextId="_Zid7kDYIEeW39qpAM_5fZw" type="id_String" value="#BASEDIR/#JOBNAME/tmp"/>
+    <contextParameter comment="" name="logDir" prompt="logDir?" promptNeeded="false" repositoryContextId="_Zid7kDYIEeW39qpAM_5fZw" type="id_String" value="#BASEDIR/#JOBNAME/log"/>
+    <contextParameter comment="" name="archiveDir" prompt="archiveDir?" promptNeeded="false" repositoryContextId="_Zid7kDYIEeW39qpAM_5fZw" type="id_String" value="#BASEDIR/archive"/>
+    <contextParameter comment="" name="inputDir" prompt="inputDir?" promptNeeded="false" repositoryContextId="_Zid7kDYIEeW39qpAM_5fZw" type="id_String" value="#BASEDIR/#JOBNAME/input"/>
+    <contextParameter comment="" name="binDir" prompt="binDir?" promptNeeded="false" repositoryContextId="_Zid7kDYIEeW39qpAM_5fZw" type="id_String" value="#BASEDIR/bin"/>
+    <contextParameter comment="" name="workingDir" prompt="workingDir?" promptNeeded="false" repositoryContextId="_Zid7kDYIEeW39qpAM_5fZw" type="id_String" value="#BASEDIR/#JOBNAME/working"/>
+    <contextParameter comment="" name="paramDir" prompt="paramDir?" promptNeeded="false" repositoryContextId="_Zid7kDYIEeW39qpAM_5fZw" type="id_String" value="#BASEDIR/#JOBNAME/param"/>
+    <contextParameter comment="" name="databaseDir" prompt="databaseDir?" promptNeeded="false" repositoryContextId="_Zid7kDYIEeW39qpAM_5fZw" type="id_String" value="#BASEDIR/#JOBNAME/database"/>
+    <contextParameter comment="" name="libDir" prompt="libDir?" promptNeeded="false" repositoryContextId="_Zid7kDYIEeW39qpAM_5fZw" type="id_String" value="#BASEDIR/#JOBNAME/lib"/>
+    <contextParameter comment="" name="debug" prompt="debug?" promptNeeded="false" repositoryContextId="_BS45gDYFEeW39qpAM_5fZw" type="id_Boolean" value="false"/>
+    <contextParameter comment="" name="targetDir" prompt="targetDir?" promptNeeded="false" repositoryContextId="_Zid7kDYIEeW39qpAM_5fZw" type="id_String" value="#BASEDIR/#JOBNAME/target"/>
+    <contextParameter comment="" name="gLibDir" prompt="gLibDir?" promptNeeded="false" repositoryContextId="_Zid7kDYIEeW39qpAM_5fZw" type="id_String" value="#BASEDIR/lib"/>
+    <contextParameter comment="" name="enableJobExecutionReporting" prompt="enableJobExecutionReporting?" promptNeeded="false" repositoryContextId="_BS45gDYFEeW39qpAM_5fZw" type="id_Boolean" value="true"/>
+    <contextParameter comment="" name="enableEmailOnError" prompt="enableEmailOnError?" promptNeeded="false" repositoryContextId="_BS45gDYFEeW39qpAM_5fZw" type="id_Boolean" value="true"/>
+    <contextParameter comment="" name="enableEmailOnSuccess" prompt="enableEmailOnSuccess?" promptNeeded="false" repositoryContextId="_BS45gDYFEeW39qpAM_5fZw" type="id_Boolean" value="false"/>
+    <contextParameter comment="" name="enableShowContext" prompt="enableShowContext?" promptNeeded="false" repositoryContextId="_BS45gDYFEeW39qpAM_5fZw" type="id_Boolean" value="true"/>
+    <contextParameter comment="" name="lockDir" prompt="lockDir?" promptNeeded="false" repositoryContextId="_Zid7kDYIEeW39qpAM_5fZw" type="id_String" value="#BASEDIR/lock"/>
+    <contextParameter comment="" name="deleteLockFileInHandledError" prompt="deleteLockFileInHandledError?" promptNeeded="false" repositoryContextId="_BS45gDYFEeW39qpAM_5fZw" type="id_Boolean" value="true"/>
+    <contextParameter comment="" name="enableLockFile" prompt="enableLockFile?" promptNeeded="false" repositoryContextId="_BS45gDYFEeW39qpAM_5fZw" type="id_Boolean" value="true"/>
+    <contextParameter comment="" name="confirmExecution" prompt="confirmExecution?" promptNeeded="false" repositoryContextId="_BS45gDYFEeW39qpAM_5fZw" type="id_Boolean" value="false"/>
+    <contextParameter comment="" name="confirmExecutionMessage" prompt="confirmExecutionMessage?" promptNeeded="false" repositoryContextId="_BS45gDYFEeW39qpAM_5fZw" type="id_String" value="&quot;You are exeucting the Job %s in the %s Context.\n\nAre you sure you want to continue?&quot;"/>
+    <contextParameter comment="" name="enableErrorOnLockFileExists" prompt="enableErrorOnLockFileExists?" promptNeeded="false" repositoryContextId="_BS45gDYFEeW39qpAM_5fZw" type="id_Boolean" value="true"/>
+    <contextParameter comment="" name="localiseArchiveDir" prompt="localiseArchiveDir?" promptNeeded="false" repositoryContextId="_BS45gDYFEeW39qpAM_5fZw" type="id_Boolean" value="true"/>
+    <contextParameter comment="" name="localiseReportingDir" prompt="localiseReportingDir?" promptNeeded="false" repositoryContextId="_BS45gDYFEeW39qpAM_5fZw" type="id_Boolean" value="true"/>
+    <contextParameter comment="" name="baseDir" prompt="baseDir?" promptNeeded="false" repositoryContextId="_Zid7kDYIEeW39qpAM_5fZw" type="id_String" value="#HOME/project/talend/#CONTEXTSTR/#PROJECTNAME"/>
+    <contextParameter comment="" name="statsDir" prompt="statsDir?" promptNeeded="false" repositoryContextId="_Zid7kDYIEeW39qpAM_5fZw" type="id_String" value="#BASEDIR/#JOBNAME/stats"/>
+    <contextParameter comment="" name="contextDir" prompt="contextDir?" promptNeeded="false" repositoryContextId="_Zid7kDYIEeW39qpAM_5fZw" type="id_String" value="#BASEDIR/context"/>
+    <contextParameter comment="" name="attachExecutionReportOnError" prompt="attachExecutionReportOnError?" promptNeeded="false" repositoryContextId="_BS45gDYFEeW39qpAM_5fZw" type="id_Boolean" value="true"/>
+    <contextParameter comment="" name="attachExecutionReportOnSuccess" prompt="attachExecutionReportOnSuccess?" promptNeeded="false" repositoryContextId="_BS45gDYFEeW39qpAM_5fZw" type="id_Boolean" value="true"/>
+    <contextParameter comment="" name="checkpointDir" prompt="checkpointDir?" promptNeeded="false" repositoryContextId="_Zid7kDYIEeW39qpAM_5fZw" type="id_String" value="#BASEDIR/#JOBNAME/checkpoint"/>
+    <contextParameter comment="" name="archiveDirRetentionDays" prompt="archiveDirRetentionDays?" promptNeeded="false" repositoryContextId="_BS45gDYFEeW39qpAM_5fZw" type="id_Integer" value="-1"/>
+    <contextParameter comment="" name="reportingDirRetentionDays" prompt="reportingDirRetentionDays?" promptNeeded="false" repositoryContextId="_BS45gDYFEeW39qpAM_5fZw" type="id_Integer" value="90"/>
+    <contextParameter comment="" name="outputDirRetentionDays" prompt="outputDirRetentionDays?" promptNeeded="false" repositoryContextId="_BS45gDYFEeW39qpAM_5fZw" type="id_Integer" value="-1"/>
+    <contextParameter comment="" name="tmpDirRetentionDays" prompt="tmpDirRetentionDays?" promptNeeded="false" repositoryContextId="_BS45gDYFEeW39qpAM_5fZw" type="id_Integer" value="7"/>
+    <contextParameter comment="" name="workingDirRetentionDays" prompt="workingDirRetentionDays?" promptNeeded="false" repositoryContextId="_BS45gDYFEeW39qpAM_5fZw" type="id_Integer" value="90"/>
+    <contextParameter comment="" name="logDirRetentionDays" prompt="logDirRetentionDays?" promptNeeded="false" repositoryContextId="_BS45gDYFEeW39qpAM_5fZw" type="id_Integer" value="30"/>
+    <contextParameter comment="" name="unprocessedFilePattern" prompt="unprocessedFilePattern?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="documentationURL" prompt="documentationURL?" promptNeeded="false" repositoryContextId="_BS45gDYFEeW39qpAM_5fZw" type="id_String" value="talendframework.com"/>
+    <contextParameter comment="" name="isHeadless" prompt="isHeadless?" promptNeeded="false" repositoryContextId="_BS45gDYFEeW39qpAM_5fZw" type="id_Boolean" value="false"/>
+    <contextParameter comment="" name="systemErrorRecipient" prompt="systemErrorRecipient?" promptNeeded="false" repositoryContextId="_BS45gDYFEeW39qpAM_5fZw" type="id_String" value=""/>
+    <contextParameter comment="" name="processingErrorRecipient" prompt="processingErrorRecipient?" promptNeeded="false" repositoryContextId="_BS45gDYFEeW39qpAM_5fZw" type="id_String" value=""/>
+  </context>
+  <context confirmationNeeded="false" name="UAT">
+    <contextParameter comment="" name="framework" prompt="framework?" promptNeeded="false" repositoryContextId="_BS45gDYFEeW39qpAM_5fZw" type="id_Object" value=""/>
+    <contextParameter comment="" name="outputDir" prompt="outputDir?" promptNeeded="false" repositoryContextId="_Zid7kDYIEeW39qpAM_5fZw" type="id_String" value="#BASEDIR/#JOBNAME/output"/>
+    <contextParameter comment="" name="reportingDir" prompt="reportingDir?" promptNeeded="false" repositoryContextId="_Zid7kDYIEeW39qpAM_5fZw" type="id_String" value="#BASEDIR/reporting"/>
+    <contextParameter comment="" name="tmpDir" prompt="tmpDir?" promptNeeded="false" repositoryContextId="_Zid7kDYIEeW39qpAM_5fZw" type="id_String" value="#BASEDIR/#JOBNAME/tmp"/>
+    <contextParameter comment="" name="logDir" prompt="logDir?" promptNeeded="false" repositoryContextId="_Zid7kDYIEeW39qpAM_5fZw" type="id_String" value="#BASEDIR/#JOBNAME/log"/>
+    <contextParameter comment="" name="archiveDir" prompt="archiveDir?" promptNeeded="false" repositoryContextId="_Zid7kDYIEeW39qpAM_5fZw" type="id_String" value="#BASEDIR/archive"/>
+    <contextParameter comment="" name="inputDir" prompt="inputDir?" promptNeeded="false" repositoryContextId="_Zid7kDYIEeW39qpAM_5fZw" type="id_String" value="#BASEDIR/#JOBNAME/input"/>
+    <contextParameter comment="" name="binDir" prompt="binDir?" promptNeeded="false" repositoryContextId="_Zid7kDYIEeW39qpAM_5fZw" type="id_String" value="#BASEDIR/bin"/>
+    <contextParameter comment="" name="workingDir" prompt="workingDir?" promptNeeded="false" repositoryContextId="_Zid7kDYIEeW39qpAM_5fZw" type="id_String" value="#BASEDIR/#JOBNAME/working"/>
+    <contextParameter comment="" name="paramDir" prompt="paramDir?" promptNeeded="false" repositoryContextId="_Zid7kDYIEeW39qpAM_5fZw" type="id_String" value="#BASEDIR/#JOBNAME/param"/>
+    <contextParameter comment="" name="databaseDir" prompt="databaseDir?" promptNeeded="false" repositoryContextId="_Zid7kDYIEeW39qpAM_5fZw" type="id_String" value="#BASEDIR/#JOBNAME/database"/>
+    <contextParameter comment="" name="libDir" prompt="libDir?" promptNeeded="false" repositoryContextId="_Zid7kDYIEeW39qpAM_5fZw" type="id_String" value="#BASEDIR/#JOBNAME/lib"/>
+    <contextParameter comment="" name="debug" prompt="debug?" promptNeeded="false" repositoryContextId="_BS45gDYFEeW39qpAM_5fZw" type="id_Boolean" value="false"/>
+    <contextParameter comment="" name="targetDir" prompt="targetDir?" promptNeeded="false" repositoryContextId="_Zid7kDYIEeW39qpAM_5fZw" type="id_String" value="#BASEDIR/#JOBNAME/target"/>
+    <contextParameter comment="" name="gLibDir" prompt="gLibDir?" promptNeeded="false" repositoryContextId="_Zid7kDYIEeW39qpAM_5fZw" type="id_String" value="#BASEDIR/lib"/>
+    <contextParameter comment="" name="enableJobExecutionReporting" prompt="enableJobExecutionReporting?" promptNeeded="false" repositoryContextId="_BS45gDYFEeW39qpAM_5fZw" type="id_Boolean" value="true"/>
+    <contextParameter comment="" name="enableEmailOnError" prompt="enableEmailOnError?" promptNeeded="false" repositoryContextId="_BS45gDYFEeW39qpAM_5fZw" type="id_Boolean" value="true"/>
+    <contextParameter comment="" name="enableEmailOnSuccess" prompt="enableEmailOnSuccess?" promptNeeded="false" repositoryContextId="_BS45gDYFEeW39qpAM_5fZw" type="id_Boolean" value="false"/>
+    <contextParameter comment="" name="enableShowContext" prompt="enableShowContext?" promptNeeded="false" repositoryContextId="_BS45gDYFEeW39qpAM_5fZw" type="id_Boolean" value="true"/>
+    <contextParameter comment="" name="lockDir" prompt="lockDir?" promptNeeded="false" repositoryContextId="_Zid7kDYIEeW39qpAM_5fZw" type="id_String" value="#BASEDIR/lock"/>
+    <contextParameter comment="" name="deleteLockFileInHandledError" prompt="deleteLockFileInHandledError?" promptNeeded="false" repositoryContextId="_BS45gDYFEeW39qpAM_5fZw" type="id_Boolean" value="true"/>
+    <contextParameter comment="" name="enableLockFile" prompt="enableLockFile?" promptNeeded="false" repositoryContextId="_BS45gDYFEeW39qpAM_5fZw" type="id_Boolean" value="true"/>
+    <contextParameter comment="" name="confirmExecution" prompt="confirmExecution?" promptNeeded="false" repositoryContextId="_BS45gDYFEeW39qpAM_5fZw" type="id_Boolean" value="false"/>
+    <contextParameter comment="" name="confirmExecutionMessage" prompt="confirmExecutionMessage?" promptNeeded="false" repositoryContextId="_BS45gDYFEeW39qpAM_5fZw" type="id_String" value="&quot;You are exeucting the Job %s in the %s Context.\n\nAre you sure you want to continue?&quot;"/>
+    <contextParameter comment="" name="enableErrorOnLockFileExists" prompt="enableErrorOnLockFileExists?" promptNeeded="false" repositoryContextId="_BS45gDYFEeW39qpAM_5fZw" type="id_Boolean" value="true"/>
+    <contextParameter comment="" name="localiseArchiveDir" prompt="localiseArchiveDir?" promptNeeded="false" repositoryContextId="_BS45gDYFEeW39qpAM_5fZw" type="id_Boolean" value="true"/>
+    <contextParameter comment="" name="localiseReportingDir" prompt="localiseReportingDir?" promptNeeded="false" repositoryContextId="_BS45gDYFEeW39qpAM_5fZw" type="id_Boolean" value="true"/>
+    <contextParameter comment="" name="baseDir" prompt="baseDir?" promptNeeded="false" repositoryContextId="_Zid7kDYIEeW39qpAM_5fZw" type="id_String" value="#HOME/project/talend/#CONTEXTSTR/#PROJECTNAME"/>
+    <contextParameter comment="" name="statsDir" prompt="statsDir?" promptNeeded="false" repositoryContextId="_Zid7kDYIEeW39qpAM_5fZw" type="id_String" value="#BASEDIR/#JOBNAME/stats"/>
+    <contextParameter comment="" name="contextDir" prompt="contextDir?" promptNeeded="false" repositoryContextId="_Zid7kDYIEeW39qpAM_5fZw" type="id_String" value="#BASEDIR/context"/>
+    <contextParameter comment="" name="attachExecutionReportOnError" prompt="attachExecutionReportOnError?" promptNeeded="false" repositoryContextId="_BS45gDYFEeW39qpAM_5fZw" type="id_Boolean" value="true"/>
+    <contextParameter comment="" name="attachExecutionReportOnSuccess" prompt="attachExecutionReportOnSuccess?" promptNeeded="false" repositoryContextId="_BS45gDYFEeW39qpAM_5fZw" type="id_Boolean" value="true"/>
+    <contextParameter comment="" name="checkpointDir" prompt="checkpointDir?" promptNeeded="false" repositoryContextId="_Zid7kDYIEeW39qpAM_5fZw" type="id_String" value="#BASEDIR/#JOBNAME/checkpoint"/>
+    <contextParameter comment="" name="archiveDirRetentionDays" prompt="archiveDirRetentionDays?" promptNeeded="false" repositoryContextId="_BS45gDYFEeW39qpAM_5fZw" type="id_Integer" value="-1"/>
+    <contextParameter comment="" name="reportingDirRetentionDays" prompt="reportingDirRetentionDays?" promptNeeded="false" repositoryContextId="_BS45gDYFEeW39qpAM_5fZw" type="id_Integer" value="90"/>
+    <contextParameter comment="" name="outputDirRetentionDays" prompt="outputDirRetentionDays?" promptNeeded="false" repositoryContextId="_BS45gDYFEeW39qpAM_5fZw" type="id_Integer" value="-1"/>
+    <contextParameter comment="" name="tmpDirRetentionDays" prompt="tmpDirRetentionDays?" promptNeeded="false" repositoryContextId="_BS45gDYFEeW39qpAM_5fZw" type="id_Integer" value="7"/>
+    <contextParameter comment="" name="workingDirRetentionDays" prompt="workingDirRetentionDays?" promptNeeded="false" repositoryContextId="_BS45gDYFEeW39qpAM_5fZw" type="id_Integer" value="90"/>
+    <contextParameter comment="" name="logDirRetentionDays" prompt="logDirRetentionDays?" promptNeeded="false" repositoryContextId="_BS45gDYFEeW39qpAM_5fZw" type="id_Integer" value="30"/>
+    <contextParameter comment="" name="unprocessedFilePattern" prompt="unprocessedFilePattern?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="documentationURL" prompt="documentationURL?" promptNeeded="false" repositoryContextId="_BS45gDYFEeW39qpAM_5fZw" type="id_String" value="talendframework.com"/>
+    <contextParameter comment="" name="isHeadless" prompt="isHeadless?" promptNeeded="false" repositoryContextId="_BS45gDYFEeW39qpAM_5fZw" type="id_Boolean" value="false"/>
+    <contextParameter comment="" name="systemErrorRecipient" prompt="systemErrorRecipient?" promptNeeded="false" repositoryContextId="_BS45gDYFEeW39qpAM_5fZw" type="id_String" value=""/>
+    <contextParameter comment="" name="processingErrorRecipient" prompt="processingErrorRecipient?" promptNeeded="false" repositoryContextId="_BS45gDYFEeW39qpAM_5fZw" type="id_String" value=""/>
+  </context>
+  <parameters>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="0"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" value="0"/>
+    <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" value=""/>
+    <elementParameter field="CHECK" name="IMPLICITCONTEXT_USE_PROJECT_SETTINGS" value="true"/>
+    <elementParameter field="CHECK" name="STATANDLOG_USE_PROJECT_SETTINGS" value="true"/>
+    <elementParameter field="CHECK" name="MULTI_THREAD_EXECATION" value="false"/>
+    <elementParameter field="CHECK" name="IMPLICIT_TCONTEXTLOAD" value="false"/>
+    <elementParameter field="RADIO" name="FROM_FILE_FLAG_IMPLICIT_CONTEXT" value="false"/>
+    <elementParameter field="RADIO" name="FROM_DATABASE_FLAG_IMPLICIT_CONTEXT" value="false"/>
+    <elementParameter field="FILE" name="IMPLICIT_TCONTEXTLOAD_FILE" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY_TYPE_IMPLICIT_CONTEXT:PROPERTY_TYPE" value=""/>
+    <elementParameter field="TECHNICAL" name="PROPERTY_TYPE_IMPLICIT_CONTEXT:REPOSITORY_PROPERTY_TYPE" value=""/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE_IMPLICIT_CONTEXT" value=""/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION_IMPLICIT_CONTEXT" value=""/>
+    <elementParameter field="TEXT" name="URL_IMPLICIT_CONTEXT" value="&quot;&quot;"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR_IMPLICIT_CONTEXT"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS_IMPLICIT_CONTEXT" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="HOST_IMPLICIT_CONTEXT" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PORT_IMPLICIT_CONTEXT" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME_IMPLICIT_CONTEXT" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME_IMPLICIT_CONTEXT" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" value="0RMsyjmybrE="/>
+    <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" value="&quot;&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="LOAD_NEW_VARIABLE" value=""/>
+    <elementParameter field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" value=""/>
+    <elementParameter field="CHECK" name="PRINT_OPERATIONS" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_ERROR" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_WARNINGS" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_INFO" value="false"/>
+    <elementParameter field="CHECK" name="ON_STATCATCHER_FLAG" value="true"/>
+    <elementParameter field="CHECK" name="ON_LOGCATCHER_FLAG" value="true"/>
+    <elementParameter field="CHECK" name="ON_METERCATCHER_FLAG" value="true"/>
+    <elementParameter field="CHECK" name="ON_CONSOLE_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_FILES_FLAG" value="true"/>
+    <elementParameter field="DIRECTORY" name="FILE_PATH" value="Framework.getDefaultStatsDir(context.statsDir, context.baseDir, contextStr, projectName, jobName)"/>
+    <elementParameter field="TEXT" name="FILENAME_STATS" value="String.format(&quot;stats_file.%s.txt&quot;, TalendDate.formatDate(&quot;yyyyMMdd&quot;, TalendDate.getCurrentDate()))"/>
+    <elementParameter field="TEXT" name="FILENAME_LOGS" value="String.format(&quot;logs_file.%s.txt&quot;, TalendDate.formatDate(&quot;yyyyMMdd&quot;, TalendDate.getCurrentDate()))"/>
+    <elementParameter field="TEXT" name="FILENAME_METTER" value="String.format(&quot;meter_file.%s.txt&quot;, TalendDate.formatDate(&quot;yyyyMMdd&quot;, TalendDate.getCurrentDate()))"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="ISO-8859-15"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="ON_DATABASE_FLAG" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE" value="tJDBCOutput"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="ORACLE_11"/>
+    <elementParameter field="TEXT" name="URL" value="&quot;&quot;"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DATASOURCE" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" value="0RMsyjmybrE="/>
+    <elementParameter field="FILE" name="DBFILE" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_STATS" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_LOGS" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_METER" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="CATCH_RUNTIME_ERRORS" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_USER_ERRORS" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_USER_WARNING" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_REALTIME_STATS" value="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_HEADERID" value=""/>
+    <elementParameter field="CHECK" name="HEADER_ENABLED" value="false"/>
+    <elementParameter field="TEXT" name="HEADER_LIBRARY" value=""/>
+    <elementParameter field="TEXT" name="HEADER_CODE" value=""/>
+    <elementParameter field="TEXT" name="HEADER_IMPORT" value=""/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_FOOTERID" value=""/>
+    <elementParameter field="CHECK" name="FOOTER_ENABLED" value="false"/>
+    <elementParameter field="TEXT" name="FOOTER_LIBRARY" value=""/>
+    <elementParameter field="TEXT" name="FOOTER_CODE" value=""/>
+    <elementParameter field="TEXT" name="FOOTER_IMPORT" value=""/>
+    <routinesParameter id="_KupssHM3EeWYVLThLquobQ" name="DataOperation"/>
+    <routinesParameter id="_Ku8noHM3EeWYVLThLquobQ" name="Mathematical"/>
+    <routinesParameter id="_KvDVUHM3EeWYVLThLquobQ" name="Numeric"/>
+    <routinesParameter id="_KvG_sHM3EeWYVLThLquobQ" name="Relational"/>
+    <routinesParameter id="_KvVpMHM3EeWYVLThLquobQ" name="StringHandling"/>
+    <routinesParameter id="_KvbIwHM3EeWYVLThLquobQ" name="TalendDataGenerator"/>
+    <routinesParameter id="_KvdlAHM3EeWYVLThLquobQ" name="TalendDate"/>
+    <routinesParameter id="_KvgBQHM3EeWYVLThLquobQ" name="TalendString"/>
+    <routinesParameter id="_OiyegDHBEeWpH5gcTEdy3w" name="TalendFieldHelper"/>
+    <routinesParameter id="_Rye_UDdAEeW39qpAM_5fZw" name="Framework"/>
+    <routinesParameter id="_Fd_HIHViEeWtC54pnsurEA" name="FrameworkHelper"/>
+  </parameters>
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="64" posY="192">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_1"/>
+    <elementParameter field="DIRECTORY" name="JAVA_LIBRARY_PATH" value="C:\Talend\TOS_DI-20141207_1530-V5.6.1\configuration\lib\java"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="/*&#xA; Copyright 2015, 2016, Yellow Pelican Ltd. www.YellowPelican.co.uk&#xA;&#xA; Licensed under the Apache License, Version 2.0 (the &quot;License&quot;);&#xA; you may not use this file except in compliance with the License.&#xA; You may obtain a copy of the License at&#xA;&#xA;    http://www.apache.org/licenses/LICENSE-2.0&#xA;&#xA; Unless required by applicable law or agreed to in writing, software&#xA; distributed under the License is distributed on an &quot;AS IS&quot; BASIS,&#xA; WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.&#xA; See the License for the specific language governing permissions and&#xA; limitations under the License.&#xA;*/&#xA;&#xA;/*&#xA; * Framework Initialisation.&#xA; */&#xA;globalMap.put(&quot;BuiltWith&quot;, &quot;1.7&quot;);&#xA;&#xA;/*&#xA; * Report Job Start and Framework version.&#xA; */&#xA;if(isChildJob) {&#xA;&#xA;&#x9;// 1.7&#xA;&#x9;((Framework) context.framework).sharedMapPut(&quot;Framework.CurrentJob&quot;, jobName);&#xA;&#xA;&#x9;((Framework) context.framework).message(jobName, jobVersion, &quot;STARTED&quot;);&#xA;&#xA;&#x9;if(! ((String) globalMap.get(&quot;BuiltWith&quot;)).equals(((Framework) context.framework).getFrameworkVersion()))&#xA;&#x9;&#x9;System.out.println(String.format(&quot;%s: %s: this Job was built with Framework version %s&quot;,&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9; jobName, jobVersion,&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9; ((String) globalMap.get(&quot;BuiltWith&quot;))));&#xA;}"/>
+    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="LABEL" value="InitFramework"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="CHECK" name="INFORMATION" value="true"/>
+    <elementParameter field="MEMO" name="COMMENT" value="Copyright 2015, Yellow Pelican Ltd. www.YellowPelican.co.uk&#xA;&#xA;Licensed under the Apache License, Version 2.0 (the &quot;License&quot;);&#xA;you may not use this file except in compliance with the License.&#xA;You may obtain a copy of the License at&#xA;&#xA;   http://www.apache.org/licenses/LICENSE-2.0&#xA;&#xA;Unless required by applicable law or agreed to in writing, software&#xA;distributed under the License is distributed on an &quot;AS IS&quot; BASIS,&#xA;WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.&#xA;See the License for the specific language governing permissions and&#xA;limitations under the License."/>
+    <metadata connector="FLOW" name="tJava_1"/>
+  </node>
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="64" posY="576">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_2"/>
+    <elementParameter field="DIRECTORY" name="JAVA_LIBRARY_PATH" value="C:\Talend\TOS_DI-20141207_1530-V5.6.1\configuration\lib\java"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="/*&#xA; * Framework Denitialisation v0.1.&#xA; */&#xA;((Framework) context.framework).message(jobName, jobVersion, &quot;ENDED&quot;);"/>
+    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="LABEL" value="DeInitFramework"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tJava_2"/>
+  </node>
+  <node componentName="tDie" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="288" posY="192">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDie_1"/>
+    <elementParameter field="DIRECTORY" name="JAVA_LIBRARY_PATH" value="C:\Talend\TOS_DI-20141207_1530-V5.6.1\configuration\lib\java"/>
+    <elementParameter field="TEXT" name="MESSAGE" value="String.format(&quot;%s: this job must have a parent&quot;, jobName)"/>
+    <elementParameter field="TEXT" name="CODE" value="5"/>
+    <elementParameter field="CLOSED_LIST" name="PRIORITY" value="5"/>
+    <elementParameter field="CHECK" name="EXIT_JVM" value="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="DieOnNotChildJob_5"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tDie_1"/>
+  </node>
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="64" posY="320">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_4"/>
+    <elementParameter field="DIRECTORY" name="JAVA_LIBRARY_PATH" value="C:\Talend\TOS_DI-20141207_1530-V5.6.1\configuration\lib\java"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="globalMap.put(&quot;UnprocessedCount&quot;, 0);"/>
+    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="LABEL" value="InitJob"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="CHECK" name="INFORMATION" value="true"/>
+    <elementParameter field="MEMO" name="COMMENT" value="Reserved for any job initalisation that should take place, once the framework has been initialised and context has been loaded."/>
+    <metadata connector="FLOW" name="tJava_4"/>
+  </node>
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="64" posY="448">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_5"/>
+    <elementParameter field="DIRECTORY" name="JAVA_LIBRARY_PATH" value="C:\Talend\TOS_DI-20141207_1530-V5.6.1\configuration\lib\java"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="String foo = &quot;bar&quot;;"/>
+    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="LABEL" value="DeInitJob"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tJava_5"/>
+  </node>
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="64" posY="64">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_7"/>
+    <elementParameter field="DIRECTORY" name="JAVA_LIBRARY_PATH" value="C:\Talend\TOS_DI-20141207_1530-V5.6.1\configuration\lib\java"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="String foo = &quot;bar&quot;;"/>
+    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="LABEL" value="PreInit"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="CHECK" name="INFORMATION" value="true"/>
+    <elementParameter field="MEMO" name="COMMENT" value="Reserved for any initialisation that shoud take place prior to initialising the framework."/>
+    <metadata connector="FLOW" name="tJava_7"/>
+  </node>
+  <node componentName="tFileList" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="288" posY="320">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileList_1"/>
+    <elementParameter field="DIRECTORY" name="JAVA_LIBRARY_PATH" value="C:\Talend\TOS_DI-20141207_1530-V5.6.1\configuration\lib\java"/>
+    <elementParameter field="DIRECTORY" name="DIRECTORY" value="context.inputDir"/>
+    <elementParameter field="CLOSED_LIST" name="LIST_MODE" value="FILES"/>
+    <elementParameter field="CHECK" name="INCLUDSUBDIR" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="CASE_SENSITIVE" value="NO"/>
+    <elementParameter field="CHECK" name="ERROR" value="false"/>
+    <elementParameter field="CHECK" name="GLOBEXPRESSIONS" value="false"/>
+    <elementParameter field="TABLE" name="FILES">
+      <elementValue elementRef="FILEMASK" value="context.unprocessedFilePattern"/>
+    </elementParameter>
+    <elementParameter field="RADIO" name="ORDER_BY_NOTHING" value="false"/>
+    <elementParameter field="RADIO" name="ORDER_BY_FILENAME" value="true"/>
+    <elementParameter field="RADIO" name="ORDER_BY_FILESIZE" value="false"/>
+    <elementParameter field="RADIO" name="ORDER_BY_MODIFIEDDATE" value="false"/>
+    <elementParameter field="RADIO" name="ORDER_ACTION_ASC" value="true"/>
+    <elementParameter field="RADIO" name="ORDER_ACTION_DESC" value="false"/>
+    <elementParameter field="CHECK" name="IFEXCLUDE" value="false"/>
+    <elementParameter field="TEXT" name="EXCLUDEFILEMASK" value="&quot;*.txt&quot;"/>
+    <elementParameter field="CHECK" name="FORMAT_FILEPATH_TO_SLASH" value="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="ListInputFiles"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="480" posY="320">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_6"/>
+    <elementParameter field="DIRECTORY" name="JAVA_LIBRARY_PATH" value="C:\Talend\TOS_DI-20141207_1530-V5.6.1\configuration\lib\java"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="globalMap.put(&quot;UnprocessedCount&quot;, ((Integer) globalMap.get(&quot;UnprocessedCount&quot;)) + 1);&#xA;&#xA;if(globalMap.get(&quot;FileList&quot;) == null)&#xA;&#x9;globalMap.put(&quot;FileList&quot;, ((String)globalMap.get(&quot;tFileList_1_CURRENT_FILEPATH&quot;)));&#xA;else globalMap.put(&quot;FileList&quot;, String.format(&quot;%s\n%s&quot;,&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9; ((String)globalMap.get(&quot;FileList&quot;)),&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9; ((String)globalMap.get(&quot;tFileList_1_CURRENT_FILEPATH&quot;))));"/>
+    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="LABEL" value="RecordUnprocessed"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tJava_6"/>
+  </node>
+  <node componentName="tFixedFlowInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="288" posY="448">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFixedFlowInput_1"/>
+    <elementParameter field="DIRECTORY" name="JAVA_LIBRARY_PATH" value="C:\Talend\TOS_DI-20141207_1530-V5.6.1\configuration\lib\java"/>
+    <elementParameter field="TEXT" name="NB_ROWS" value="((Integer)globalMap.get(&quot;tFileList_1_NB_FILE&quot;))"/>
+    <elementParameter field="RADIO" name="USE_SINGLEMODE" value="true"/>
+    <elementParameter field="TABLE" name="VALUES">
+      <elementValue elementRef="SCHEMA_COLUMN" value="fileNumber"/>
+      <elementValue elementRef="VALUE" value="1"/>
+    </elementParameter>
+    <elementParameter field="RADIO" name="USE_INTABLE" value="false"/>
+    <elementParameter field="TABLE" name="INTABLE"/>
+    <elementParameter field="RADIO" name="USE_INLINECONTENT" value="false"/>
+    <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;;&quot;"/>
+    <elementParameter field="MEMO" name="INLINECONTENT" value=""/>
+    <elementParameter field="TEXT" name="LABEL" value="InputFileCount"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tFixedFlowInput_1">
+      <column comment="" key="false" name="fileNumber" nullable="true" pattern="" sourceType="" type="id_Integer" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tJavaRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="480" posY="448">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJavaRow_1"/>
+    <elementParameter field="DIRECTORY" name="JAVA_LIBRARY_PATH" value="C:\Talend\TOS_DI-20141207_1530-V5.6.1\configuration\lib\java"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="// code sample:&#xA;//&#xA;// multiply by 2 the row identifier&#xA;// output_row.id = input_row.id * 2;&#xA;//&#xA;// lowercase the name&#xA;// output_row.name = input_row.name.toLowerCase();&#xA;&#xA;"/>
+    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="LABEL" value="CountInputFiles"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tJavaRow_1">
+      <column comment="" key="false" name="fileNumber" nullable="true" pattern="" sourceType="" type="id_Integer" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="288" posY="576">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_3"/>
+    <elementParameter field="DIRECTORY" name="JAVA_LIBRARY_PATH" value="C:\Talend\TOS_DI-20141207_1530-V5.6.1\configuration\lib\java"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="if(((Integer) globalMap.get(&quot;UnprocessedCount&quot;)) > 0) {&#xA;&#x9;System.err.println(String.format(&quot;%s: %d unprocessed files remain in %s&quot;,&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9; jobName,&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9; ((Integer) globalMap.get(&quot;UnprocessedCount&quot;)),&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9; context.inputDir));&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9; &#xA;globalMap.put(&quot;SendMailSubject&quot;, String.format(&quot;%s v%s: WARNING: unprocessed input files remain&quot;,&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;((Framework) context.framework).getJobName(),&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;((Framework) context.framework).getJobVersion()));&#xA;&#xA;&#xA;globalMap.put(&quot;SendMailMessage&quot;, String.format(&quot;Execution of this job has completed, with %d files remaining in the input directory. These should be investigated as they have failed to process. This error is being reported by %s v%s.\n\n%s&quot;,&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;((Integer) globalMap.get(&quot;UnprocessedCount&quot;)),&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;((Framework) context.framework).getJobName(),&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;((Framework) context.framework).getJobVersion(),&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;((String)globalMap.get(&quot;FileList&quot;))));&#xA;}"/>
+    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="LABEL" value="InitEmailer"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tJava_3"/>
+  </node>
+  <node componentName="tRunJob" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="480" posY="576">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRunJob_1"/>
+    <elementParameter field="DIRECTORY" name="JAVA_LIBRARY_PATH" value="C:\Talend\TOS_DI-20141207_1530-V5.6.1\configuration\lib\java"/>
+    <elementParameter field="CHECK" name="USE_DYNAMIC_JOB" value="false"/>
+    <elementParameter field="TEXT" name="CONTEXT_JOB" value=""/>
+    <elementParameter field="PROCESS_TYPE" name="PROCESS" value="LibEmailer"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_PROCESS" value="_ZJzn0HvAEeWUcpkX9YPDRQ"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_VERSION" value="Latest"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_CONTEXT" value="Default"/>
+    <elementParameter field="TEXT" name="CONTEXT_NAME" value="Default"/>
+    <elementParameter field="CHECK" name="USE_INDEPENDENT_PROCESS" value="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_CHILD_ERROR" value="false"/>
+    <elementParameter field="CHECK" name="TRANSMIT_WHOLE_CONTEXT" value="true"/>
+    <elementParameter field="TABLE" name="CONTEXTPARAMS">
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="sendMailSubject"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="((String) globalMap.get(&quot;SendMailSubject&quot;))"/>
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="sendMailMessage"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="((String) globalMap.get(&quot;SendMailMessage&quot;))"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="PROPAGATE_CHILD_RESULT" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_PARAMETER" value="false"/>
+    <elementParameter field="CHECK" name="TRANSMIT_ORIGINAL_CONTEXT" value="true"/>
+    <elementParameter field="TEXT" name="LABEL" value="__PROCESS__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tRunJob_1"/>
+  </node>
+  <connection connectorName="RUN_IF" label="NotChildJob" lineStyle="6" metaname="tJava_1" offsetLabelX="0" offsetLabelY="0" source="tJava_1" target="tDie_1">
+    <elementParameter field="MEMO_JAVA" name="CONDITION" value="! isChildJob"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="NotChildJob"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tJava_1" offsetLabelX="0" offsetLabelY="0" source="tJava_1" target="tJava_4">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk4"/>
+  </connection>
+  <connection connectorName="RUN_IF" label="Report" lineStyle="6" metaname="tJava_4" offsetLabelX="0" offsetLabelY="0" source="tJava_4" target="tFileList_1">
+    <elementParameter field="MEMO_JAVA" name="CONDITION" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="Report"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tJava_4" offsetLabelX="0" offsetLabelY="0" source="tJava_4" target="tJava_5">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk10"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tJava_5" offsetLabelX="0" offsetLabelY="0" source="tJava_5" target="tJava_2">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk6"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tJava_7" offsetLabelX="0" offsetLabelY="0" source="tJava_7" target="tJava_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk9"/>
+  </connection>
+  <connection connectorName="ITERATE" label="Iterate" lineStyle="7" metaname="tFileList_1" offsetLabelX="0" offsetLabelY="0" source="tFileList_1" target="tJava_6">
+    <elementParameter field="CHECK" name="ENABLE_PARALLEL" value="false"/>
+    <elementParameter field="TEXT" name="NUMBER_PARALLEL" value="2"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="iterate1"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tFileList_1" offsetLabelX="0" offsetLabelY="0" source="tFileList_1" target="tFixedFlowInput_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk7"/>
+  </connection>
+  <connection connectorName="FLOW" label="inputFileCount" lineStyle="0" metaname="tFixedFlowInput_1" offsetLabelX="0" offsetLabelY="0" source="tFixedFlowInput_1" target="tJavaRow_1">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER">
+      <elementValue elementRef="TRACE_COLUMN" value="fileNumber"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="inputFileCount"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tFixedFlowInput_1" offsetLabelX="0" offsetLabelY="0" source="tFixedFlowInput_1" target="tJava_3">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk8"/>
+  </connection>
+  <connection connectorName="RUN_IF" label="UnprocessedFiles" lineStyle="6" metaname="tJava_3" offsetLabelX="0" offsetLabelY="0" source="tJava_3" target="tRunJob_1">
+    <elementParameter field="MEMO_JAVA" name="CONDITION" value="((Integer) globalMap.get(&quot;UnprocessedCount&quot;)) > 0"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="UnprocessedFiles"/>
+  </connection>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="160;190;240"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="255;0;0"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_2"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="160;190;240"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="255;0;0"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDie_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="160;190;240"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="255;0;0"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_4"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="160;190;240"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="255;128;0"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_5"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="160;190;240"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="255;255;0"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_7"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="160;190;240"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="255;255;0"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileList_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="160;190;240"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="220;220;250"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFixedFlowInput_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="160;190;240"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="220;220;250"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_3"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="160;190;240"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="220;220;250"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRunJob_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="160;190;240"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="220;220;250"/>
+  </subjob>
+</talendfile:ProcessType>

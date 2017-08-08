@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" confirmationNeeded="false" name="Default">
+  <contextParameter comment="" name="inputDir" prompt="inputDir?" promptNeeded="false" type="id_String" value="#BASEDIR/#JOBNAME/input"/>
+  <contextParameter comment="" name="outputDir" prompt="outputDir?" promptNeeded="false" type="id_String" value="#BASEDIR/#JOBNAME/output"/>
+  <contextParameter comment="" name="workingDir" prompt="workingDir?" promptNeeded="false" type="id_String" value="#BASEDIR/#JOBNAME/working"/>
+  <contextParameter comment="" name="tmpDir" prompt="tmpDir?" promptNeeded="false" type="id_String" value="#BASEDIR/#JOBNAME/tmp"/>
+  <contextParameter comment="" name="archiveDir" prompt="archiveDir?" promptNeeded="false" type="id_String" value="#BASEDIR/archive"/>
+  <contextParameter comment="" name="reportingDir" prompt="reportingDir?" promptNeeded="false" type="id_String" value="#BASEDIR/reporting"/>
+  <contextParameter comment="" name="databaseDir" prompt="databaseDir?" promptNeeded="false" type="id_String" value="#BASEDIR/#JOBNAME/database"/>
+  <contextParameter comment="" name="paramDir" prompt="paramDir?" promptNeeded="false" type="id_String" value="#BASEDIR/#JOBNAME/param"/>
+  <contextParameter comment="" name="logDir" prompt="logDir?" promptNeeded="false" type="id_String" value="#BASEDIR/#JOBNAME/log"/>
+  <contextParameter comment="" name="binDir" prompt="binDir?" promptNeeded="false" type="id_String" value="#BASEDIR/bin"/>
+  <contextParameter comment="" name="libDir" prompt="libDir?" promptNeeded="false" type="id_String" value="#BASEDIR/#JOBNAME/lib"/>
+  <contextParameter comment="" name="gLibDir" prompt="gLibDir?" promptNeeded="false" type="id_String" value="#BASEDIR/lib"/>
+  <contextParameter comment="" name="targetDir" prompt="targetDir?" promptNeeded="false" type="id_String" value="#BASEDIR/#JOBNAME/target"/>
+  <contextParameter comment="" name="lockDir" prompt="lockDir?" promptNeeded="false" type="id_String" value="#BASEDIR/lock"/>
+  <contextParameter comment="" name="baseDir" prompt="baseDir?" promptNeeded="false" type="id_String" value="#HOME/project/talend/#CONTEXTSTR/#PROJECTNAME"/>
+  <contextParameter comment="" name="statsDir" prompt="statsDir?" promptNeeded="false" type="id_String" value="#BASEDIR/#JOBNAME/stats"/>
+  <contextParameter comment="" name="contextDir" prompt="contextDir?" promptNeeded="false" type="id_String" value="#BASEDIR/context"/>
+  <contextParameter comment="" name="checkpointDir" prompt="checkpointDir?" promptNeeded="false" type="id_String" value="#BASEDIR/#JOBNAME/checkpoint"/>
+</talendfile:ContextType>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" confirmationNeeded="false" name="Default">
+  <contextParameter comment="" name="sendMailTo" prompt="sendMailTo?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter comment="" name="sendMailFrom" prompt="sendMailFrom?" promptNeeded="false" type="id_String" value="contributions@TalendFramework.com"/>
+  <contextParameter comment="" name="sendMailSendername" prompt="sendMailSendername?" promptNeeded="false" type="id_String" value="Talend Framework"/>
+  <contextParameter comment="" name="sendMailCc" prompt="sendMailCc?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter comment="" name="sendMailBcc" prompt="sendMailBcc?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter comment="" name="sendMailSubject" prompt="sendMailSubject?" promptNeeded="false" type="id_String" value="You can send Email from the Talend Framework"/>
+  <contextParameter comment="" name="sendMailMessage" prompt="sendMailMessage?" promptNeeded="false" type="id_String" value="You can send Email from the Talend Framework"/>
+  <contextParameter comment="" name="sendMailSMTPHost" prompt="sendMailSMTPHost?" promptNeeded="false" type="id_String" value="smtp.gmail.com"/>
+  <contextParameter comment="" name="sendMailSMTPPort" prompt="sendMailSMTPPort?" promptNeeded="false" type="id_String" value="465"/>
+  <contextParameter comment="" name="sendMailUsername" prompt="sendMailUsername?" promptNeeded="false" type="id_String" value="TalendFramework@gmail.com"/>
+  <contextParameter comment="" name="sendMailPassword" prompt="sendMailPassword?" promptNeeded="false" type="id_Password" value="9zHVDciwi+kZlZjkw/el0fpbec0hJ/q7"/>
+  <contextParameter comment="" name="sendMailAttachment" prompt="sendMailAttachment?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter comment="" name="sendMailEncoding" prompt="sendMailEncoding?" promptNeeded="false" type="id_String" value="UTF-8"/>
+  <contextParameter comment="" name="sendMailSSLSupport" prompt="sendMailSSLSupport?" promptNeeded="false" type="id_Boolean" value="true"/>
+  <contextParameter comment="" name="sendMailStartTLS" prompt="sendMailStartTLS?" promptNeeded="false" type="id_Boolean" value="false"/>
+</talendfile:ContextType>

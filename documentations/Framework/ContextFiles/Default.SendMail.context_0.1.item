@@ -1,0 +1,33 @@
+#
+# Default SendMail Context File v0.1
+#
+#sendMailSubject="This is a test email from the Talend Framework"
+#sendMailMessage="Hello World!"
+#sendMailTo=""
+#sendMailFrom=""
+#sendMailSendername=""
+#sendMailCc=""
+#sendMailBcc=""
+#sendMailUsername=""
+#sendMailPassword=""
+#sendMailEncoding="UTF-8"
+
+# Typical GMail settings
+#sendMailSMTPHost="smtp.gmail.com"
+#sendMailSMTPPort="465"
+#sendMailSSLSupport="true"
+#sendMailStartTLS="false"
+
+# Typical Outlook settings
+#sendMailSMTPHost="smtp-mail.outlook.com"
+#sendMailSMTPPort="25"
+# Use 587 if 25 is blocked
+#sendMailSMTPPort="587"
+#sendMailSSLSupport="false"
+#sendMailStartTLS="end"
+
+# Typical 1&1 settings
+#sendMailSMTPHost="smtp.1and1.com"
+#sendMailSMTPPort="587"
+#sendMailSSLSupport="true"
+#sendMailStartTLS="false"

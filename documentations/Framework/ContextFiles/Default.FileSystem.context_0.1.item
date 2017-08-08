@@ -1,0 +1,21 @@
+#
+# Default FileSystem Context File v0.1
+#
+#baseDir="#HOME/project/talend/#CONTEXTSTR/#PROJECTNAME/#JOBNAME"
+#archiveDir="#BASEDIR/archive"
+#binDir="#BASEDIR/bin"
+#checkpointDir="#BASEDIR/checkpoint"
+#databaseDir="#BASEDIR/database"
+#gLibDir="#HOME/project/talend/#CONTEXTSTR/lib"
+#inputDir="#BASEDIR/input"
+#libDir="#BASEDIR/lib"
+#localiseArchiveDir="true"
+#localiseReportingDir="true"
+#lockDir="#BASEDIR/lock"
+#logDir="#BASEDIR/log"
+#outputDir="#BASEDIR/output"
+#paramDir="#BASEDIR/param"
+#reportingDir="#BASEDIR/reporting"
+#targetDir="#BASEDIR/target"
+#tmpDir="#BASEDIR/tmp"
+#workingDir="#BASEDIR/working"

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" confirmationNeeded="false" name="Default">
+  <contextParameter comment="" name="soapUsername" prompt="soapUsername?" promptNeeded="false" type="id_String" value="null"/>
+  <contextParameter comment="" name="soapPassword" prompt="soapPassword?" promptNeeded="false" type="id_String" value="null"/>
+  <contextParameter comment="" name="soapENDPOINT" prompt="soapENDPOINT?" promptNeeded="false" type="id_String" value="null"/>
+  <contextParameter comment="" name="soapSOAPAction" prompt="soapSOAPAction?" promptNeeded="false" type="id_String" value="null"/>
+  <contextParameter comment="" name="soapSOAPMessage" prompt="soapSOAPMessage?" promptNeeded="false" type="id_String" value="null"/>
+  <contextParameter comment="" name="soapUseNTLM" prompt="soapUseNTLM?" promptNeeded="false" type="id_Boolean" value="false"/>
+  <contextParameter comment="" name="soapNTLMDomain" prompt="soapNTLMDomain?" promptNeeded="false" type="id_String" value="&quot;192.168.0.100&quot;"/>
+  <contextParameter comment="" name="soapNeedAuthentication" prompt="soapNeedAuthentication?" promptNeeded="false" type="id_Boolean" value="true"/>
+  <contextParameter comment="" name="soapUseHTTPProxy" prompt="soapUseHTTPProxy?" promptNeeded="false" type="id_Boolean" value="false"/>
+  <contextParameter comment="" name="soapProxyHost" prompt="soapProxyHost?" promptNeeded="false" type="id_String" value="&quot;61.163.92.4&quot;"/>
+  <contextParameter comment="" name="soapProxyPort" prompt="soapProxyPort?" promptNeeded="false" type="id_Integer" value="8080"/>
+  <contextParameter comment="" name="soapProxyUser" prompt="soapProxyUser?" promptNeeded="false" type="id_String" value="&quot;&quot;"/>
+  <contextParameter comment="" name="soapProxyPassword" prompt="soapProxyPassword?" promptNeeded="false" type="id_Password" value="PIwSfBIFL6rnomZhvARBuA=="/>
+  <contextParameter comment="" name="soapTrustServerWithSSL" prompt="soapTrustServerWithSSL?" promptNeeded="false" type="id_Boolean" value="false"/>
+  <contextParameter comment="" name="soapTrustStoreFile" prompt="soapTrustStoreFile?" promptNeeded="false" type="id_String" value="&quot;C:/clientTrustStore.trustStore&quot;"/>
+  <contextParameter comment="" name="soapTrustStorePassword" prompt="soapTrustStorePassword?" promptNeeded="false" type="id_Password" value="NehTXHKJTvkAn+sy9Q3GMw=="/>
+  <contextParameter comment="" name="soapSOAPVersion" prompt="soapSOAPVersion?" promptNeeded="false" type="id_String" value="&quot;1.2&quot;"/>
+  <contextParameter comment="" name="soapUseMessageFromTheSchema" prompt="soapUseMessageFromTheSchema?" promptNeeded="false" type="id_Boolean" value="false"/>
+  <contextParameter comment="" name="soapOutputInDocument" prompt="soapOutputInDocument?" promptNeeded="false" type="id_Boolean" value="false"/>
+  <contextParameter comment="" name="soapUseKerberos" prompt="soapUseKerberos?" promptNeeded="false" type="id_Boolean" value="false"/>
+  <contextParameter comment="" name="soapKerberosConfiguration" prompt="soapKerberosConfiguration?" promptNeeded="false" type="id_String" value="null"/>
+</talendfile:ContextType>

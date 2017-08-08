@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" confirmationNeeded="false" name="Default">
+  <contextParameter comment="" name="ftpHost" prompt="ftpHost?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter comment="" name="ftpPort" prompt="ftpPort?" promptNeeded="false" type="id_Integer" value=""/>
+  <contextParameter comment="" name="ftpUsername" prompt="ftpUsername?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter comment="" name="ftpPassword" prompt="ftpPassword?" promptNeeded="false" type="id_Password" value=""/>
+  <contextParameter comment="" name="ftpSFTPSupport" prompt="ftpSFTPSupport?" promptNeeded="false" type="id_Boolean" value="false"/>
+  <contextParameter comment="" name="ftpFTPSSupport" prompt="ftpFTPSSupport?" promptNeeded="false" type="id_Boolean" value="false"/>
+  <contextParameter comment="" name="ftpConnectionMode" prompt="ftpConnectionMode?" promptNeeded="false" type="id_String" value="Passive"/>
+  <contextParameter comment="" name="ftpEncoding" prompt="ftpEncoding?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter comment="" name="ftpUseSocksProxy" prompt="ftpUseSocksProxy?" promptNeeded="false" type="id_Boolean" value="false"/>
+</talendfile:ContextType>

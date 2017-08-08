@@ -1,0 +1,11 @@
+#
+# Default Job: Template Context File v0.1
+#
+autoload="#HOME/project/talend/Default/context/Default.Framework.context"
+autoload="#HOME/project/talend/Default/context/Default.FileSystem.context"
+autoload="#HOME/project/talend/Default/context/Default.SendMail.context"
+#enablePersistence="false"
+#persistenceMaxIterations="99999999"
+#persistenceSleepBetweenExecutions="30"
+#runBetweenStart="00:00"
+#runBetweenEnd="00:00"

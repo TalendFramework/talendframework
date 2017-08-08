@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" confirmationNeeded="false" name="Default">
+  <contextParameter comment="" name="enablePersistence" prompt="enablePersistence?" promptNeeded="false" type="id_Boolean" value="false"/>
+  <contextParameter comment="" name="persistenceMaxIterations" prompt="persistenceMaxIterations?" promptNeeded="false" type="id_Integer" value="99999999"/>
+  <contextParameter comment="" name="runBetweenStart" prompt="runBetweenStart?" promptNeeded="false" type="id_String" value="00:00"/>
+  <contextParameter comment="" name="runBetweenEnd" prompt="runBetweenEnd?" promptNeeded="false" type="id_String" value="00:00"/>
+  <contextParameter comment="" name="persistenceSleepBetweenExecutions" prompt="persistenceSleepBetweenExecutions?" promptNeeded="false" type="id_Integer" value="30"/>
+  <contextParameter comment="" name="persistenceSuppressDuplicateEmailsWithinMinutes" prompt="persistenceSuppressDuplicateEmailsWithinMinutes?" promptNeeded="false" type="id_Integer" value="60"/>
+</talendfile:ContextType>
