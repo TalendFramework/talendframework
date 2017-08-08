@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore">
+  <TalendMetadata:DelimitedFileConnection xmi:id="_-vIo8Cu0EeWEVtMBeyhMbA" name="FlowMeter" dataPackage="_-vIo8Su0EeWEVtMBeyhMbA" Server="Localhost 127.0.0.1" FilePath="C:/FT/FTLS/Archive/FTLS.20150716.141802/Stats/meter_file.txt" Encoding="US-ASCII" FieldSeparatorValue="&quot;;&quot;" RowSeparatorValue="&quot;\n&quot;" HeaderValue="0"/>
+  <orgomg.cwm.resource.record:RecordFile xmi:id="_-vIo8Su0EeWEVtMBeyhMbA" name="default" dataManager="_-vIo8Cu0EeWEVtMBeyhMbA">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_-vIo8iu0EeWEVtMBeyhMbA" id="_xyJOECu0EeWEVtMBeyhMbA" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Ete2sCu1EeWEVtMBeyhMbA" name="moment" label="moment" sourceType="" talendType="id_Date" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;">
+        <initialValue xmi:id="_Ete2sSu1EeWEVtMBeyhMbA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Ete2siu1EeWEVtMBeyhMbA" name="pid" label="pid" length="20" sourceType="" talendType="id_String" pattern="null">
+        <initialValue xmi:id="_Ete2syu1EeWEVtMBeyhMbA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Ete2tCu1EeWEVtMBeyhMbA" name="father_pid" label="father_pid" length="20" sourceType="" talendType="id_String" pattern="null">
+        <initialValue xmi:id="_Ete2tSu1EeWEVtMBeyhMbA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Ete2tiu1EeWEVtMBeyhMbA" name="root_pid" label="root_pid" length="20" sourceType="" talendType="id_String" pattern="null">
+        <initialValue xmi:id="_Ete2tyu1EeWEVtMBeyhMbA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Ete2uCu1EeWEVtMBeyhMbA" name="system_pid" label="system_pid" length="8" sourceType="" talendType="id_Long" pattern="null">
+        <initialValue xmi:id="_Ete2uSu1EeWEVtMBeyhMbA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Ete2uiu1EeWEVtMBeyhMbA" name="project" label="project" length="50" sourceType="" talendType="id_String" pattern="null">
+        <initialValue xmi:id="_Ete2uyu1EeWEVtMBeyhMbA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Ete2vCu1EeWEVtMBeyhMbA" name="job" label="job" length="50" sourceType="" talendType="id_String" pattern="null">
+        <initialValue xmi:id="_Ete2vSu1EeWEVtMBeyhMbA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Ete2viu1EeWEVtMBeyhMbA" name="job_repository_id" label="job_repository_id" length="255" sourceType="" talendType="id_String" pattern="null">
+        <initialValue xmi:id="_Ete2vyu1EeWEVtMBeyhMbA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Ete2wCu1EeWEVtMBeyhMbA" name="job_version" label="job_version" length="255" sourceType="" talendType="id_String" pattern="null">
+        <initialValue xmi:id="_Ete2wSu1EeWEVtMBeyhMbA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Ete2wiu1EeWEVtMBeyhMbA" name="context" label="context" length="50" sourceType="" talendType="id_String" pattern="null">
+        <initialValue xmi:id="_Ete2wyu1EeWEVtMBeyhMbA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Ete2xCu1EeWEVtMBeyhMbA" name="origin" label="origin" length="255" sourceType="" talendType="id_String" pattern="null">
+        <initialValue xmi:id="_Ete2xSu1EeWEVtMBeyhMbA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Ete2xiu1EeWEVtMBeyhMbA" name="label" label="label" length="255" sourceType="" talendType="id_String" pattern="null">
+        <initialValue xmi:id="_Ete2xyu1EeWEVtMBeyhMbA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Ete2yCu1EeWEVtMBeyhMbA" name="count" label="count" length="3" sourceType="" talendType="id_Integer" pattern="null">
+        <initialValue xmi:id="_Ete2ySu1EeWEVtMBeyhMbA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Ete2yiu1EeWEVtMBeyhMbA" name="reference" label="reference" length="3" sourceType="" talendType="id_Integer" pattern="null">
+        <initialValue xmi:id="_Ete2yyu1EeWEVtMBeyhMbA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Ete2zCu1EeWEVtMBeyhMbA" name="thresholds" label="thresholds" length="255" sourceType="" talendType="id_String" pattern="null">
+        <initialValue xmi:id="_Ete2zSu1EeWEVtMBeyhMbA" body=""/>
+      </feature>
+    </ownedElement>
+  </orgomg.cwm.resource.record:RecordFile>
+</xmi:XMI>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" confirmationNeeded="false" name="Default">
+  <contextParameter comment="" name="popHost" prompt="popHost?" promptNeeded="false" type="id_String" value="127.0.0.1"/>
+  <contextParameter comment="" name="popPort" prompt="popPort?" promptNeeded="false" type="id_Integer" value="110"/>
+  <contextParameter comment="" name="popUsername" prompt="popUsername?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter comment="" name="popPassword" prompt="popPassword?" promptNeeded="false" type="id_Password" value=""/>
+  <contextParameter comment="" name="popOutputDirectory" prompt="popOutputDirectory?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter comment="" name="popFilenamePattern" prompt="popFilenamePattern?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter comment="" name="popRetrieveAllEmails" prompt="popRetrieveAllEmails?" promptNeeded="false" type="id_Boolean" value="true"/>
+  <contextParameter comment="" name="popNumberOfEmailsToRetrieve" prompt="popNumberOfEmailsToRetrieve?" promptNeeded="false" type="id_Integer" value="10"/>
+  <contextParameter comment="" name="popDeleteEmailsFromServer" prompt="popDeleteEmailsFromServer?" promptNeeded="false" type="id_Boolean" value="false"/>
+  <contextParameter comment="" name="popProtocol" prompt="popProtocol?" promptNeeded="false" type="id_String" value="pop3"/>
+  <contextParameter comment="" name="popUseSSL" prompt="popUseSSL?" promptNeeded="false" type="id_Boolean" value="false"/>
+  <contextParameter comment="" name="popFilterItemSubjectPattern" prompt="popFilterItemSubjectPattern?" promptNeeded="false" type="id_String" value="(?s).*"/>
+  <contextParameter comment="" name="popSpecifyMailFolder" prompt="popSpecifyMailFolder?" promptNeeded="false" type="id_Boolean" value="false"/>
+  <contextParameter comment="" name="popMailFolder" prompt="popMailFolder?" promptNeeded="false" type="id_String" value="&quot;INBOX&quot;"/>
+</talendfile:ContextType>

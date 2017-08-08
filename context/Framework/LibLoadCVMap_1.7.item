@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" confirmationNeeded="false" name="Default">
+  <contextParameter comment="" name="libLoadCVMapFile" prompt="libLoadCVMapFile?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter comment="" name="libLoadCVMapEncoding" prompt="libLoadCVMapEncoding?" promptNeeded="false" type="id_String" value="ISO-8859-15"/>
+  <contextParameter comment="" name="libLoadCVMapName" prompt="libLoadCVMapName?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter comment="" name="libLoadCVFile" prompt="libLoadCVFile?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter comment="" name="libLoadCVShowMappingTable" prompt="libLoadCVShowMappingTable?" promptNeeded="false" type="id_Boolean" value="false"/>
+  <contextParameter comment="" name="libLoadCVErrorOnEmptyMappingTable" prompt="libLoadCVErrorOnEmptyMappingTable?" promptNeeded="false" type="id_Boolean" value="true"/>
+  <contextParameter comment="" name="libLoadCVSmartMatching" prompt="libLoadCVSmartMatching?" promptNeeded="false" type="id_Boolean" value="true"/>
+  <contextParameter comment="" name="libLoadCVErrorOnInvalidTarget" prompt="libLoadCVErrorOnInvalidTarget?" promptNeeded="false" type="id_Boolean" value="true"/>
+  <contextParameter comment="" name="libLoadCVErrorOnDuplicateSource" prompt="libLoadCVErrorOnDuplicateSource?" promptNeeded="false" type="id_Boolean" value="false"/>
+  <contextParameter comment="" name="libLoadCVApplyDefaultMapping" prompt="libLoadCVApplyDefaultMapping?" promptNeeded="false" type="id_Boolean" value="true"/>
+</talendfile:ContextType>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<exportParameters version="5.6.1.20141207_1530">
+    <exportParameter name="DEV" type="technicalStatus">development</exportParameter>
+    <exportParameter name="TEST" type="technicalStatus">testing</exportParameter>
+    <exportParameter name="PROD" type="technicalStatus">production</exportParameter>
+    <exportParameter name="UCK" type="documentationStatus">unchecked</exportParameter>
+    <exportParameter name="CHK" type="documentationStatus">checked</exportParameter>
+    <exportParameter name="VAL" type="documentationStatus">validated</exportParameter>
+    <exportParameter name="hidePassword" type="security">true</exportParameter>
+    <exportParameter name="UPDATE_COMPONENTS" type="statAndLogs">false</exportParameter>
+    <exportParameter name="STATS_DEFAULT_PROJECTSETTING" type="statAndLogs">true</exportParameter>
+    <exportParameter name="ON_STATCATCHER_FLAG" type="statAndLogs">true</exportParameter>
+    <exportParameter name="ON_LOGCATCHER_FLAG" type="statAndLogs">true</exportParameter>
+    <exportParameter name="ON_METERCATCHER_FLAG" type="statAndLogs">true</exportParameter>
+    <exportParameter name="ON_CONSOLE_FLAG" type="statAndLogs">false</exportParameter>
+    <exportParameter name="ON_FILES_FLAG" type="statAndLogs">true</exportParameter>
+    <exportParameter name="FILE_PATH" type="statAndLogs">Framework.getDefaultStatsDir(context.statsDir, context.baseDir, contextStr, projectName, jobName)</exportParameter>
+    <exportParameter name="FILENAME_STATS" type="statAndLogs">String.format("stats_file.%s.txt", TalendDate.formatDate("yyyyMMdd", TalendDate.getCurrentDate()))</exportParameter>
+    <exportParameter name="FILENAME_LOGS" type="statAndLogs">String.format("logs_file.%s.txt", TalendDate.formatDate("yyyyMMdd", TalendDate.getCurrentDate()))</exportParameter>
+    <exportParameter name="FILENAME_METTER" type="statAndLogs">String.format("meter_file.%s.txt", TalendDate.formatDate("yyyyMMdd", TalendDate.getCurrentDate()))</exportParameter>
+    <exportParameter name="ENCODING" type="statAndLogs">ISO-8859-15</exportParameter>
+    <exportParameter name="ON_DATABASE_FLAG" type="statAndLogs">false</exportParameter>
+    <exportParameter name="PROPERTY_TYPE" type="statAndLogs"/>
+    <exportParameter name="DB_TYPE" type="statAndLogs">tJDBCOutput</exportParameter>
+    <exportParameter name="DB_VERSION" type="statAndLogs">ORACLE_11</exportParameter>
+    <exportParameter name="URL" type="statAndLogs">""</exportParameter>
+    <exportParameter name="DRIVER_JAR" type="statAndLogs"/>
+    <exportParameter name="DRIVER_CLASS" type="statAndLogs">""</exportParameter>
+    <exportParameter name="HOST" type="statAndLogs">""</exportParameter>
+    <exportParameter name="PORT" type="statAndLogs">""</exportParameter>
+    <exportParameter name="DBNAME" type="statAndLogs">""</exportParameter>
+    <exportParameter name="LOCAL_SERVICE_NAME" type="statAndLogs">""</exportParameter>
+    <exportParameter name="PROPERTIES" type="statAndLogs">""</exportParameter>
+    <exportParameter name="SCHEMA_DB" type="statAndLogs">""</exportParameter>
+    <exportParameter name="USER" type="statAndLogs">""</exportParameter>
+    <exportParameter name="PASS" type="statAndLogs">0RMsyjmybrE=</exportParameter>
+    <exportParameter name="DBFILE" type="statAndLogs">""</exportParameter>
+    <exportParameter name="TABLE_STATS" type="statAndLogs">""</exportParameter>
+    <exportParameter name="TABLE_LOGS" type="statAndLogs">""</exportParameter>
+    <exportParameter name="TABLE_METER" type="statAndLogs">""</exportParameter>
+    <exportParameter name="CATCH_RUNTIME_ERRORS" type="statAndLogs">true</exportParameter>
+    <exportParameter name="CATCH_USER_ERRORS" type="statAndLogs">true</exportParameter>
+    <exportParameter name="CATCH_USER_WARNING" type="statAndLogs">true</exportParameter>
+    <exportParameter name="CATCH_REALTIME_STATS" type="statAndLogs">false</exportParameter>
+    <exportParameter name="ENCODING:ENCODING_TYPE" type="statAndLogs">ISO-8859-15</exportParameter>
+    <exportParameter name="PROPERTY_TYPE:PROPERTY_TYPE" type="statAndLogs">BUILT_IN</exportParameter>
+    <exportParameter name="PROPERTY_TYPE:REPOSITORY_PROPERTY_TYPE" type="statAndLogs"/>
+    <exportParameter name="UPDATE_COMPONENTS" type="implicitContext">false</exportParameter>
+    <exportParameter name="IMPLICIT_TCONTEXTLOAD" type="implicitContext">false</exportParameter>
+    <exportParameter name="IMPLICT_DEFAULT_PROJECTSETTING" type="implicitContext">true</exportParameter>
+    <exportParameter name="FROM_FILE_FLAG_IMPLICIT_CONTEXT" type="implicitContext">false</exportParameter>
+    <exportParameter name="FROM_DATABASE_FLAG_IMPLICIT_CONTEXT" type="implicitContext">false</exportParameter>
+    <exportParameter name="IMPLICIT_TCONTEXTLOAD_FILE" type="implicitContext">""</exportParameter>
+    <exportParameter name="FIELDSEPARATOR" type="implicitContext">""</exportParameter>
+    <exportParameter name="PROPERTY_TYPE_IMPLICIT_CONTEXT" type="implicitContext"/>
+    <exportParameter name="DB_TYPE_IMPLICIT_CONTEXT" type="implicitContext"/>
+    <exportParameter name="DB_VERSION_IMPLICIT_CONTEXT" type="implicitContext"/>
+    <exportParameter name="HOST_IMPLICIT_CONTEXT" type="implicitContext">""</exportParameter>
+    <exportParameter name="PORT_IMPLICIT_CONTEXT" type="implicitContext">""</exportParameter>
+    <exportParameter name="DBNAME_IMPLICIT_CONTEXT" type="implicitContext">""</exportParameter>
+    <exportParameter name="LOCAL_SERVICE_NAME_IMPLICIT_CONTEXT" type="implicitContext">""</exportParameter>
+    <exportParameter name="PROPERTIES_IMPLICIT_CONTEXT" type="implicitContext">""</exportParameter>
+    <exportParameter name="SCHEMA_DB_IMPLICIT_CONTEXT" type="implicitContext">""</exportParameter>
+    <exportParameter name="USER_IMPLICIT_CONTEXT" type="implicitContext">""</exportParameter>
+    <exportParameter name="PASS_IMPLICIT_CONTEXT" type="implicitContext">0RMsyjmybrE=</exportParameter>
+    <exportParameter name="DBFILE_IMPLICIT_CONTEXT" type="implicitContext">""</exportParameter>
+    <exportParameter name="DBTABLE_IMPLICIT_CONTEXT" type="implicitContext">""</exportParameter>
+    <exportParameter name="QUERY_CONDITION_IMPLICIT_CONTEXT" type="implicitContext">""</exportParameter>
+    <exportParameter name="LOAD_NEW_VARIABLE" type="implicitContext"/>
+    <exportParameter name="NOT_LOAD_OLD_VARIABLE" type="implicitContext"/>
+    <exportParameter name="PRINT_OPERATIONS" type="implicitContext">false</exportParameter>
+    <exportParameter name="DISABLE_ERROR" type="implicitContext">false</exportParameter>
+    <exportParameter name="DISABLE_WARNINGS" type="implicitContext">false</exportParameter>
+    <exportParameter name="DISABLE_INFO" type="implicitContext">false</exportParameter>
+    <exportParameter name="PROPERTY_TYPE_IMPLICIT_CONTEXT:PROPERTY_TYPE" type="implicitContext"/>
+    <exportParameter
+        name="PROPERTY_TYPE_IMPLICIT_CONTEXT:REPOSITORY_PROPERTY_TYPE" type="implicitContext"/>
+</exportParameters>

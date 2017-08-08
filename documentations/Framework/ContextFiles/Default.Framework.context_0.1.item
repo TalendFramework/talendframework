@@ -1,0 +1,16 @@
+#
+# Default Framework Context File v0.1
+#
+#attachExecutionReportOnError="true"
+#attachExecutionReportOnSuccess="true"
+#confirmExecution="false"
+#debug="false"
+#deleteLockFileInHandledError="true"
+#enableEmailOnError="true"
+#enableEmailOnSuccess="false"
+#enableErrorOnLockFileExists="true"
+#enableJobReporting="true"
+#enableLockFile="true"
+#enableShowContext="true"
+#localiseArchiveDir="true"
+#localiseReportingDir="true"

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" confirmationNeeded="false" name="Default">
+  <contextParameter comment="" name="enableAcquisition" prompt="enableAcquisition?" promptNeeded="false" type="id_Boolean" value="true"/>
+  <contextParameter comment="" name="enableIdentification" prompt="enableIdentification?" promptNeeded="false" type="id_Boolean" value="true"/>
+  <contextParameter comment="" name="enableProfiling" prompt="enableProfiling?" promptNeeded="false" type="id_Boolean" value="true"/>
+  <contextParameter comment="" name="enablePreparation" prompt="enablePreparation?" promptNeeded="false" type="id_Boolean" value="true"/>
+  <contextParameter comment="" name="enableQC" prompt="enableQC?" promptNeeded="false" type="id_Boolean" value="true"/>
+  <contextParameter comment="" name="enableFinalisation" prompt="enableFinalisation?" promptNeeded="false" type="id_Boolean" value="true"/>
+  <contextParameter comment="" name="enableLoading" prompt="enableLoading?" promptNeeded="false" type="id_Boolean" value="true"/>
+  <contextParameter comment="" name="sharedMap" prompt="sharedMap?" promptNeeded="false" type="id_Object" value=""/>
+</talendfile:ContextType>

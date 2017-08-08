@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore">
+  <TalendMetadata:FileExcelConnection xmi:id="_56JLwCu7EeWEVtMBeyhMbA" name="JobReporting" dataPackage="_56JLwSu7EeWEVtMBeyhMbA" Server="Localhost 127.0.0.1" FilePath="C:/FT/FTLS/Lib/JobReporting.xls" Encoding="UTF-8" UseHeader="true" HeaderValue="1" FirstLineCaption="true" SheetName="Sheet1" firstColumn="1" lastColumn="4" thousandSeparator="','" decimalSeparator="'.'" selectAllSheets="true" sheetList="Sheet1:w&#xA;">
+    <sheetColumns>A</sheetColumns>
+    <sheetColumns>B</sheetColumns>
+    <sheetColumns>C</sheetColumns>
+    <sheetColumns>D</sheetColumns>
+  </TalendMetadata:FileExcelConnection>
+  <orgomg.cwm.resource.record:RecordFile xmi:id="_56JLwSu7EeWEVtMBeyhMbA" name="default" dataManager="_56JLwCu7EeWEVtMBeyhMbA">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_56JLwiu7EeWEVtMBeyhMbA" id="_vGZ8YCu7EeWEVtMBeyhMbA" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_56JLwyu7EeWEVtMBeyhMbA" label="Job" length="11" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_56JLxCu7EeWEVtMBeyhMbA" label="Label" length="12" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_56JLxSu7EeWEVtMBeyhMbA" label="Order" length="1" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_rbEFECxVEeWEVtMBeyhMbA" name="Status" label="Status" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_56JLxiu7EeWEVtMBeyhMbA" label="Description" length="44" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_o601kCxYEeWEVtMBeyhMbA" name="Comment" label="Comment" talendType="id_String"/>
+    </ownedElement>
+  </orgomg.cwm.resource.record:RecordFile>
+</xmi:XMI>

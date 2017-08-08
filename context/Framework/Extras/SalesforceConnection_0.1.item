@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" confirmationNeeded="false" name="Default">
+  <contextParameter comment="" name="salesforceBulk" prompt="salesforceBulk?" promptNeeded="false" type="id_Boolean" value="false"/>
+  <contextParameter comment="" name="salesforceLoginType" prompt="salesforceLoginType?" promptNeeded="false" type="id_String" value="Basic"/>
+  <contextParameter comment="" name="salesforceWebServiceURL" prompt="salesforceWebServiceURL?" promptNeeded="false" type="id_String" value="https://login.salesforce.com/services/Soap/u/25.0"/>
+  <contextParameter comment="" name="salesforceUsername" prompt="salesforceUsername?" promptNeeded="false" type="id_String" value="youemail@yourcompany.com"/>
+  <contextParameter comment="" name="salesforcePassword" prompt="salesforcePassword?" promptNeeded="false" type="id_Password" value=""/>
+  <contextParameter comment="" name="salesforceOAuth2ConsumerKey" prompt="salesforceOAuth2ConsumerKey?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter comment="" name="salesforceOAuth2ConsumerSecret" prompt="salesforceOAuth2ConsumerSecret?" promptNeeded="false" type="id_Password" value=""/>
+  <contextParameter comment="" name="salesforceOAuth2CallBackHost" prompt="salesforceOAuth2CallBackHost?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter comment="" name="salesforceOAuth2CallBackPort" prompt="salesforceOAuth2CallBackPort?" promptNeeded="false" type="id_Integer" value=""/>
+  <contextParameter comment="" name="salesforceOAuth2" prompt="salesforceOAuth2?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter comment="" name="salesforceVersion" prompt="salesforceVersion?" promptNeeded="false" type="id_String" value="25.0"/>
+  <contextParameter comment="" name="salesforceUseSoapCompression" prompt="salesforceUseSoapCompression?" promptNeeded="false" type="id_Boolean" value="false"/>
+  <contextParameter comment="" name="salesforceTimeoutMilliseconds" prompt="salesforceTimeoutMilliseconds?" promptNeeded="false" type="id_Integer" value="60000"/>
+  <contextParameter comment="" name="salesforceOutputHttpTraceMessage" prompt="salesforceOutputHttpTraceMessage?" promptNeeded="false" type="id_Boolean" value="false"/>
+  <contextParameter comment="" name="salesforceClientID" prompt="salesforceClientID?" promptNeeded="false" type="id_String" value="Talend"/>
+</talendfile:ContextType>

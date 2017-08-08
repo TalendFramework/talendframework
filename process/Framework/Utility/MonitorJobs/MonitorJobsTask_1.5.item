@@ -1,0 +1,1176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.talend.org/mapper" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="Default">
+  <context confirmationNeeded="false" name="Default">
+    <contextParameter comment="" name="framework" prompt="framework?" promptNeeded="false" repositoryContextId="_BS45gDYFEeW39qpAM_5fZw" type="id_Object" value=""/>
+    <contextParameter comment="" name="outputDir" prompt="outputDir?" promptNeeded="false" repositoryContextId="_Zid7kDYIEeW39qpAM_5fZw" type="id_String" value="#BASEDIR/#JOBNAME/output"/>
+    <contextParameter comment="" name="reportingDir" prompt="reportingDir?" promptNeeded="false" repositoryContextId="_Zid7kDYIEeW39qpAM_5fZw" type="id_String" value="#BASEDIR/reporting"/>
+    <contextParameter comment="" name="tmpDir" prompt="tmpDir?" promptNeeded="false" repositoryContextId="_Zid7kDYIEeW39qpAM_5fZw" type="id_String" value="#BASEDIR/#JOBNAME/tmp"/>
+    <contextParameter comment="" name="logDir" prompt="logDir?" promptNeeded="false" repositoryContextId="_Zid7kDYIEeW39qpAM_5fZw" type="id_String" value="#BASEDIR/#JOBNAME/log"/>
+    <contextParameter comment="" name="archiveDir" prompt="archiveDir?" promptNeeded="false" repositoryContextId="_Zid7kDYIEeW39qpAM_5fZw" type="id_String" value="#BASEDIR/archive"/>
+    <contextParameter comment="" name="inputDir" prompt="inputDir?" promptNeeded="false" repositoryContextId="_Zid7kDYIEeW39qpAM_5fZw" type="id_String" value="#BASEDIR/#JOBNAME/input"/>
+    <contextParameter comment="" name="binDir" prompt="binDir?" promptNeeded="false" repositoryContextId="_Zid7kDYIEeW39qpAM_5fZw" type="id_String" value="#BASEDIR/bin"/>
+    <contextParameter comment="" name="workingDir" prompt="workingDir?" promptNeeded="false" repositoryContextId="_Zid7kDYIEeW39qpAM_5fZw" type="id_String" value="#BASEDIR/#JOBNAME/working"/>
+    <contextParameter comment="" name="paramDir" prompt="paramDir?" promptNeeded="false" repositoryContextId="_Zid7kDYIEeW39qpAM_5fZw" type="id_String" value="#BASEDIR/#JOBNAME/param"/>
+    <contextParameter comment="" name="databaseDir" prompt="databaseDir?" promptNeeded="false" repositoryContextId="_Zid7kDYIEeW39qpAM_5fZw" type="id_String" value="#BASEDIR/#JOBNAME/database"/>
+    <contextParameter comment="" name="libDir" prompt="libDir?" promptNeeded="false" repositoryContextId="_Zid7kDYIEeW39qpAM_5fZw" type="id_String" value="#BASEDIR/#JOBNAME/lib"/>
+    <contextParameter comment="" name="debug" prompt="debug?" promptNeeded="false" repositoryContextId="_BS45gDYFEeW39qpAM_5fZw" type="id_Boolean" value="false"/>
+    <contextParameter comment="" name="targetDir" prompt="targetDir?" promptNeeded="false" repositoryContextId="_Zid7kDYIEeW39qpAM_5fZw" type="id_String" value="#BASEDIR/#JOBNAME/target"/>
+    <contextParameter comment="" name="gLibDir" prompt="gLibDir?" promptNeeded="false" repositoryContextId="_Zid7kDYIEeW39qpAM_5fZw" type="id_String" value="#BASEDIR/lib"/>
+    <contextParameter comment="" name="enableJobExecutionReporting" prompt="enableJobExecutionReporting?" promptNeeded="false" repositoryContextId="_BS45gDYFEeW39qpAM_5fZw" type="id_Boolean" value="true"/>
+    <contextParameter comment="" name="enableEmailOnError" prompt="enableEmailOnError?" promptNeeded="false" repositoryContextId="_BS45gDYFEeW39qpAM_5fZw" type="id_Boolean" value="true"/>
+    <contextParameter comment="" name="enableEmailOnSuccess" prompt="enableEmailOnSuccess?" promptNeeded="false" repositoryContextId="_BS45gDYFEeW39qpAM_5fZw" type="id_Boolean" value="false"/>
+    <contextParameter comment="" name="enableShowContext" prompt="enableShowContext?" promptNeeded="false" repositoryContextId="_BS45gDYFEeW39qpAM_5fZw" type="id_Boolean" value="true"/>
+    <contextParameter comment="" name="lockDir" prompt="lockDir?" promptNeeded="false" repositoryContextId="_Zid7kDYIEeW39qpAM_5fZw" type="id_String" value="#BASEDIR/lock"/>
+    <contextParameter comment="" name="deleteLockFileInHandledError" prompt="deleteLockFileInHandledError?" promptNeeded="false" repositoryContextId="_BS45gDYFEeW39qpAM_5fZw" type="id_Boolean" value="true"/>
+    <contextParameter comment="" name="enableLockFile" prompt="enableLockFile?" promptNeeded="false" repositoryContextId="_BS45gDYFEeW39qpAM_5fZw" type="id_Boolean" value="true"/>
+    <contextParameter comment="" name="confirmExecution" prompt="confirmExecution?" promptNeeded="false" repositoryContextId="_BS45gDYFEeW39qpAM_5fZw" type="id_Boolean" value="false"/>
+    <contextParameter comment="" name="confirmExecutionMessage" prompt="confirmExecutionMessage?" promptNeeded="false" repositoryContextId="_BS45gDYFEeW39qpAM_5fZw" type="id_String" value="&quot;You are exeucting the Job %s in the %s Context.\n\nAre you sure you want to continue?&quot;"/>
+    <contextParameter comment="" name="enableErrorOnLockFileExists" prompt="enableErrorOnLockFileExists?" promptNeeded="false" repositoryContextId="_BS45gDYFEeW39qpAM_5fZw" type="id_Boolean" value="true"/>
+    <contextParameter comment="" name="localiseArchiveDir" prompt="localiseArchiveDir?" promptNeeded="false" repositoryContextId="_BS45gDYFEeW39qpAM_5fZw" type="id_Boolean" value="true"/>
+    <contextParameter comment="" name="localiseReportingDir" prompt="localiseReportingDir?" promptNeeded="false" repositoryContextId="_BS45gDYFEeW39qpAM_5fZw" type="id_Boolean" value="true"/>
+    <contextParameter comment="" name="baseDir" prompt="baseDir?" promptNeeded="false" repositoryContextId="_Zid7kDYIEeW39qpAM_5fZw" type="id_String" value="#HOME/project/talend/#CONTEXTSTR/#PROJECTNAME"/>
+    <contextParameter comment="" name="statsDir" prompt="statsDir?" promptNeeded="false" repositoryContextId="_Zid7kDYIEeW39qpAM_5fZw" type="id_String" value="#BASEDIR/#JOBNAME/stats"/>
+    <contextParameter comment="" name="contextDir" prompt="contextDir?" promptNeeded="false" repositoryContextId="_Zid7kDYIEeW39qpAM_5fZw" type="id_String" value="#BASEDIR/context"/>
+    <contextParameter comment="" name="attachExecutionReportOnError" prompt="attachExecutionReportOnError?" promptNeeded="false" repositoryContextId="_BS45gDYFEeW39qpAM_5fZw" type="id_Boolean" value="true"/>
+    <contextParameter comment="" name="attachExecutionReportOnSuccess" prompt="attachExecutionReportOnSuccess?" promptNeeded="false" repositoryContextId="_BS45gDYFEeW39qpAM_5fZw" type="id_Boolean" value="true"/>
+    <contextParameter comment="" name="checkpointDir" prompt="checkpointDir?" promptNeeded="false" repositoryContextId="_Zid7kDYIEeW39qpAM_5fZw" type="id_String" value="#BASEDIR/#JOBNAME/checkpoint"/>
+    <contextParameter comment="" name="archiveDirRetentionDays" prompt="archiveDirRetentionDays?" promptNeeded="false" repositoryContextId="_BS45gDYFEeW39qpAM_5fZw" type="id_Integer" value="-1"/>
+    <contextParameter comment="" name="reportingDirRetentionDays" prompt="reportingDirRetentionDays?" promptNeeded="false" repositoryContextId="_BS45gDYFEeW39qpAM_5fZw" type="id_Integer" value="90"/>
+    <contextParameter comment="" name="outputDirRetentionDays" prompt="outputDirRetentionDays?" promptNeeded="false" repositoryContextId="_BS45gDYFEeW39qpAM_5fZw" type="id_Integer" value="-1"/>
+    <contextParameter comment="" name="tmpDirRetentionDays" prompt="tmpDirRetentionDays?" promptNeeded="false" repositoryContextId="_BS45gDYFEeW39qpAM_5fZw" type="id_Integer" value="7"/>
+    <contextParameter comment="" name="workingDirRetentionDays" prompt="workingDirRetentionDays?" promptNeeded="false" repositoryContextId="_BS45gDYFEeW39qpAM_5fZw" type="id_Integer" value="90"/>
+    <contextParameter comment="" name="logDirRetentionDays" prompt="logDirRetentionDays?" promptNeeded="false" repositoryContextId="_BS45gDYFEeW39qpAM_5fZw" type="id_Integer" value="90"/>
+    <contextParameter comment="" name="documentationURL" prompt="documentationURL?" promptNeeded="false" repositoryContextId="_BS45gDYFEeW39qpAM_5fZw" type="id_String" value="talendframework.com"/>
+  </context>
+  <context confirmationNeeded="false" name="Dev">
+    <contextParameter comment="" name="framework" prompt="framework?" promptNeeded="false" repositoryContextId="_BS45gDYFEeW39qpAM_5fZw" type="id_Object" value=""/>
+    <contextParameter comment="" name="outputDir" prompt="outputDir?" promptNeeded="false" repositoryContextId="_Zid7kDYIEeW39qpAM_5fZw" type="id_String" value="#BASEDIR/#JOBNAME/output"/>
+    <contextParameter comment="" name="reportingDir" prompt="reportingDir?" promptNeeded="false" repositoryContextId="_Zid7kDYIEeW39qpAM_5fZw" type="id_String" value="#BASEDIR/reporting"/>
+    <contextParameter comment="" name="tmpDir" prompt="tmpDir?" promptNeeded="false" repositoryContextId="_Zid7kDYIEeW39qpAM_5fZw" type="id_String" value="#BASEDIR/#JOBNAME/tmp"/>
+    <contextParameter comment="" name="logDir" prompt="logDir?" promptNeeded="false" repositoryContextId="_Zid7kDYIEeW39qpAM_5fZw" type="id_String" value="#BASEDIR/#JOBNAME/log"/>
+    <contextParameter comment="" name="archiveDir" prompt="archiveDir?" promptNeeded="false" repositoryContextId="_Zid7kDYIEeW39qpAM_5fZw" type="id_String" value="#BASEDIR/archive"/>
+    <contextParameter comment="" name="inputDir" prompt="inputDir?" promptNeeded="false" repositoryContextId="_Zid7kDYIEeW39qpAM_5fZw" type="id_String" value="#BASEDIR/#JOBNAME/input"/>
+    <contextParameter comment="" name="binDir" prompt="binDir?" promptNeeded="false" repositoryContextId="_Zid7kDYIEeW39qpAM_5fZw" type="id_String" value="#BASEDIR/bin"/>
+    <contextParameter comment="" name="workingDir" prompt="workingDir?" promptNeeded="false" repositoryContextId="_Zid7kDYIEeW39qpAM_5fZw" type="id_String" value="#BASEDIR/#JOBNAME/working"/>
+    <contextParameter comment="" name="paramDir" prompt="paramDir?" promptNeeded="false" repositoryContextId="_Zid7kDYIEeW39qpAM_5fZw" type="id_String" value="#BASEDIR/#JOBNAME/param"/>
+    <contextParameter comment="" name="databaseDir" prompt="databaseDir?" promptNeeded="false" repositoryContextId="_Zid7kDYIEeW39qpAM_5fZw" type="id_String" value="#BASEDIR/#JOBNAME/database"/>
+    <contextParameter comment="" name="libDir" prompt="libDir?" promptNeeded="false" repositoryContextId="_Zid7kDYIEeW39qpAM_5fZw" type="id_String" value="#BASEDIR/#JOBNAME/lib"/>
+    <contextParameter comment="" name="debug" prompt="debug?" promptNeeded="false" repositoryContextId="_BS45gDYFEeW39qpAM_5fZw" type="id_Boolean" value="false"/>
+    <contextParameter comment="" name="targetDir" prompt="targetDir?" promptNeeded="false" repositoryContextId="_Zid7kDYIEeW39qpAM_5fZw" type="id_String" value="#BASEDIR/#JOBNAME/target"/>
+    <contextParameter comment="" name="gLibDir" prompt="gLibDir?" promptNeeded="false" repositoryContextId="_Zid7kDYIEeW39qpAM_5fZw" type="id_String" value="#BASEDIR/lib"/>
+    <contextParameter comment="" name="enableJobExecutionReporting" prompt="enableJobExecutionReporting?" promptNeeded="false" repositoryContextId="_BS45gDYFEeW39qpAM_5fZw" type="id_Boolean" value="true"/>
+    <contextParameter comment="" name="enableEmailOnError" prompt="enableEmailOnError?" promptNeeded="false" repositoryContextId="_BS45gDYFEeW39qpAM_5fZw" type="id_Boolean" value="true"/>
+    <contextParameter comment="" name="enableEmailOnSuccess" prompt="enableEmailOnSuccess?" promptNeeded="false" repositoryContextId="_BS45gDYFEeW39qpAM_5fZw" type="id_Boolean" value="false"/>
+    <contextParameter comment="" name="enableShowContext" prompt="enableShowContext?" promptNeeded="false" repositoryContextId="_BS45gDYFEeW39qpAM_5fZw" type="id_Boolean" value="true"/>
+    <contextParameter comment="" name="lockDir" prompt="lockDir?" promptNeeded="false" repositoryContextId="_Zid7kDYIEeW39qpAM_5fZw" type="id_String" value="#BASEDIR/lock"/>
+    <contextParameter comment="" name="deleteLockFileInHandledError" prompt="deleteLockFileInHandledError?" promptNeeded="false" repositoryContextId="_BS45gDYFEeW39qpAM_5fZw" type="id_Boolean" value="true"/>
+    <contextParameter comment="" name="enableLockFile" prompt="enableLockFile?" promptNeeded="false" repositoryContextId="_BS45gDYFEeW39qpAM_5fZw" type="id_Boolean" value="true"/>
+    <contextParameter comment="" name="confirmExecution" prompt="confirmExecution?" promptNeeded="false" repositoryContextId="_BS45gDYFEeW39qpAM_5fZw" type="id_Boolean" value="false"/>
+    <contextParameter comment="" name="confirmExecutionMessage" prompt="confirmExecutionMessage?" promptNeeded="false" repositoryContextId="_BS45gDYFEeW39qpAM_5fZw" type="id_String" value="&quot;You are exeucting the Job %s in the %s Context.\n\nAre you sure you want to continue?&quot;"/>
+    <contextParameter comment="" name="enableErrorOnLockFileExists" prompt="enableErrorOnLockFileExists?" promptNeeded="false" repositoryContextId="_BS45gDYFEeW39qpAM_5fZw" type="id_Boolean" value="true"/>
+    <contextParameter comment="" name="localiseArchiveDir" prompt="localiseArchiveDir?" promptNeeded="false" repositoryContextId="_BS45gDYFEeW39qpAM_5fZw" type="id_Boolean" value="true"/>
+    <contextParameter comment="" name="localiseReportingDir" prompt="localiseReportingDir?" promptNeeded="false" repositoryContextId="_BS45gDYFEeW39qpAM_5fZw" type="id_Boolean" value="true"/>
+    <contextParameter comment="" name="baseDir" prompt="baseDir?" promptNeeded="false" repositoryContextId="_Zid7kDYIEeW39qpAM_5fZw" type="id_String" value="#HOME/project/talend/#CONTEXTSTR/#PROJECTNAME"/>
+    <contextParameter comment="" name="statsDir" prompt="statsDir?" promptNeeded="false" repositoryContextId="_Zid7kDYIEeW39qpAM_5fZw" type="id_String" value="#BASEDIR/#JOBNAME/stats"/>
+    <contextParameter comment="" name="contextDir" prompt="contextDir?" promptNeeded="false" repositoryContextId="_Zid7kDYIEeW39qpAM_5fZw" type="id_String" value="#BASEDIR/context"/>
+    <contextParameter comment="" name="attachExecutionReportOnError" prompt="attachExecutionReportOnError?" promptNeeded="false" repositoryContextId="_BS45gDYFEeW39qpAM_5fZw" type="id_Boolean" value="true"/>
+    <contextParameter comment="" name="attachExecutionReportOnSuccess" prompt="attachExecutionReportOnSuccess?" promptNeeded="false" repositoryContextId="_BS45gDYFEeW39qpAM_5fZw" type="id_Boolean" value="true"/>
+    <contextParameter comment="" name="checkpointDir" prompt="checkpointDir?" promptNeeded="false" repositoryContextId="_Zid7kDYIEeW39qpAM_5fZw" type="id_String" value="#BASEDIR/#JOBNAME/checkpoint"/>
+    <contextParameter comment="" name="archiveDirRetentionDays" prompt="archiveDirRetentionDays?" promptNeeded="false" repositoryContextId="_BS45gDYFEeW39qpAM_5fZw" type="id_Integer" value="-1"/>
+    <contextParameter comment="" name="reportingDirRetentionDays" prompt="reportingDirRetentionDays?" promptNeeded="false" repositoryContextId="_BS45gDYFEeW39qpAM_5fZw" type="id_Integer" value="90"/>
+    <contextParameter comment="" name="outputDirRetentionDays" prompt="outputDirRetentionDays?" promptNeeded="false" repositoryContextId="_BS45gDYFEeW39qpAM_5fZw" type="id_Integer" value="-1"/>
+    <contextParameter comment="" name="tmpDirRetentionDays" prompt="tmpDirRetentionDays?" promptNeeded="false" repositoryContextId="_BS45gDYFEeW39qpAM_5fZw" type="id_Integer" value="7"/>
+    <contextParameter comment="" name="workingDirRetentionDays" prompt="workingDirRetentionDays?" promptNeeded="false" repositoryContextId="_BS45gDYFEeW39qpAM_5fZw" type="id_Integer" value="90"/>
+    <contextParameter comment="" name="logDirRetentionDays" prompt="logDirRetentionDays?" promptNeeded="false" repositoryContextId="_BS45gDYFEeW39qpAM_5fZw" type="id_Integer" value="90"/>
+    <contextParameter comment="" name="documentationURL" prompt="documentationURL?" promptNeeded="false" repositoryContextId="_BS45gDYFEeW39qpAM_5fZw" type="id_String" value="talendframework.com"/>
+  </context>
+  <context confirmationNeeded="false" name="Prod">
+    <contextParameter comment="" name="framework" prompt="framework?" promptNeeded="false" repositoryContextId="_BS45gDYFEeW39qpAM_5fZw" type="id_Object" value=""/>
+    <contextParameter comment="" name="outputDir" prompt="outputDir?" promptNeeded="false" repositoryContextId="_Zid7kDYIEeW39qpAM_5fZw" type="id_String" value="#BASEDIR/#JOBNAME/output"/>
+    <contextParameter comment="" name="reportingDir" prompt="reportingDir?" promptNeeded="false" repositoryContextId="_Zid7kDYIEeW39qpAM_5fZw" type="id_String" value="#BASEDIR/reporting"/>
+    <contextParameter comment="" name="tmpDir" prompt="tmpDir?" promptNeeded="false" repositoryContextId="_Zid7kDYIEeW39qpAM_5fZw" type="id_String" value="#BASEDIR/#JOBNAME/tmp"/>
+    <contextParameter comment="" name="logDir" prompt="logDir?" promptNeeded="false" repositoryContextId="_Zid7kDYIEeW39qpAM_5fZw" type="id_String" value="#BASEDIR/#JOBNAME/log"/>
+    <contextParameter comment="" name="archiveDir" prompt="archiveDir?" promptNeeded="false" repositoryContextId="_Zid7kDYIEeW39qpAM_5fZw" type="id_String" value="#BASEDIR/archive"/>
+    <contextParameter comment="" name="inputDir" prompt="inputDir?" promptNeeded="false" repositoryContextId="_Zid7kDYIEeW39qpAM_5fZw" type="id_String" value="#BASEDIR/#JOBNAME/input"/>
+    <contextParameter comment="" name="binDir" prompt="binDir?" promptNeeded="false" repositoryContextId="_Zid7kDYIEeW39qpAM_5fZw" type="id_String" value="#BASEDIR/bin"/>
+    <contextParameter comment="" name="workingDir" prompt="workingDir?" promptNeeded="false" repositoryContextId="_Zid7kDYIEeW39qpAM_5fZw" type="id_String" value="#BASEDIR/#JOBNAME/working"/>
+    <contextParameter comment="" name="paramDir" prompt="paramDir?" promptNeeded="false" repositoryContextId="_Zid7kDYIEeW39qpAM_5fZw" type="id_String" value="#BASEDIR/#JOBNAME/param"/>
+    <contextParameter comment="" name="databaseDir" prompt="databaseDir?" promptNeeded="false" repositoryContextId="_Zid7kDYIEeW39qpAM_5fZw" type="id_String" value="#BASEDIR/#JOBNAME/database"/>
+    <contextParameter comment="" name="libDir" prompt="libDir?" promptNeeded="false" repositoryContextId="_Zid7kDYIEeW39qpAM_5fZw" type="id_String" value="#BASEDIR/#JOBNAME/lib"/>
+    <contextParameter comment="" name="debug" prompt="debug?" promptNeeded="false" repositoryContextId="_BS45gDYFEeW39qpAM_5fZw" type="id_Boolean" value="false"/>
+    <contextParameter comment="" name="targetDir" prompt="targetDir?" promptNeeded="false" repositoryContextId="_Zid7kDYIEeW39qpAM_5fZw" type="id_String" value="#BASEDIR/#JOBNAME/target"/>
+    <contextParameter comment="" name="gLibDir" prompt="gLibDir?" promptNeeded="false" repositoryContextId="_Zid7kDYIEeW39qpAM_5fZw" type="id_String" value="#BASEDIR/lib"/>
+    <contextParameter comment="" name="enableJobExecutionReporting" prompt="enableJobExecutionReporting?" promptNeeded="false" repositoryContextId="_BS45gDYFEeW39qpAM_5fZw" type="id_Boolean" value="true"/>
+    <contextParameter comment="" name="enableEmailOnError" prompt="enableEmailOnError?" promptNeeded="false" repositoryContextId="_BS45gDYFEeW39qpAM_5fZw" type="id_Boolean" value="true"/>
+    <contextParameter comment="" name="enableEmailOnSuccess" prompt="enableEmailOnSuccess?" promptNeeded="false" repositoryContextId="_BS45gDYFEeW39qpAM_5fZw" type="id_Boolean" value="false"/>
+    <contextParameter comment="" name="enableShowContext" prompt="enableShowContext?" promptNeeded="false" repositoryContextId="_BS45gDYFEeW39qpAM_5fZw" type="id_Boolean" value="true"/>
+    <contextParameter comment="" name="lockDir" prompt="lockDir?" promptNeeded="false" repositoryContextId="_Zid7kDYIEeW39qpAM_5fZw" type="id_String" value="#BASEDIR/lock"/>
+    <contextParameter comment="" name="deleteLockFileInHandledError" prompt="deleteLockFileInHandledError?" promptNeeded="false" repositoryContextId="_BS45gDYFEeW39qpAM_5fZw" type="id_Boolean" value="true"/>
+    <contextParameter comment="" name="enableLockFile" prompt="enableLockFile?" promptNeeded="false" repositoryContextId="_BS45gDYFEeW39qpAM_5fZw" type="id_Boolean" value="true"/>
+    <contextParameter comment="" name="confirmExecution" prompt="confirmExecution?" promptNeeded="false" repositoryContextId="_BS45gDYFEeW39qpAM_5fZw" type="id_Boolean" value="false"/>
+    <contextParameter comment="" name="confirmExecutionMessage" prompt="confirmExecutionMessage?" promptNeeded="false" repositoryContextId="_BS45gDYFEeW39qpAM_5fZw" type="id_String" value="&quot;You are exeucting the Job %s in the %s Context.\n\nAre you sure you want to continue?&quot;"/>
+    <contextParameter comment="" name="enableErrorOnLockFileExists" prompt="enableErrorOnLockFileExists?" promptNeeded="false" repositoryContextId="_BS45gDYFEeW39qpAM_5fZw" type="id_Boolean" value="true"/>
+    <contextParameter comment="" name="localiseArchiveDir" prompt="localiseArchiveDir?" promptNeeded="false" repositoryContextId="_BS45gDYFEeW39qpAM_5fZw" type="id_Boolean" value="true"/>
+    <contextParameter comment="" name="localiseReportingDir" prompt="localiseReportingDir?" promptNeeded="false" repositoryContextId="_BS45gDYFEeW39qpAM_5fZw" type="id_Boolean" value="true"/>
+    <contextParameter comment="" name="baseDir" prompt="baseDir?" promptNeeded="false" repositoryContextId="_Zid7kDYIEeW39qpAM_5fZw" type="id_String" value="#HOME/project/talend/#CONTEXTSTR/#PROJECTNAME"/>
+    <contextParameter comment="" name="statsDir" prompt="statsDir?" promptNeeded="false" repositoryContextId="_Zid7kDYIEeW39qpAM_5fZw" type="id_String" value="#BASEDIR/#JOBNAME/stats"/>
+    <contextParameter comment="" name="contextDir" prompt="contextDir?" promptNeeded="false" repositoryContextId="_Zid7kDYIEeW39qpAM_5fZw" type="id_String" value="#BASEDIR/context"/>
+    <contextParameter comment="" name="attachExecutionReportOnError" prompt="attachExecutionReportOnError?" promptNeeded="false" repositoryContextId="_BS45gDYFEeW39qpAM_5fZw" type="id_Boolean" value="true"/>
+    <contextParameter comment="" name="attachExecutionReportOnSuccess" prompt="attachExecutionReportOnSuccess?" promptNeeded="false" repositoryContextId="_BS45gDYFEeW39qpAM_5fZw" type="id_Boolean" value="true"/>
+    <contextParameter comment="" name="checkpointDir" prompt="checkpointDir?" promptNeeded="false" repositoryContextId="_Zid7kDYIEeW39qpAM_5fZw" type="id_String" value="#BASEDIR/#JOBNAME/checkpoint"/>
+    <contextParameter comment="" name="archiveDirRetentionDays" prompt="archiveDirRetentionDays?" promptNeeded="false" repositoryContextId="_BS45gDYFEeW39qpAM_5fZw" type="id_Integer" value="-1"/>
+    <contextParameter comment="" name="reportingDirRetentionDays" prompt="reportingDirRetentionDays?" promptNeeded="false" repositoryContextId="_BS45gDYFEeW39qpAM_5fZw" type="id_Integer" value="90"/>
+    <contextParameter comment="" name="outputDirRetentionDays" prompt="outputDirRetentionDays?" promptNeeded="false" repositoryContextId="_BS45gDYFEeW39qpAM_5fZw" type="id_Integer" value="-1"/>
+    <contextParameter comment="" name="tmpDirRetentionDays" prompt="tmpDirRetentionDays?" promptNeeded="false" repositoryContextId="_BS45gDYFEeW39qpAM_5fZw" type="id_Integer" value="7"/>
+    <contextParameter comment="" name="workingDirRetentionDays" prompt="workingDirRetentionDays?" promptNeeded="false" repositoryContextId="_BS45gDYFEeW39qpAM_5fZw" type="id_Integer" value="90"/>
+    <contextParameter comment="" name="logDirRetentionDays" prompt="logDirRetentionDays?" promptNeeded="false" repositoryContextId="_BS45gDYFEeW39qpAM_5fZw" type="id_Integer" value="90"/>
+    <contextParameter comment="" name="documentationURL" prompt="documentationURL?" promptNeeded="false" repositoryContextId="_BS45gDYFEeW39qpAM_5fZw" type="id_String" value="talendframework.com"/>
+  </context>
+  <context confirmationNeeded="false" name="Test">
+    <contextParameter comment="" name="framework" prompt="framework?" promptNeeded="false" repositoryContextId="_BS45gDYFEeW39qpAM_5fZw" type="id_Object" value=""/>
+    <contextParameter comment="" name="outputDir" prompt="outputDir?" promptNeeded="false" repositoryContextId="_Zid7kDYIEeW39qpAM_5fZw" type="id_String" value="#BASEDIR/#JOBNAME/output"/>
+    <contextParameter comment="" name="reportingDir" prompt="reportingDir?" promptNeeded="false" repositoryContextId="_Zid7kDYIEeW39qpAM_5fZw" type="id_String" value="#BASEDIR/reporting"/>
+    <contextParameter comment="" name="tmpDir" prompt="tmpDir?" promptNeeded="false" repositoryContextId="_Zid7kDYIEeW39qpAM_5fZw" type="id_String" value="#BASEDIR/#JOBNAME/tmp"/>
+    <contextParameter comment="" name="logDir" prompt="logDir?" promptNeeded="false" repositoryContextId="_Zid7kDYIEeW39qpAM_5fZw" type="id_String" value="#BASEDIR/#JOBNAME/log"/>
+    <contextParameter comment="" name="archiveDir" prompt="archiveDir?" promptNeeded="false" repositoryContextId="_Zid7kDYIEeW39qpAM_5fZw" type="id_String" value="#BASEDIR/archive"/>
+    <contextParameter comment="" name="inputDir" prompt="inputDir?" promptNeeded="false" repositoryContextId="_Zid7kDYIEeW39qpAM_5fZw" type="id_String" value="#BASEDIR/#JOBNAME/input"/>
+    <contextParameter comment="" name="binDir" prompt="binDir?" promptNeeded="false" repositoryContextId="_Zid7kDYIEeW39qpAM_5fZw" type="id_String" value="#BASEDIR/bin"/>
+    <contextParameter comment="" name="workingDir" prompt="workingDir?" promptNeeded="false" repositoryContextId="_Zid7kDYIEeW39qpAM_5fZw" type="id_String" value="#BASEDIR/#JOBNAME/working"/>
+    <contextParameter comment="" name="paramDir" prompt="paramDir?" promptNeeded="false" repositoryContextId="_Zid7kDYIEeW39qpAM_5fZw" type="id_String" value="#BASEDIR/#JOBNAME/param"/>
+    <contextParameter comment="" name="databaseDir" prompt="databaseDir?" promptNeeded="false" repositoryContextId="_Zid7kDYIEeW39qpAM_5fZw" type="id_String" value="#BASEDIR/#JOBNAME/database"/>
+    <contextParameter comment="" name="libDir" prompt="libDir?" promptNeeded="false" repositoryContextId="_Zid7kDYIEeW39qpAM_5fZw" type="id_String" value="#BASEDIR/#JOBNAME/lib"/>
+    <contextParameter comment="" name="debug" prompt="debug?" promptNeeded="false" repositoryContextId="_BS45gDYFEeW39qpAM_5fZw" type="id_Boolean" value="false"/>
+    <contextParameter comment="" name="targetDir" prompt="targetDir?" promptNeeded="false" repositoryContextId="_Zid7kDYIEeW39qpAM_5fZw" type="id_String" value="#BASEDIR/#JOBNAME/target"/>
+    <contextParameter comment="" name="gLibDir" prompt="gLibDir?" promptNeeded="false" repositoryContextId="_Zid7kDYIEeW39qpAM_5fZw" type="id_String" value="#BASEDIR/lib"/>
+    <contextParameter comment="" name="enableJobExecutionReporting" prompt="enableJobExecutionReporting?" promptNeeded="false" repositoryContextId="_BS45gDYFEeW39qpAM_5fZw" type="id_Boolean" value="true"/>
+    <contextParameter comment="" name="enableEmailOnError" prompt="enableEmailOnError?" promptNeeded="false" repositoryContextId="_BS45gDYFEeW39qpAM_5fZw" type="id_Boolean" value="true"/>
+    <contextParameter comment="" name="enableEmailOnSuccess" prompt="enableEmailOnSuccess?" promptNeeded="false" repositoryContextId="_BS45gDYFEeW39qpAM_5fZw" type="id_Boolean" value="false"/>
+    <contextParameter comment="" name="enableShowContext" prompt="enableShowContext?" promptNeeded="false" repositoryContextId="_BS45gDYFEeW39qpAM_5fZw" type="id_Boolean" value="true"/>
+    <contextParameter comment="" name="lockDir" prompt="lockDir?" promptNeeded="false" repositoryContextId="_Zid7kDYIEeW39qpAM_5fZw" type="id_String" value="#BASEDIR/lock"/>
+    <contextParameter comment="" name="deleteLockFileInHandledError" prompt="deleteLockFileInHandledError?" promptNeeded="false" repositoryContextId="_BS45gDYFEeW39qpAM_5fZw" type="id_Boolean" value="true"/>
+    <contextParameter comment="" name="enableLockFile" prompt="enableLockFile?" promptNeeded="false" repositoryContextId="_BS45gDYFEeW39qpAM_5fZw" type="id_Boolean" value="true"/>
+    <contextParameter comment="" name="confirmExecution" prompt="confirmExecution?" promptNeeded="false" repositoryContextId="_BS45gDYFEeW39qpAM_5fZw" type="id_Boolean" value="false"/>
+    <contextParameter comment="" name="confirmExecutionMessage" prompt="confirmExecutionMessage?" promptNeeded="false" repositoryContextId="_BS45gDYFEeW39qpAM_5fZw" type="id_String" value="&quot;You are exeucting the Job %s in the %s Context.\n\nAre you sure you want to continue?&quot;"/>
+    <contextParameter comment="" name="enableErrorOnLockFileExists" prompt="enableErrorOnLockFileExists?" promptNeeded="false" repositoryContextId="_BS45gDYFEeW39qpAM_5fZw" type="id_Boolean" value="true"/>
+    <contextParameter comment="" name="localiseArchiveDir" prompt="localiseArchiveDir?" promptNeeded="false" repositoryContextId="_BS45gDYFEeW39qpAM_5fZw" type="id_Boolean" value="true"/>
+    <contextParameter comment="" name="localiseReportingDir" prompt="localiseReportingDir?" promptNeeded="false" repositoryContextId="_BS45gDYFEeW39qpAM_5fZw" type="id_Boolean" value="true"/>
+    <contextParameter comment="" name="baseDir" prompt="baseDir?" promptNeeded="false" repositoryContextId="_Zid7kDYIEeW39qpAM_5fZw" type="id_String" value="#HOME/project/talend/#CONTEXTSTR/#PROJECTNAME"/>
+    <contextParameter comment="" name="statsDir" prompt="statsDir?" promptNeeded="false" repositoryContextId="_Zid7kDYIEeW39qpAM_5fZw" type="id_String" value="#BASEDIR/#JOBNAME/stats"/>
+    <contextParameter comment="" name="contextDir" prompt="contextDir?" promptNeeded="false" repositoryContextId="_Zid7kDYIEeW39qpAM_5fZw" type="id_String" value="#BASEDIR/context"/>
+    <contextParameter comment="" name="attachExecutionReportOnError" prompt="attachExecutionReportOnError?" promptNeeded="false" repositoryContextId="_BS45gDYFEeW39qpAM_5fZw" type="id_Boolean" value="true"/>
+    <contextParameter comment="" name="attachExecutionReportOnSuccess" prompt="attachExecutionReportOnSuccess?" promptNeeded="false" repositoryContextId="_BS45gDYFEeW39qpAM_5fZw" type="id_Boolean" value="true"/>
+    <contextParameter comment="" name="checkpointDir" prompt="checkpointDir?" promptNeeded="false" repositoryContextId="_Zid7kDYIEeW39qpAM_5fZw" type="id_String" value="#BASEDIR/#JOBNAME/checkpoint"/>
+    <contextParameter comment="" name="archiveDirRetentionDays" prompt="archiveDirRetentionDays?" promptNeeded="false" repositoryContextId="_BS45gDYFEeW39qpAM_5fZw" type="id_Integer" value="-1"/>
+    <contextParameter comment="" name="reportingDirRetentionDays" prompt="reportingDirRetentionDays?" promptNeeded="false" repositoryContextId="_BS45gDYFEeW39qpAM_5fZw" type="id_Integer" value="90"/>
+    <contextParameter comment="" name="outputDirRetentionDays" prompt="outputDirRetentionDays?" promptNeeded="false" repositoryContextId="_BS45gDYFEeW39qpAM_5fZw" type="id_Integer" value="-1"/>
+    <contextParameter comment="" name="tmpDirRetentionDays" prompt="tmpDirRetentionDays?" promptNeeded="false" repositoryContextId="_BS45gDYFEeW39qpAM_5fZw" type="id_Integer" value="7"/>
+    <contextParameter comment="" name="workingDirRetentionDays" prompt="workingDirRetentionDays?" promptNeeded="false" repositoryContextId="_BS45gDYFEeW39qpAM_5fZw" type="id_Integer" value="90"/>
+    <contextParameter comment="" name="logDirRetentionDays" prompt="logDirRetentionDays?" promptNeeded="false" repositoryContextId="_BS45gDYFEeW39qpAM_5fZw" type="id_Integer" value="90"/>
+    <contextParameter comment="" name="documentationURL" prompt="documentationURL?" promptNeeded="false" repositoryContextId="_BS45gDYFEeW39qpAM_5fZw" type="id_String" value="talendframework.com"/>
+  </context>
+  <context confirmationNeeded="false" name="UAT">
+    <contextParameter comment="" name="framework" prompt="framework?" promptNeeded="false" repositoryContextId="_BS45gDYFEeW39qpAM_5fZw" type="id_Object" value=""/>
+    <contextParameter comment="" name="outputDir" prompt="outputDir?" promptNeeded="false" repositoryContextId="_Zid7kDYIEeW39qpAM_5fZw" type="id_String" value="#BASEDIR/#JOBNAME/output"/>
+    <contextParameter comment="" name="reportingDir" prompt="reportingDir?" promptNeeded="false" repositoryContextId="_Zid7kDYIEeW39qpAM_5fZw" type="id_String" value="#BASEDIR/reporting"/>
+    <contextParameter comment="" name="tmpDir" prompt="tmpDir?" promptNeeded="false" repositoryContextId="_Zid7kDYIEeW39qpAM_5fZw" type="id_String" value="#BASEDIR/#JOBNAME/tmp"/>
+    <contextParameter comment="" name="logDir" prompt="logDir?" promptNeeded="false" repositoryContextId="_Zid7kDYIEeW39qpAM_5fZw" type="id_String" value="#BASEDIR/#JOBNAME/log"/>
+    <contextParameter comment="" name="archiveDir" prompt="archiveDir?" promptNeeded="false" repositoryContextId="_Zid7kDYIEeW39qpAM_5fZw" type="id_String" value="#BASEDIR/archive"/>
+    <contextParameter comment="" name="inputDir" prompt="inputDir?" promptNeeded="false" repositoryContextId="_Zid7kDYIEeW39qpAM_5fZw" type="id_String" value="#BASEDIR/#JOBNAME/input"/>
+    <contextParameter comment="" name="binDir" prompt="binDir?" promptNeeded="false" repositoryContextId="_Zid7kDYIEeW39qpAM_5fZw" type="id_String" value="#BASEDIR/bin"/>
+    <contextParameter comment="" name="workingDir" prompt="workingDir?" promptNeeded="false" repositoryContextId="_Zid7kDYIEeW39qpAM_5fZw" type="id_String" value="#BASEDIR/#JOBNAME/working"/>
+    <contextParameter comment="" name="paramDir" prompt="paramDir?" promptNeeded="false" repositoryContextId="_Zid7kDYIEeW39qpAM_5fZw" type="id_String" value="#BASEDIR/#JOBNAME/param"/>
+    <contextParameter comment="" name="databaseDir" prompt="databaseDir?" promptNeeded="false" repositoryContextId="_Zid7kDYIEeW39qpAM_5fZw" type="id_String" value="#BASEDIR/#JOBNAME/database"/>
+    <contextParameter comment="" name="libDir" prompt="libDir?" promptNeeded="false" repositoryContextId="_Zid7kDYIEeW39qpAM_5fZw" type="id_String" value="#BASEDIR/#JOBNAME/lib"/>
+    <contextParameter comment="" name="debug" prompt="debug?" promptNeeded="false" repositoryContextId="_BS45gDYFEeW39qpAM_5fZw" type="id_Boolean" value="false"/>
+    <contextParameter comment="" name="targetDir" prompt="targetDir?" promptNeeded="false" repositoryContextId="_Zid7kDYIEeW39qpAM_5fZw" type="id_String" value="#BASEDIR/#JOBNAME/target"/>
+    <contextParameter comment="" name="gLibDir" prompt="gLibDir?" promptNeeded="false" repositoryContextId="_Zid7kDYIEeW39qpAM_5fZw" type="id_String" value="#BASEDIR/lib"/>
+    <contextParameter comment="" name="enableJobExecutionReporting" prompt="enableJobExecutionReporting?" promptNeeded="false" repositoryContextId="_BS45gDYFEeW39qpAM_5fZw" type="id_Boolean" value="true"/>
+    <contextParameter comment="" name="enableEmailOnError" prompt="enableEmailOnError?" promptNeeded="false" repositoryContextId="_BS45gDYFEeW39qpAM_5fZw" type="id_Boolean" value="true"/>
+    <contextParameter comment="" name="enableEmailOnSuccess" prompt="enableEmailOnSuccess?" promptNeeded="false" repositoryContextId="_BS45gDYFEeW39qpAM_5fZw" type="id_Boolean" value="false"/>
+    <contextParameter comment="" name="enableShowContext" prompt="enableShowContext?" promptNeeded="false" repositoryContextId="_BS45gDYFEeW39qpAM_5fZw" type="id_Boolean" value="true"/>
+    <contextParameter comment="" name="lockDir" prompt="lockDir?" promptNeeded="false" repositoryContextId="_Zid7kDYIEeW39qpAM_5fZw" type="id_String" value="#BASEDIR/lock"/>
+    <contextParameter comment="" name="deleteLockFileInHandledError" prompt="deleteLockFileInHandledError?" promptNeeded="false" repositoryContextId="_BS45gDYFEeW39qpAM_5fZw" type="id_Boolean" value="true"/>
+    <contextParameter comment="" name="enableLockFile" prompt="enableLockFile?" promptNeeded="false" repositoryContextId="_BS45gDYFEeW39qpAM_5fZw" type="id_Boolean" value="true"/>
+    <contextParameter comment="" name="confirmExecution" prompt="confirmExecution?" promptNeeded="false" repositoryContextId="_BS45gDYFEeW39qpAM_5fZw" type="id_Boolean" value="false"/>
+    <contextParameter comment="" name="confirmExecutionMessage" prompt="confirmExecutionMessage?" promptNeeded="false" repositoryContextId="_BS45gDYFEeW39qpAM_5fZw" type="id_String" value="&quot;You are exeucting the Job %s in the %s Context.\n\nAre you sure you want to continue?&quot;"/>
+    <contextParameter comment="" name="enableErrorOnLockFileExists" prompt="enableErrorOnLockFileExists?" promptNeeded="false" repositoryContextId="_BS45gDYFEeW39qpAM_5fZw" type="id_Boolean" value="true"/>
+    <contextParameter comment="" name="localiseArchiveDir" prompt="localiseArchiveDir?" promptNeeded="false" repositoryContextId="_BS45gDYFEeW39qpAM_5fZw" type="id_Boolean" value="true"/>
+    <contextParameter comment="" name="localiseReportingDir" prompt="localiseReportingDir?" promptNeeded="false" repositoryContextId="_BS45gDYFEeW39qpAM_5fZw" type="id_Boolean" value="true"/>
+    <contextParameter comment="" name="baseDir" prompt="baseDir?" promptNeeded="false" repositoryContextId="_Zid7kDYIEeW39qpAM_5fZw" type="id_String" value="#HOME/project/talend/#CONTEXTSTR/#PROJECTNAME"/>
+    <contextParameter comment="" name="statsDir" prompt="statsDir?" promptNeeded="false" repositoryContextId="_Zid7kDYIEeW39qpAM_5fZw" type="id_String" value="#BASEDIR/#JOBNAME/stats"/>
+    <contextParameter comment="" name="contextDir" prompt="contextDir?" promptNeeded="false" repositoryContextId="_Zid7kDYIEeW39qpAM_5fZw" type="id_String" value="#BASEDIR/context"/>
+    <contextParameter comment="" name="attachExecutionReportOnError" prompt="attachExecutionReportOnError?" promptNeeded="false" repositoryContextId="_BS45gDYFEeW39qpAM_5fZw" type="id_Boolean" value="true"/>
+    <contextParameter comment="" name="attachExecutionReportOnSuccess" prompt="attachExecutionReportOnSuccess?" promptNeeded="false" repositoryContextId="_BS45gDYFEeW39qpAM_5fZw" type="id_Boolean" value="true"/>
+    <contextParameter comment="" name="checkpointDir" prompt="checkpointDir?" promptNeeded="false" repositoryContextId="_Zid7kDYIEeW39qpAM_5fZw" type="id_String" value="#BASEDIR/#JOBNAME/checkpoint"/>
+    <contextParameter comment="" name="archiveDirRetentionDays" prompt="archiveDirRetentionDays?" promptNeeded="false" repositoryContextId="_BS45gDYFEeW39qpAM_5fZw" type="id_Integer" value="-1"/>
+    <contextParameter comment="" name="reportingDirRetentionDays" prompt="reportingDirRetentionDays?" promptNeeded="false" repositoryContextId="_BS45gDYFEeW39qpAM_5fZw" type="id_Integer" value="90"/>
+    <contextParameter comment="" name="outputDirRetentionDays" prompt="outputDirRetentionDays?" promptNeeded="false" repositoryContextId="_BS45gDYFEeW39qpAM_5fZw" type="id_Integer" value="-1"/>
+    <contextParameter comment="" name="tmpDirRetentionDays" prompt="tmpDirRetentionDays?" promptNeeded="false" repositoryContextId="_BS45gDYFEeW39qpAM_5fZw" type="id_Integer" value="7"/>
+    <contextParameter comment="" name="workingDirRetentionDays" prompt="workingDirRetentionDays?" promptNeeded="false" repositoryContextId="_BS45gDYFEeW39qpAM_5fZw" type="id_Integer" value="90"/>
+    <contextParameter comment="" name="logDirRetentionDays" prompt="logDirRetentionDays?" promptNeeded="false" repositoryContextId="_BS45gDYFEeW39qpAM_5fZw" type="id_Integer" value="90"/>
+    <contextParameter comment="" name="documentationURL" prompt="documentationURL?" promptNeeded="false" repositoryContextId="_BS45gDYFEeW39qpAM_5fZw" type="id_String" value="talendframework.com"/>
+  </context>
+  <parameters>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="0"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" value="0"/>
+    <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" value=""/>
+    <elementParameter field="CHECK" name="IMPLICITCONTEXT_USE_PROJECT_SETTINGS" value="true"/>
+    <elementParameter field="CHECK" name="STATANDLOG_USE_PROJECT_SETTINGS" value="true"/>
+    <elementParameter field="CHECK" name="MULTI_THREAD_EXECATION" value="false"/>
+    <elementParameter field="CHECK" name="IMPLICIT_TCONTEXTLOAD" value="false"/>
+    <elementParameter field="RADIO" name="FROM_FILE_FLAG_IMPLICIT_CONTEXT" value="false"/>
+    <elementParameter field="RADIO" name="FROM_DATABASE_FLAG_IMPLICIT_CONTEXT" value="false"/>
+    <elementParameter field="FILE" name="IMPLICIT_TCONTEXTLOAD_FILE" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY_TYPE_IMPLICIT_CONTEXT:PROPERTY_TYPE" value=""/>
+    <elementParameter field="TECHNICAL" name="PROPERTY_TYPE_IMPLICIT_CONTEXT:REPOSITORY_PROPERTY_TYPE" value=""/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE_IMPLICIT_CONTEXT" value=""/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION_IMPLICIT_CONTEXT" value=""/>
+    <elementParameter field="TEXT" name="URL_IMPLICIT_CONTEXT" value="&quot;&quot;"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR_IMPLICIT_CONTEXT"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS_IMPLICIT_CONTEXT" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="HOST_IMPLICIT_CONTEXT" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PORT_IMPLICIT_CONTEXT" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME_IMPLICIT_CONTEXT" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME_IMPLICIT_CONTEXT" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" value="0RMsyjmybrE="/>
+    <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" value="&quot;&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="LOAD_NEW_VARIABLE" value=""/>
+    <elementParameter field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" value=""/>
+    <elementParameter field="CHECK" name="PRINT_OPERATIONS" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_ERROR" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_WARNINGS" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_INFO" value="false"/>
+    <elementParameter field="CHECK" name="ON_STATCATCHER_FLAG" value="true"/>
+    <elementParameter field="CHECK" name="ON_LOGCATCHER_FLAG" value="true"/>
+    <elementParameter field="CHECK" name="ON_METERCATCHER_FLAG" value="true"/>
+    <elementParameter field="CHECK" name="ON_CONSOLE_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_FILES_FLAG" value="true"/>
+    <elementParameter field="DIRECTORY" name="FILE_PATH" value="Framework.getDefaultStatsDir(context.statsDir, context.baseDir, contextStr, projectName, jobName)"/>
+    <elementParameter field="TEXT" name="FILENAME_STATS" value="String.format(&quot;stats_file.%s.txt&quot;, TalendDate.formatDate(&quot;yyyyMMdd&quot;, TalendDate.getCurrentDate()))"/>
+    <elementParameter field="TEXT" name="FILENAME_LOGS" value="String.format(&quot;logs_file.%s.txt&quot;, TalendDate.formatDate(&quot;yyyyMMdd&quot;, TalendDate.getCurrentDate()))"/>
+    <elementParameter field="TEXT" name="FILENAME_METTER" value="String.format(&quot;meter_file.%s.txt&quot;, TalendDate.formatDate(&quot;yyyyMMdd&quot;, TalendDate.getCurrentDate()))"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="ISO-8859-15"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="ON_DATABASE_FLAG" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE" value="tJDBCOutput"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="ORACLE_11"/>
+    <elementParameter field="TEXT" name="URL" value="&quot;&quot;"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DATASOURCE" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" value="0RMsyjmybrE="/>
+    <elementParameter field="FILE" name="DBFILE" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_STATS" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_LOGS" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_METER" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="CATCH_RUNTIME_ERRORS" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_USER_ERRORS" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_USER_WARNING" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_REALTIME_STATS" value="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_HEADERID" value=""/>
+    <elementParameter field="CHECK" name="HEADER_ENABLED" value="false"/>
+    <elementParameter field="TEXT" name="HEADER_LIBRARY" value=""/>
+    <elementParameter field="TEXT" name="HEADER_CODE" value=""/>
+    <elementParameter field="TEXT" name="HEADER_IMPORT" value=""/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_FOOTERID" value=""/>
+    <elementParameter field="CHECK" name="FOOTER_ENABLED" value="false"/>
+    <elementParameter field="TEXT" name="FOOTER_LIBRARY" value=""/>
+    <elementParameter field="TEXT" name="FOOTER_CODE" value=""/>
+    <elementParameter field="TEXT" name="FOOTER_IMPORT" value=""/>
+    <routinesParameter id="_KupssHM3EeWYVLThLquobQ" name="DataOperation"/>
+    <routinesParameter id="_Ku8noHM3EeWYVLThLquobQ" name="Mathematical"/>
+    <routinesParameter id="_KvDVUHM3EeWYVLThLquobQ" name="Numeric"/>
+    <routinesParameter id="_KvG_sHM3EeWYVLThLquobQ" name="Relational"/>
+    <routinesParameter id="_KvVpMHM3EeWYVLThLquobQ" name="StringHandling"/>
+    <routinesParameter id="_KvbIwHM3EeWYVLThLquobQ" name="TalendDataGenerator"/>
+    <routinesParameter id="_KvdlAHM3EeWYVLThLquobQ" name="TalendDate"/>
+    <routinesParameter id="_KvgBQHM3EeWYVLThLquobQ" name="TalendString"/>
+    <routinesParameter id="_OiyegDHBEeWpH5gcTEdy3w" name="TalendFieldHelper"/>
+    <routinesParameter id="_Rye_UDdAEeW39qpAM_5fZw" name="Framework"/>
+    <routinesParameter id="_Fd_HIHViEeWtC54pnsurEA" name="FrameworkHelper"/>
+    <routinesParameter id="_qe-aQE4VEeWUSP6_b_HTvg" name="FileHelper"/>
+    <routinesParameter id="_OiyegDHBEeWpH5gcTEdy3w" name="FieldHelper"/>
+  </parameters>
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="64" posY="192">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_1"/>
+    <elementParameter field="DIRECTORY" name="JAVA_LIBRARY_PATH" value="C:\Talend\TOS_DI-20141207_1530-V5.6.1\configuration\lib\java"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="/*&#xA; Copyright 2015, 2016, Yellow Pelican Ltd. www.YellowPelican.co.uk&#xA;&#xA; Licensed under the Apache License, Version 2.0 (the &quot;License&quot;);&#xA; you may not use this file except in compliance with the License.&#xA; You may obtain a copy of the License at&#xA;&#xA;    http://www.apache.org/licenses/LICENSE-2.0&#xA;&#xA; Unless required by applicable law or agreed to in writing, software&#xA; distributed under the License is distributed on an &quot;AS IS&quot; BASIS,&#xA; WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.&#xA; See the License for the specific language governing permissions and&#xA; limitations under the License.&#xA;*/&#xA;&#xA;/*&#xA; * Framework Initialisation.&#xA; */&#xA;globalMap.put(&quot;BuiltWith&quot;, &quot;1.7&quot;);&#xA;&#xA;/*&#xA; * Report Job Start and Framework version.&#xA; */&#xA;if(isChildJob) {&#xA;&#xA;&#x9;// 1.7&#xA;&#x9;((Framework) context.framework).sharedMapPut(&quot;Framework.CurrentJob&quot;, jobName);&#xA;&#xA;&#x9;((Framework) context.framework).message(jobName, jobVersion, &quot;STARTED&quot;);&#xA;&#xA;&#x9;if(! ((String) globalMap.get(&quot;BuiltWith&quot;)).equals(((Framework) context.framework).getFrameworkVersion()))&#xA;&#x9;&#x9;System.out.println(String.format(&quot;%s: %s: this Job was built with Framework version %s&quot;,&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9; jobName, jobVersion,&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9; ((String) globalMap.get(&quot;BuiltWith&quot;))));&#xA;}"/>
+    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="LABEL" value="InitFramework"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="CHECK" name="INFORMATION" value="true"/>
+    <elementParameter field="MEMO" name="COMMENT" value="Copyright 2015, Yellow Pelican Ltd. www.YellowPelican.co.uk&#xA;&#xA;Licensed under the Apache License, Version 2.0 (the &quot;License&quot;);&#xA;you may not use this file except in compliance with the License.&#xA;You may obtain a copy of the License at&#xA;&#xA;   http://www.apache.org/licenses/LICENSE-2.0&#xA;&#xA;Unless required by applicable law or agreed to in writing, software&#xA;distributed under the License is distributed on an &quot;AS IS&quot; BASIS,&#xA;WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.&#xA;See the License for the specific language governing permissions and&#xA;limitations under the License."/>
+    <metadata connector="FLOW" name="tJava_1"/>
+  </node>
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="64" posY="704">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_2"/>
+    <elementParameter field="DIRECTORY" name="JAVA_LIBRARY_PATH" value="C:\Talend\TOS_DI-20141207_1530-V5.6.1\configuration\lib\java"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="/*&#xA; * Framework Denitialisation v0.1.&#xA; */&#xA;((Framework) context.framework).message(jobName, jobVersion, &quot;ENDED&quot;);"/>
+    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="LABEL" value="DeInitFramework"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tJava_2"/>
+  </node>
+  <node componentName="tDie" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="288" posY="192">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDie_1"/>
+    <elementParameter field="DIRECTORY" name="JAVA_LIBRARY_PATH" value="C:\Talend\TOS_DI-20141207_1530-V5.6.1\configuration\lib\java"/>
+    <elementParameter field="TEXT" name="MESSAGE" value="String.format(&quot;%s: this job must have a parent&quot;, jobName)"/>
+    <elementParameter field="TEXT" name="CODE" value="5"/>
+    <elementParameter field="CLOSED_LIST" name="PRIORITY" value="5"/>
+    <elementParameter field="CHECK" name="EXIT_JVM" value="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="DieOnNotChildJob_5"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tDie_1"/>
+  </node>
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="64" posY="320">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_4"/>
+    <elementParameter field="DIRECTORY" name="JAVA_LIBRARY_PATH" value="C:\Talend\TOS_DI-20141207_1530-V5.6.1\configuration\lib\java"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="String foo = &quot;bar&quot;;"/>
+    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="LABEL" value="InitJob"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="CHECK" name="INFORMATION" value="true"/>
+    <elementParameter field="MEMO" name="COMMENT" value="Reserved for any job initalisation that should take place, once the framework has been initialised and context has been loaded."/>
+    <metadata connector="FLOW" name="tJava_4"/>
+  </node>
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="64" posY="576">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_5"/>
+    <elementParameter field="DIRECTORY" name="JAVA_LIBRARY_PATH" value="C:\Talend\TOS_DI-20141207_1530-V5.6.1\configuration\lib\java"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="String foo = &quot;bar&quot;;"/>
+    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="LABEL" value="DeInitJob"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tJava_5"/>
+  </node>
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="64" posY="64">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_7"/>
+    <elementParameter field="DIRECTORY" name="JAVA_LIBRARY_PATH" value="C:\Talend\TOS_DI-20141207_1530-V5.6.1\configuration\lib\java"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="String foo = &quot;bar&quot;;"/>
+    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="LABEL" value="PreInit"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="CHECK" name="INFORMATION" value="true"/>
+    <elementParameter field="MEMO" name="COMMENT" value="Reserved for any initialisation that shoud take place prior to initialising the framework."/>
+    <metadata connector="FLOW" name="tJava_7"/>
+  </node>
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="64" posY="448">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_3"/>
+    <elementParameter field="DIRECTORY" name="JAVA_LIBRARY_PATH" value="C:\Talend\TOS_DI-20141207_1530-V5.6.1\configuration\lib\java"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="globalMap.put(&quot;ToMonitorFilePath&quot;, String.format(&quot;%s/%s.csv&quot;, context.libDir, ((Framework) context.framework).getJobName()));"/>
+    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="LABEL" value="InitMonitorJobs"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="CHECK" name="INFORMATION" value="true"/>
+    <elementParameter field="MEMO" name="COMMENT" value="This is a simply a place-holder where we can perform and initaliation that is specific to the execution of the If-linked child job. This also allows us to have a decision that will determine if the child job should be executed."/>
+    <metadata connector="FLOW" name="tJava_3"/>
+  </node>
+  <node componentName="tDie" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="512" posY="448">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDie_2"/>
+    <elementParameter field="DIRECTORY" name="JAVA_LIBRARY_PATH" value="C:\Talend\TOS_DI-20141207_1530-V5.6.1\configuration\lib\java"/>
+    <elementParameter field="TEXT" name="MESSAGE" value="String.format(&quot;%s: there is nothing to monitor (the monitor file does not exist)&quot;, jobName)"/>
+    <elementParameter field="TEXT" name="CODE" value="6"/>
+    <elementParameter field="CLOSED_LIST" name="PRIORITY" value="5"/>
+    <elementParameter field="CHECK" name="EXIT_JVM" value="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="DieOnToMonitorFileNotExistsError_6"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="CHECK" name="INFORMATION" value="true"/>
+    <elementParameter field="MEMO" name="COMMENT" value="Handling the child job return code, allows us to have controlled error handling, rather than simply allowing a Java Exception to be thrown. tRunJob must be configured to not die on child error.&#xA;&#xA;We may choose to handle different return codes in different ways, rather than simply dieing, as shown in this template.&#xA;&#xA;We may also handle other types of error, not just the error from a child job."/>
+    <metadata connector="FLOW" name="tDie_2"/>
+  </node>
+  <node componentName="tFileList" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="288" posY="832">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileList_1"/>
+    <elementParameter field="DIRECTORY" name="JAVA_LIBRARY_PATH" value="C:\Talend\TOS_DI-20141207_1530-V5.6.1\configuration\lib\java"/>
+    <elementParameter field="DIRECTORY" name="DIRECTORY" value="context.baseDir"/>
+    <elementParameter field="CLOSED_LIST" name="LIST_MODE" value="FILES"/>
+    <elementParameter field="CHECK" name="INCLUDSUBDIR" value="true"/>
+    <elementParameter field="CLOSED_LIST" name="CASE_SENSITIVE" value="YES"/>
+    <elementParameter field="CHECK" name="ERROR" value="false"/>
+    <elementParameter field="CHECK" name="GLOBEXPRESSIONS" value="true"/>
+    <elementParameter field="TABLE" name="FILES">
+      <elementValue elementRef="FILEMASK" value="&quot;stats_file.txt&quot;"/>
+    </elementParameter>
+    <elementParameter field="RADIO" name="ORDER_BY_NOTHING" value="true"/>
+    <elementParameter field="RADIO" name="ORDER_BY_FILENAME" value="false"/>
+    <elementParameter field="RADIO" name="ORDER_BY_FILESIZE" value="false"/>
+    <elementParameter field="RADIO" name="ORDER_BY_MODIFIEDDATE" value="false"/>
+    <elementParameter field="RADIO" name="ORDER_ACTION_ASC" value="true"/>
+    <elementParameter field="RADIO" name="ORDER_ACTION_DESC" value="false"/>
+    <elementParameter field="CHECK" name="IFEXCLUDE" value="false"/>
+    <elementParameter field="TEXT" name="EXCLUDEFILEMASK" value="&quot;*.txt&quot;"/>
+    <elementParameter field="CHECK" name="FORMAT_FILEPATH_TO_SLASH" value="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="JobStatsFiles"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tIterateToFlow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="512" posY="832">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tIterateToFlow_1"/>
+    <elementParameter field="DIRECTORY" name="JAVA_LIBRARY_PATH" value="C:\Talend\TOS_DI-20141207_1530-V5.6.1\configuration\lib\java"/>
+    <elementParameter field="TABLE" name="MAPPING">
+      <elementValue elementRef="SCHEMA_COLUMN" value="statsFilePath"/>
+      <elementValue elementRef="VALUE" value="((String)globalMap.get(&quot;tFileList_1_CURRENT_FILEPATH&quot;))"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="LABEL" value="FlowJobStatsFiles"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tIterateToFlow_1">
+      <column comment="" key="false" name="statsFilePath" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="704" posY="832">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_1"/>
+    <elementParameter field="DIRECTORY" name="JAVA_LIBRARY_PATH" value="C:\Talend\TOS_DI-20141207_1530-V5.6.1\configuration\lib\java"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_g7ytgO5rEeWq1pXLV3yBJQ-tMap_1-PREVIEW.bmp"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true"/>
+    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" value="false"/>
+    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="MapJobStatsFiles"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="mappedJobStatsFiles">
+      <column comment="" key="false" name="jobName" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="statsFilePath" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="MapperData">
+      <uiProperties/>
+      <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
+      <outputTables sizeState="INTERMEDIATE" name="mappedJobStatsFiles">
+        <mapperTableEntries name="jobName" expression="// TODO This is inelegant and we do run the risk of an exception being thrown on the split.&#xD;&#xA;jobStatsFiles.statsFilePath == null ? null :&#xD;&#xA;jobStatsFiles.statsFilePath.replace(context.baseDir, &quot;&quot;).split(java.util.regex.Pattern.quote(java.io.File.separator))[1]&#xD;&#xA;" type="id_String" nullable="true"/>
+        <mapperTableEntries name="statsFilePath" expression="jobStatsFiles.statsFilePath" type="id_String" nullable="true"/>
+      </outputTables>
+      <inputTables sizeState="INTERMEDIATE" name="jobStatsFiles" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+        <mapperTableEntries name="statsFilePath" type="id_String" nullable="true"/>
+      </inputTables>
+    </nodeData>
+  </node>
+  <node componentName="tHashOutput" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="896" posY="832">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tHashOutput_1"/>
+    <elementParameter field="DIRECTORY" name="JAVA_LIBRARY_PATH" value="C:\Talend\TOS_DI-20141207_1530-V5.6.1\configuration\lib\java"/>
+    <elementParameter field="CHECK" name="LINK_WITH" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="LIST" value=""/>
+    <elementParameter field="CLOSED_LIST" name="DATA_WRITE_MODEL" value="MEMORY"/>
+    <elementParameter field="FILE" name="BASE_FILE_PATH" value="&quot;C:/Talend/TOS_DI-20141207_1530-V5.6.1/workspace/in.hash&quot;"/>
+    <elementParameter field="TEXT" name="MEMORY_HEAP_MAX_SIZE" value="2"/>
+    <elementParameter field="CLOSED_LIST" name="KEYS_MANAGEMENT" value="KEEP_ALL"/>
+    <elementParameter field="CHECK" name="APPEND" value="true"/>
+    <elementParameter field="CHECK" name="HASH_KEY_FROM_INPUT_CONNECTOR" value="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="JobStatsFiles"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tHashOutput_1">
+      <column comment="" key="false" name="jobName" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="statsFilePath" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tFileInputDelimited" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="288" posY="576">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputDelimited_1"/>
+    <elementParameter field="DIRECTORY" name="JAVA_LIBRARY_PATH" value="C:\Talend\TOS_DI-20141207_1530-V5.6.1\configuration\lib\java"/>
+    <elementParameter field="LABEL" name="FILENAMETEXT" value="&quot;When the input source is a stream or a zip file,footer and random shouldn't be bigger than 0.&quot;"/>
+    <elementParameter field="FILE" name="FILENAME" value="((String) globalMap.get(&quot;ToMonitorFilePath&quot;))"/>
+    <elementParameter field="CHECK" name="CSV_OPTION" value="true"/>
+    <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;"/>
+    <elementParameter field="OPENED_LIST" name="CSVROWSEPARATOR" value="&quot;\n&quot;"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;,&quot;"/>
+    <elementParameter field="TEXT" name="ESCAPE_CHAR" value="&quot;&quot;&quot;"/>
+    <elementParameter field="TEXT" name="TEXT_ENCLOSURE" value="&quot;&quot;&quot;"/>
+    <elementParameter field="TEXT" name="HEADER" value="1"/>
+    <elementParameter field="TEXT" name="FOOTER" value="0"/>
+    <elementParameter field="TEXT" name="LIMIT" value=""/>
+    <elementParameter field="CHECK" name="REMOVE_EMPTY_ROW" value="true"/>
+    <elementParameter field="CHECK" name="UNCOMPRESS" value="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="DIRECTORY" name="TEMP_DIR" value="&quot;C:/Talend/TOS_DI-20141207_1530-V5.6.1/workspace&quot;"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" value="&quot;,&quot;"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" value="&quot;.&quot;"/>
+    <elementParameter field="CHECK" name="RANDOM" value="false"/>
+    <elementParameter field="TEXT" name="NB_RANDOM" value="10"/>
+    <elementParameter field="CHECK" name="TRIMALL" value="false"/>
+    <elementParameter field="TABLE" name="TRIMSELECT">
+      <elementValue elementRef="SCHEMA_COLUMN" value="jobName"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="alertAfterSeconds"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="CHECK_FIELDS_NUM" value="false"/>
+    <elementParameter field="CHECK" name="CHECK_DATE" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="SPLITRECORD" value="false"/>
+    <elementParameter field="CHECK" name="ENABLE_DECODE" value="false"/>
+    <elementParameter field="TABLE" name="DECODE_COLS">
+      <elementValue elementRef="SCHEMA_COLUMN" value="jobName"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="alertAfterSeconds"/>
+      <elementValue elementRef="DECODE" value="false"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="DESTINATION" value=""/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100"/>
+    <elementParameter field="TEXT" name="LABEL" value="ToMonitorFile"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tFileInputDelimited_1">
+      <column comment="" key="false" name="jobName" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="alertAfterSeconds" nullable="true" pattern="" sourceType="" type="id_Long" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="REJECT" name="REJECT">
+      <column comment="" key="false" name="jobName" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="alertAfterSeconds" nullable="true" pattern="" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tHashOutput" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="512" posY="576">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tHashOutput_2"/>
+    <elementParameter field="DIRECTORY" name="JAVA_LIBRARY_PATH" value="C:\Talend\TOS_DI-20141207_1530-V5.6.1\configuration\lib\java"/>
+    <elementParameter field="CHECK" name="LINK_WITH" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="LIST" value=""/>
+    <elementParameter field="CLOSED_LIST" name="DATA_WRITE_MODEL" value="MEMORY"/>
+    <elementParameter field="FILE" name="BASE_FILE_PATH" value="&quot;C:/Talend/TOS_DI-20141207_1530-V5.6.1/workspace/in.hash&quot;"/>
+    <elementParameter field="TEXT" name="MEMORY_HEAP_MAX_SIZE" value="2"/>
+    <elementParameter field="CLOSED_LIST" name="KEYS_MANAGEMENT" value="KEEP_ALL"/>
+    <elementParameter field="CHECK" name="APPEND" value="true"/>
+    <elementParameter field="CHECK" name="HASH_KEY_FROM_INPUT_CONNECTOR" value="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="Jobs"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tHashOutput_2">
+      <column comment="" key="false" name="jobName" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="alertAfterSeconds" nullable="true" pattern="" sourceType="" type="id_Long" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tFileExist" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="288" posY="448">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileExist_1"/>
+    <elementParameter field="DIRECTORY" name="JAVA_LIBRARY_PATH" value="C:\Talend\TOS_DI-20141207_1530-V5.6.1\configuration\lib\java"/>
+    <elementParameter field="FILE" name="FILE_NAME" value="((String) globalMap.get(&quot;ToMonitorFilePath&quot;))"/>
+    <elementParameter field="TEXT" name="LABEL" value="ToMonitorFile"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="288" posY="704">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_6"/>
+    <elementParameter field="DIRECTORY" name="JAVA_LIBRARY_PATH" value="C:\Talend\TOS_DI-20141207_1530-V5.6.1\configuration\lib\java"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value=""/>
+    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="LABEL" value="DeInitToMonitorFile"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tJava_6"/>
+  </node>
+  <node componentName="tDie" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="512" posY="704">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDie_3"/>
+    <elementParameter field="DIRECTORY" name="JAVA_LIBRARY_PATH" value="C:\Talend\TOS_DI-20141207_1530-V5.6.1\configuration\lib\java"/>
+    <elementParameter field="TEXT" name="MESSAGE" value="String.format(&quot;%s: there is nothing to monitor&quot;, jobName)"/>
+    <elementParameter field="TEXT" name="CODE" value="6"/>
+    <elementParameter field="CLOSED_LIST" name="PRIORITY" value="5"/>
+    <elementParameter field="CHECK" name="EXIT_JVM" value="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="DieOnNothingToMonitorError_6"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="CHECK" name="INFORMATION" value="true"/>
+    <elementParameter field="MEMO" name="COMMENT" value="Handling the child job return code, allows us to have controlled error handling, rather than simply allowing a Java Exception to be thrown. tRunJob must be configured to not die on child error.&#xA;&#xA;We may choose to handle different return codes in different ways, rather than simply dieing, as shown in this template.&#xA;&#xA;We may also handle other types of error, not just the error from a child job."/>
+    <metadata connector="FLOW" name="tDie_3"/>
+  </node>
+  <node componentName="tHashInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="288" posY="1088">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tHashInput_1"/>
+    <elementParameter field="DIRECTORY" name="JAVA_LIBRARY_PATH" value="C:\Talend\TOS_DI-20141207_1530-V5.6.1\configuration\lib\java"/>
+    <elementParameter field="CHECK" name="LINK_WITH" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="LIST" value="tHashOutput_2"/>
+    <elementParameter field="FILE" name="BASE_FILE_PATH" value="&quot;C:/Talend/TOS_DI-20141207_1530-V5.6.1/workspace/in.hash&quot;"/>
+    <elementParameter field="CHECK" name="RELEASE_CACHE" value="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="Jobs"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tHashInput_1">
+      <column comment="" key="false" name="jobName" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="alertAfterSeconds" nullable="true" pattern="" sourceType="" type="id_Long" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tFlowToIterate" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="512" posY="1088">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFlowToIterate_1"/>
+    <elementParameter field="DIRECTORY" name="JAVA_LIBRARY_PATH" value="C:\Talend\TOS_DI-20141207_1530-V5.6.1\configuration\lib\java"/>
+    <elementParameter field="CHECK" name="DEFAULT_MAP" value="true"/>
+    <elementParameter field="TABLE" name="MAP"/>
+    <elementParameter field="TEXT" name="LABEL" value="IterateJobs"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tFlowToIterate_1"/>
+  </node>
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="704" posY="1088">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_8"/>
+    <elementParameter field="DIRECTORY" name="JAVA_LIBRARY_PATH" value="C:\Talend\TOS_DI-20141207_1530-V5.6.1\configuration\lib\java"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="System.out.println(String.format(&quot;%s: monitoring activity of %s&quot;,&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9; jobName,&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9; ((String) globalMap.get(&quot;jobs.jobName&quot;))));"/>
+    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="LABEL" value="InitCheckJob"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tJava_8"/>
+  </node>
+  <node componentName="tFixedFlowInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="704" posY="1216">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFixedFlowInput_1"/>
+    <elementParameter field="DIRECTORY" name="JAVA_LIBRARY_PATH" value="C:\Talend\TOS_DI-20141207_1530-V5.6.1\configuration\lib\java"/>
+    <elementParameter field="TEXT" name="NB_ROWS" value="1"/>
+    <elementParameter field="RADIO" name="USE_SINGLEMODE" value="true"/>
+    <elementParameter field="TABLE" name="VALUES">
+      <elementValue elementRef="SCHEMA_COLUMN" value="jobName"/>
+      <elementValue elementRef="VALUE" value="((String) globalMap.get(&quot;jobs.jobName&quot;))"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="alertAfterSeconds"/>
+      <elementValue elementRef="VALUE" value="((Long) globalMap.get(&quot;jobs.alertAfterSeconds&quot;))"/>
+    </elementParameter>
+    <elementParameter field="RADIO" name="USE_INTABLE" value="false"/>
+    <elementParameter field="TABLE" name="INTABLE"/>
+    <elementParameter field="RADIO" name="USE_INLINECONTENT" value="false"/>
+    <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;;&quot;"/>
+    <elementParameter field="MEMO" name="INLINECONTENT" value=""/>
+    <elementParameter field="TEXT" name="LABEL" value="KickJob"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tFixedFlowInput_1">
+      <column comment="" key="false" name="jobName" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="alertAfterSeconds" nullable="true" pattern="" sourceType="" type="id_Long" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="896" posY="1216">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_2"/>
+    <elementParameter field="DIRECTORY" name="JAVA_LIBRARY_PATH" value="C:\Talend\TOS_DI-20141207_1530-V5.6.1\configuration\lib\java"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_g7ytgO5rEeWq1pXLV3yBJQ-tMap_2-PREVIEW.bmp"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true"/>
+    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" value="false"/>
+    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="MapJobStatsFile"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="mappedJobStatsFile" name="jobStatsFile">
+      <column comment="" key="false" name="jobName" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="alertAfterSeconds" nullable="true" pattern="" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" name="statsFilePath" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="MapperData">
+      <uiProperties/>
+      <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
+      <outputTables sizeState="INTERMEDIATE" name="jobStatsFile">
+        <mapperTableEntries name="jobName" expression="job.jobName " type="id_String" nullable="true"/>
+        <mapperTableEntries name="alertAfterSeconds" expression="job.alertAfterSeconds " type="id_Long" nullable="true"/>
+        <mapperTableEntries name="statsFilePath" expression="jobStatsFilesLookup.statsFilePath " type="id_String" nullable="true"/>
+      </outputTables>
+      <inputTables sizeState="INTERMEDIATE" name="job" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+        <mapperTableEntries name="jobName" type="id_String" nullable="true"/>
+        <mapperTableEntries name="alertAfterSeconds" type="id_Long" nullable="true"/>
+      </inputTables>
+      <inputTables sizeState="INTERMEDIATE" name="jobStatsFilesLookup" activateCondensedTool="true" matchingMode="FIRST_MATCH" lookupMode="LOAD_ONCE">
+        <mapperTableEntries name="jobName" expression="job.jobName " type="id_String" nullable="true" operator="="/>
+        <mapperTableEntries name="statsFilePath" type="id_String" nullable="true"/>
+      </inputTables>
+    </nodeData>
+  </node>
+  <node componentName="tHashInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="704" posY="1280">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tHashInput_2"/>
+    <elementParameter field="DIRECTORY" name="JAVA_LIBRARY_PATH" value="C:\Talend\TOS_DI-20141207_1530-V5.6.1\configuration\lib\java"/>
+    <elementParameter field="CHECK" name="LINK_WITH" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="LIST" value="tHashOutput_1"/>
+    <elementParameter field="FILE" name="BASE_FILE_PATH" value="&quot;C:/Talend/TOS_DI-20141207_1530-V5.6.1/workspace/in.hash&quot;"/>
+    <elementParameter field="CHECK" name="RELEASE_CACHE" value="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="JobStatsFiles"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tHashInput_2">
+      <column comment="" key="false" name="jobName" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="statsFilePath" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tFlowToIterate" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1088" posY="1216">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFlowToIterate_2"/>
+    <elementParameter field="DIRECTORY" name="JAVA_LIBRARY_PATH" value="C:\Talend\TOS_DI-20141207_1530-V5.6.1\configuration\lib\java"/>
+    <elementParameter field="CHECK" name="DEFAULT_MAP" value="true"/>
+    <elementParameter field="TABLE" name="MAP"/>
+    <elementParameter field="TEXT" name="LABEL" value="IterateJobStatsFile"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tFlowToIterate_2"/>
+  </node>
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1280" posY="1216">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_9"/>
+    <elementParameter field="DIRECTORY" name="JAVA_LIBRARY_PATH" value="C:\Talend\TOS_DI-20141207_1530-V5.6.1\configuration\lib\java"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value=""/>
+    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="LABEL" value="InitStatsFileCheck"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tJava_9"/>
+  </node>
+  <node componentName="tFileProperties" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="896" posY="1536">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileProperties_1"/>
+    <elementParameter field="DIRECTORY" name="JAVA_LIBRARY_PATH" value="C:\Talend\TOS_DI-20141207_1530-V5.6.1\configuration\lib\java"/>
+    <elementParameter field="FILE" name="FILENAME" value="((String) globalMap.get(&quot;jobStatsFile.statsFilePath&quot;))"/>
+    <elementParameter field="CHECK" name="MD5" value="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="GetStatsFileProperties"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tFileProperties_1">
+      <column key="false" length="255" name="abs_path" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column key="false" length="255" name="dirname" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column key="false" length="255" name="basename" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column key="false" length="10" name="mode_string" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="20" name="size" nullable="true" precision="0" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="20" name="mtime" nullable="true" precision="0" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column key="false" length="20" name="mtime_string" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tFlowToIterate" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1088" posY="1536">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFlowToIterate_3"/>
+    <elementParameter field="DIRECTORY" name="JAVA_LIBRARY_PATH" value="C:\Talend\TOS_DI-20141207_1530-V5.6.1\configuration\lib\java"/>
+    <elementParameter field="CHECK" name="DEFAULT_MAP" value="true"/>
+    <elementParameter field="TABLE" name="MAP"/>
+    <elementParameter field="TEXT" name="LABEL" value="IterateJobStatsFile"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tFlowToIterate_3"/>
+  </node>
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1280" posY="1536">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_10"/>
+    <elementParameter field="DIRECTORY" name="JAVA_LIBRARY_PATH" value="C:\Talend\TOS_DI-20141207_1530-V5.6.1\configuration\lib\java"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="Boolean reportInactivity = false;&#xA;Long elapsed = (TalendDate.getCurrentDate().getTime() - ((Long) globalMap.get(&quot;statsFileProperties.mtime&quot;))) / 1000;&#xA;&#xA;if(elapsed > ((Long) globalMap.get(&quot;jobs.alertAfterSeconds&quot;))) {&#xA;&#x9;reportInactivity = true;&#xA;&#x9;globalMap.put(&quot;Elapsed&quot;, elapsed);&#xA;}"/>
+    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="LABEL" value="CheckStatsFileProperties"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tJava_10"/>
+  </node>
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="704" posY="960">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_11"/>
+    <elementParameter field="DIRECTORY" name="JAVA_LIBRARY_PATH" value="C:\Talend\TOS_DI-20141207_1530-V5.6.1\configuration\lib\java"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="String errorMessage = String.format(&quot;the Job %s has shown no activity (limit %d seconds)&quot;,&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9; ((String) globalMap.get(&quot;jobs.jobName&quot;)),&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9; ((Long) globalMap.get(&quot;jobs.alertAfterSeconds&quot;)));&#xA;&#xA;globalMap.put(&quot;SendMailSubject&quot;, String.format(&quot;%s: %s&quot;, ((Framework) context.framework).getJobName(), errorMessage));&#xA;globalMap.put(&quot;SendMailMessage&quot;, String.format(&quot;%s.\n\nThere appear to be no stats files located under %s.\n\nCheck that the Job has been scheduled.\n\nThis inactivity is being reported by %s v%s.&quot;,&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;   errorMessage,&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;   context.baseDir,&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;   ((Framework) context.framework).getJobName(),&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;   ((Framework) context.framework).getJobVersion()));&#xA;&#xA;System.err.println(errorMessage);"/>
+    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="LABEL" value="InitError"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tJava_11"/>
+  </node>
+  <node componentName="tRunJob" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="896" posY="960">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRunJob_1"/>
+    <elementParameter field="DIRECTORY" name="JAVA_LIBRARY_PATH" value="C:\Talend\TOS_DI-20141207_1530-V5.6.1\configuration\lib\java"/>
+    <elementParameter field="CHECK" name="USE_DYNAMIC_JOB" value="false"/>
+    <elementParameter field="TEXT" name="CONTEXT_JOB" value=""/>
+    <elementParameter field="PROCESS_TYPE" name="PROCESS" value="LibEmailer"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_PROCESS" value="_ZJzn0HvAEeWUcpkX9YPDRQ"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_VERSION" value="Latest"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_CONTEXT" value="Default"/>
+    <elementParameter field="TEXT" name="CONTEXT_NAME" value="Default"/>
+    <elementParameter field="CHECK" name="USE_INDEPENDENT_PROCESS" value="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_CHILD_ERROR" value="false"/>
+    <elementParameter field="CHECK" name="TRANSMIT_WHOLE_CONTEXT" value="true"/>
+    <elementParameter field="TABLE" name="CONTEXTPARAMS">
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="sendMailSubject"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="((String) globalMap.get(&quot;SendMailSubject&quot;))"/>
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="sendMailMessage"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="((String) globalMap.get(&quot;SendMailMessage&quot;))"/>
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="allowDuplicateChecking"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="false"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="PROPAGATE_CHILD_RESULT" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_PARAMETER" value="false"/>
+    <elementParameter field="CHECK" name="TRANSMIT_ORIGINAL_CONTEXT" value="true"/>
+    <elementParameter field="TEXT" name="LABEL" value="__PROCESS__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tRunJob_1"/>
+  </node>
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1280" posY="1088">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_12"/>
+    <elementParameter field="DIRECTORY" name="JAVA_LIBRARY_PATH" value="C:\Talend\TOS_DI-20141207_1530-V5.6.1\configuration\lib\java"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="String errorMessage = String.format(&quot;the Job %s has shown no activity (limit %d seconds)&quot;,&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9; ((String) globalMap.get(&quot;jobs.jobName&quot;)),&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9; ((Long) globalMap.get(&quot;jobs.alertAfterSeconds&quot;)));&#xA;&#xA;globalMap.put(&quot;SendMailSubject&quot;, String.format(&quot;%s: %s&quot;, ((Framework) context.framework).getJobName(), errorMessage));&#xA;globalMap.put(&quot;SendMailMessage&quot;, String.format(&quot;%s.\n\nThe Job's stats file does not appear to be located under %s.\n\nCheck that the Job has been scheduled.\n\nThis inactivity is being reported by %s v%s.&quot;,&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;   errorMessage,&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;   context.baseDir,&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;   ((Framework) context.framework).getJobName(),&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;   ((Framework) context.framework).getJobVersion()));&#xA;&#xA;System.err.println(errorMessage);"/>
+    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="LABEL" value="InitError"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tJava_12"/>
+  </node>
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1280" posY="1408">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_13"/>
+    <elementParameter field="DIRECTORY" name="JAVA_LIBRARY_PATH" value="C:\Talend\TOS_DI-20141207_1530-V5.6.1\configuration\lib\java"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="String errorMessage = String.format(&quot;the Job %s has shown no activity within the last %d seconds (limit %d seconds) (%s)&quot;,&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9; ((String) globalMap.get(&quot;jobs.jobName&quot;)),&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9; ((Long) globalMap.get(&quot;Elapsed&quot;)),&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9; ((Long) globalMap.get(&quot;jobs.alertAfterSeconds&quot;)),&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9; ((String) globalMap.get(&quot;statsFileProperties.mtime_string&quot;)));&#xA;&#xA;globalMap.put(&quot;SendMailSubject&quot;, String.format(&quot;%s: %s&quot;, ((Framework) context.framework).getJobName(), errorMessage));&#xA;globalMap.put(&quot;SendMailMessage&quot;, String.format(&quot;%s.\n\nCheck that the Job has been scheduled and has not failed in an error state.\n\nThis inactivity is being reported by %s v%s.&quot;,&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;   errorMessage,&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;   ((Framework) context.framework).getJobName(),&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;   ((Framework) context.framework).getJobVersion()));&#xA;&#xA;System.err.println(errorMessage);"/>
+    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="LABEL" value="InitError"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tJava_13"/>
+  </node>
+  <node componentName="tRunJob" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1472" posY="1088">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRunJob_2"/>
+    <elementParameter field="DIRECTORY" name="JAVA_LIBRARY_PATH" value="C:\Talend\TOS_DI-20141207_1530-V5.6.1\configuration\lib\java"/>
+    <elementParameter field="CHECK" name="USE_DYNAMIC_JOB" value="false"/>
+    <elementParameter field="TEXT" name="CONTEXT_JOB" value=""/>
+    <elementParameter field="PROCESS_TYPE" name="PROCESS" value="LibEmailer"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_PROCESS" value="_ZJzn0HvAEeWUcpkX9YPDRQ"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_VERSION" value="Latest"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_CONTEXT" value="Default"/>
+    <elementParameter field="TEXT" name="CONTEXT_NAME" value="Default"/>
+    <elementParameter field="CHECK" name="USE_INDEPENDENT_PROCESS" value="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_CHILD_ERROR" value="false"/>
+    <elementParameter field="CHECK" name="TRANSMIT_WHOLE_CONTEXT" value="true"/>
+    <elementParameter field="TABLE" name="CONTEXTPARAMS">
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="sendMailSubject"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="((String) globalMap.get(&quot;SendMailSubject&quot;))"/>
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="sendMailMessage"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="((String) globalMap.get(&quot;SendMailMessage&quot;))"/>
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="allowDuplicateChecking"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="false"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="PROPAGATE_CHILD_RESULT" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_PARAMETER" value="false"/>
+    <elementParameter field="CHECK" name="TRANSMIT_ORIGINAL_CONTEXT" value="true"/>
+    <elementParameter field="TEXT" name="LABEL" value="__PROCESS__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tRunJob_2"/>
+  </node>
+  <node componentName="tRunJob" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1472" posY="1408">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRunJob_3"/>
+    <elementParameter field="DIRECTORY" name="JAVA_LIBRARY_PATH" value="C:\Talend\TOS_DI-20141207_1530-V5.6.1\configuration\lib\java"/>
+    <elementParameter field="CHECK" name="USE_DYNAMIC_JOB" value="false"/>
+    <elementParameter field="TEXT" name="CONTEXT_JOB" value=""/>
+    <elementParameter field="PROCESS_TYPE" name="PROCESS" value="LibEmailer"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_PROCESS" value="_ZJzn0HvAEeWUcpkX9YPDRQ"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_VERSION" value="Latest"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_CONTEXT" value="Default"/>
+    <elementParameter field="TEXT" name="CONTEXT_NAME" value="Default"/>
+    <elementParameter field="CHECK" name="USE_INDEPENDENT_PROCESS" value="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_CHILD_ERROR" value="false"/>
+    <elementParameter field="CHECK" name="TRANSMIT_WHOLE_CONTEXT" value="true"/>
+    <elementParameter field="TABLE" name="CONTEXTPARAMS">
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="sendMailSubject"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="((String) globalMap.get(&quot;SendMailSubject&quot;))"/>
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="sendMailMessage"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="((String) globalMap.get(&quot;SendMailMessage&quot;))"/>
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="allowDuplicateChecking"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="false"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="PROPAGATE_CHILD_RESULT" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_PARAMETER" value="false"/>
+    <elementParameter field="CHECK" name="TRANSMIT_ORIGINAL_CONTEXT" value="true"/>
+    <elementParameter field="TEXT" name="LABEL" value="__PROCESS__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tRunJob_3"/>
+  </node>
+  <connection connectorName="RUN_IF" label="NotChildJob" lineStyle="6" metaname="tJava_1" offsetLabelX="0" offsetLabelY="0" source="tJava_1" target="tDie_1">
+    <elementParameter field="MEMO_JAVA" name="CONDITION" value="! isChildJob"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="NotChildJob"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tJava_1" offsetLabelX="0" offsetLabelY="0" source="tJava_1" target="tJava_4">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk4"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tJava_4" offsetLabelX="0" offsetLabelY="0" source="tJava_4" target="tJava_3">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk7"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tJava_5" offsetLabelX="0" offsetLabelY="0" source="tJava_5" target="tJava_2">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk6"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tJava_7" offsetLabelX="0" offsetLabelY="0" source="tJava_7" target="tJava_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk9"/>
+  </connection>
+  <connection connectorName="RUN_IF" label="MonitorJobs" lineStyle="6" metaname="tJava_3" offsetLabelX="0" offsetLabelY="0" source="tJava_3" target="tFileExist_1">
+    <elementParameter field="MEMO_JAVA" name="CONDITION" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="MonitorJobs"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tJava_3" offsetLabelX="0" offsetLabelY="0" source="tJava_3" target="tJava_5">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk8"/>
+  </connection>
+  <connection connectorName="ITERATE" label="Iterate" lineStyle="7" metaname="tFileList_1" offsetLabelX="0" offsetLabelY="0" source="tFileList_1" target="tIterateToFlow_1">
+    <elementParameter field="CHECK" name="ENABLE_PARALLEL" value="false"/>
+    <elementParameter field="TEXT" name="NUMBER_PARALLEL" value="2"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="iterate1"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tFileList_1" offsetLabelX="0" offsetLabelY="0" source="tFileList_1" target="tHashInput_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk13"/>
+  </connection>
+  <connection connectorName="FLOW" label="jobStatsFiles" lineStyle="0" metaname="tIterateToFlow_1" offsetLabelX="0" offsetLabelY="0" source="tIterateToFlow_1" target="tMap_1">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER">
+      <elementValue elementRef="TRACE_COLUMN" value="statsFilePath"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="jobStatsFiles"/>
+  </connection>
+  <connection connectorName="FLOW" label="mappedJobStatsFiles" lineStyle="0" metaname="mappedJobStatsFiles" offsetLabelX="0" offsetLabelY="0" source="tMap_1" target="tHashOutput_1">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER">
+      <elementValue elementRef="TRACE_COLUMN" value="statsFilePath"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="jobName"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="mappedJobStatsFiles"/>
+  </connection>
+  <connection connectorName="FLOW" label="jobsToMonitor" lineStyle="0" metaname="tFileInputDelimited_1" offsetLabelX="0" offsetLabelY="0" source="tFileInputDelimited_1" target="tHashOutput_2">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER">
+      <elementValue elementRef="TRACE_COLUMN" value="jobName"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="monitorJobName"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="alertAfterSeconds"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="jobsToMonitor"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tFileInputDelimited_1" offsetLabelX="0" offsetLabelY="0" source="tFileInputDelimited_1" target="tJava_6">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk11"/>
+  </connection>
+  <connection connectorName="RUN_IF" label="NotToMonitorFileNotExists" lineStyle="6" metaname="tFileExist_1" offsetLabelX="0" offsetLabelY="0" source="tFileExist_1" target="tDie_2">
+    <elementParameter field="MEMO_JAVA" name="CONDITION" value="! ((Boolean)globalMap.get(&quot;tFileExist_1_EXISTS&quot;))"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="NotToMonitorFileNotExists"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tFileExist_1" offsetLabelX="0" offsetLabelY="0" source="tFileExist_1" target="tFileInputDelimited_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk10"/>
+  </connection>
+  <connection connectorName="RUN_IF" label="NothingToMonitor" lineStyle="6" metaname="tJava_6" offsetLabelX="0" offsetLabelY="0" source="tJava_6" target="tDie_3">
+    <elementParameter field="MEMO_JAVA" name="CONDITION" value="((Integer)globalMap.get(&quot;tHashOutput_2_NB_LINE&quot;)) == null || ((Integer)globalMap.get(&quot;tHashOutput_2_NB_LINE&quot;)) == 0"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="NothingToMonitor"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tJava_6" offsetLabelX="0" offsetLabelY="0" source="tJava_6" target="tFileList_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk12"/>
+  </connection>
+  <connection connectorName="FLOW" label="jobs" lineStyle="0" metaname="tHashInput_1" offsetLabelX="0" offsetLabelY="0" source="tHashInput_1" target="tFlowToIterate_1">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER">
+      <elementValue elementRef="TRACE_COLUMN" value="jobName"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="monitorJobName"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="alertAfterSeconds"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="jobs"/>
+  </connection>
+  <connection connectorName="ITERATE" label="Iterate" lineStyle="7" metaname="tFlowToIterate_1" offsetLabelX="0" offsetLabelY="0" source="tFlowToIterate_1" target="tJava_8">
+    <elementParameter field="CHECK" name="ENABLE_PARALLEL" value="false"/>
+    <elementParameter field="TEXT" name="NUMBER_PARALLEL" value="2"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="iterate2"/>
+  </connection>
+  <connection connectorName="RUN_IF" label="NotAnyStatsFileExists" lineStyle="6" metaname="tJava_8" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tJava_8" target="tJava_11">
+    <elementParameter field="MEMO_JAVA" name="CONDITION" value="((Integer)globalMap.get(&quot;tHashOutput_1_NB_LINE&quot;)) == null || ((Integer)globalMap.get(&quot;tHashOutput_1_NB_LINE&quot;)) == 0"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="NotAnyStatsFileExists"/>
+  </connection>
+  <connection connectorName="RUN_IF" label="AnyStatsFileExists" lineStyle="6" metaname="tJava_8" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tJava_8" target="tFixedFlowInput_1">
+    <elementParameter field="MEMO_JAVA" name="CONDITION" value="((Integer)globalMap.get(&quot;tHashOutput_1_NB_LINE&quot;)) != null &amp;&amp; ((Integer)globalMap.get(&quot;tHashOutput_1_NB_LINE&quot;)) > 0"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="AnyStatsFileExists"/>
+  </connection>
+  <connection connectorName="FLOW" label="job" lineStyle="0" metaname="tFixedFlowInput_1" offsetLabelX="0" offsetLabelY="0" source="tFixedFlowInput_1" target="tMap_2">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER">
+      <elementValue elementRef="TRACE_COLUMN" value="jobName"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="monitorJobName"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="alertAfterSeconds"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="job"/>
+  </connection>
+  <connection connectorName="FLOW" label="jobStatsFile" lineStyle="0" metaname="jobStatsFile" offsetLabelX="0" offsetLabelY="0" source="tMap_2" target="tFlowToIterate_2">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER">
+      <elementValue elementRef="TRACE_COLUMN" value="jobName"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="monitorJobName"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="alertAfterSeconds"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="statsFilePath"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="jobStatsFile"/>
+  </connection>
+  <connection connectorName="FLOW" label="jobStatsFilesLookup" lineStyle="8" metaname="tHashInput_2" offsetLabelX="0" offsetLabelY="0" source="tHashInput_2" target="tMap_2">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER">
+      <elementValue elementRef="TRACE_COLUMN" value="statsFilePath"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="jobName"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="jobStatsFilesLookup"/>
+  </connection>
+  <connection connectorName="ITERATE" label="Iterate" lineStyle="7" metaname="tFlowToIterate_2" offsetLabelX="0" offsetLabelY="0" source="tFlowToIterate_2" target="tJava_9">
+    <elementParameter field="CHECK" name="ENABLE_PARALLEL" value="false"/>
+    <elementParameter field="TEXT" name="NUMBER_PARALLEL" value="2"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="iterate3"/>
+  </connection>
+  <connection connectorName="RUN_IF" label="NotStatsFileExists" lineStyle="6" metaname="tJava_9" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tJava_9" target="tJava_12">
+    <elementParameter field="MEMO_JAVA" name="CONDITION" value="FieldHelper.isEmpty(((String) globalMap.get(&quot;jobStatsFile.statsFilePath&quot;)))"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="NotStatsFileExists"/>
+  </connection>
+  <connection connectorName="RUN_IF" label="StatsFileExists" lineStyle="6" metaname="tJava_9" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tJava_9" target="tFileProperties_1">
+    <elementParameter field="MEMO_JAVA" name="CONDITION" value="FieldHelper.isNotEmpty(((String) globalMap.get(&quot;jobStatsFile.statsFilePath&quot;)))"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="StatsFileExists"/>
+  </connection>
+  <connection connectorName="FLOW" label="statsFileProperties" lineStyle="0" metaname="tFileProperties_1" offsetLabelX="0" offsetLabelY="0" source="tFileProperties_1" target="tFlowToIterate_3">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER">
+      <elementValue elementRef="TRACE_COLUMN" value="abs_path"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="dirname"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="basename"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="mode_string"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="size"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="mtime"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="mtime_string"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="statsFileProperties"/>
+  </connection>
+  <connection connectorName="ITERATE" label="Iterate" lineStyle="7" metaname="tFlowToIterate_3" offsetLabelX="0" offsetLabelY="0" source="tFlowToIterate_3" target="tJava_10">
+    <elementParameter field="CHECK" name="ENABLE_PARALLEL" value="false"/>
+    <elementParameter field="TEXT" name="NUMBER_PARALLEL" value="2"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="iterate4"/>
+  </connection>
+  <connection connectorName="RUN_IF" label="ReportInactivity" lineStyle="6" metaname="tJava_10" offsetLabelX="0" offsetLabelY="0" source="tJava_10" target="tJava_13">
+    <elementParameter field="MEMO_JAVA" name="CONDITION" value="reportInactivity"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="ReportInactivity"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tJava_11" offsetLabelX="0" offsetLabelY="0" source="tJava_11" target="tRunJob_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk15"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tJava_12" offsetLabelX="0" offsetLabelY="0" source="tJava_12" target="tRunJob_2">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk16"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tJava_13" offsetLabelX="0" offsetLabelY="0" source="tJava_13" target="tRunJob_3">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk17"/>
+  </connection>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="160;190;240"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="255;0;0"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_2"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="160;190;240"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="255;0;0"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDie_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="160;190;240"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="255;0;0"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_4"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="160;190;240"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="255;255;0"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_5"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="160;190;240"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="255;255;0"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_7"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="160;190;240"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="255;255;0"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_3"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="160;190;240"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="255;128;0"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDie_2"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="160;190;240"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="220;220;250"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileList_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="160;190;240"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="220;220;250"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputDelimited_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="160;190;240"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="220;220;250"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileExist_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="160;190;240"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="220;220;250"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_6"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="160;190;240"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="220;220;250"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDie_3"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="160;190;240"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="220;220;250"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tHashInput_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="160;190;240"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="220;220;250"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFixedFlowInput_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="160;190;240"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="220;220;250"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileProperties_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="160;190;240"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="220;220;250"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_11"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="160;190;240"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="220;220;250"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRunJob_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="160;190;240"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="220;220;250"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_12"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="160;190;240"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="220;220;250"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_13"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="160;190;240"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="220;220;250"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRunJob_2"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="160;190;240"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="220;220;250"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRunJob_3"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="160;190;240"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="220;220;250"/>
+  </subjob>
+</talendfile:ProcessType>

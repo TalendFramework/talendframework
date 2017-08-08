@@ -1,0 +1,277 @@
+/*
+ Copyright 2015, Yellow Pelican Ltd. www.YellowPelican.co.uk
+
+ Licensed under the Apache License, Version 2.0 (the "License");
+ you may not use this file except in compliance with the License.
+ You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an "AS IS" BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.
+*/
+package routines;
+
+/*
+ * Framework Class.
+ */
+public class Framework {
+	private static String homeDir = System.getProperty("user.home");
+
+	private String frameworkVersion = "1.0";
+	private String frameworkAuthor = "Alan.Black@YellowPelican.co.uk";
+	private String contextStr = "Default";
+	private String baseDir = String.format("%s/talend/project/%s", getHomeDir(), contextStr);
+	private String projectName = "NOPROJECT";
+	private String jobName = "NOJOB";
+	private String jobVersion = "0.0";
+	private java.util.Date startTime = TalendDate.getCurrentDate();
+	private String startTimeStr = TalendDate.formatDate("yyyyMMdd.HHmmss", startTime);
+		
+	/**
+	 * Initialises the Framework.
+	 * 
+	 * @param baseDir
+	 * @param projectName
+	 * @param jobName
+	 * @param jobVersion
+	 */
+	public Framework(String baseDir, String contextStr, String projectName, String jobName, String jobVersion) {
+		if(FieldHelper.isNotEmpty(projectName)) this.projectName = projectName;
+		if(FieldHelper.isNotEmpty(jobName)) this.jobName = jobName;
+		if(FieldHelper.isNotEmpty(jobVersion)) this.jobVersion = jobVersion;
+		if(FieldHelper.isNotEmpty(contextStr)) this.contextStr = replaceContextTokens(contextStr);
+		if(FieldHelper.isNotEmpty(baseDir)) this.baseDir = replaceContextTokens(baseDir);
+	}
+
+	/**
+	 * 
+	 * @return
+	 */
+	public String getFrameworkVersion() { return frameworkVersion; };
+
+	/**
+	 * 
+	 * @return
+	 */
+	public String getFrameworkAuthor() { return frameworkAuthor; };
+	
+	/**
+	 * 
+	 * @return
+	 */
+	public java.util.Date getStartTime() {
+		return startTime;
+	}
+
+	/**
+	 * 
+	 * @return
+	 */
+	public String getStartTimeStr() {
+		return startTimeStr;
+	}
+
+	/**
+	 * 
+	 * @param jobName
+	 * @param message
+	 */
+	public void errorMessage(String jobName, String message) {
+		System.err.println(String.format("%s: %s, jobName, message"));
+	}
+	
+	/**
+	 * 
+	 * @param jobName
+	 * @param jobVersion
+	 * @param messageTime
+	 * @param message
+	 */
+	public void message(String jobName, String jobVersion, java.util.Date messageTime, String message)
+	{
+		System.out.println(jobName + ": " + jobVersion + ": " + message + ": " + messageTime);		
+	}
+	
+	/**
+	 * 
+	 * @param jobName
+	 * @param jobVersion
+	 * @param message
+	 */
+	public void message(String jobName, String jobVersion, String message) {
+		message(jobName, jobVersion, TalendDate.getCurrentDate(), message);
+	}
+	
+	/**
+	 * 
+	 * @param messageTime
+	 * @param message
+	 */
+	public void message(java.util.Date messageTime, String message) {
+		message(jobName, jobVersion, messageTime, message);
+	}
+		
+	/**
+	 * 
+	 * @param message
+	 * @return
+	 */
+	public void message(String message) {
+		message(TalendDate.getCurrentDate(), message);
+	}
+
+
+	/**
+	 * Returns the Home Directory.
+	 * 
+	 * @return
+	 */
+	public static String getHomeDir() {
+		return homeDir;
+	}
+
+	/**
+	 * Sets the Base Directory.
+	 * 
+	 * @param baseDir
+	 */
+	public void setBaseDir(String baseDir) {
+		if(FieldHelper.isNotEmpty(baseDir)) this.baseDir = baseDir;
+	}
+	
+	/**
+	 * Returns the Base Directory.
+	 * 
+	 * @return
+	 */
+	public String getBaseDir() {
+		return baseDir;
+	}
+
+	/**
+	 * Returns the Project Name.
+	 * 
+	 * @return
+	 */
+	public String getProjectName() {
+		return projectName;
+	}
+
+	/**
+	 * Returns the Context String.
+	 * 
+	 * @return
+	 */
+	public String getContextStr() {
+		return contextStr;
+	}
+
+	/**
+	 * Returns the Job Name.
+	 * 
+	 * @return
+	 */
+	public String getJobName() {
+		return jobName;
+	}
+	
+	/**
+	 * Returns the Job Version.
+	 *  	
+	 * @return
+	 */
+	public String getJobVersion() {
+		return jobVersion;
+	}
+
+	/**
+	 * Parses the supplied String and replaces the Context Tokens.
+	 *
+	 * @param value
+	 * @param baseDir
+	 * @param projectName
+	 * @param jobName
+	 * @return
+	 */
+	public static String replaceContextTokens(String value, String baseDir, String contextStr, String projectName, String jobName) {
+		if(value == null) return value;
+		else {
+			return value.replace("#HOME", getHomeDir()).
+			 			 replace("#BASEDIR", (baseDir == null ? "#BASEDIR" : baseDir)).
+ 						 replace("#PROJECTNAME", projectName).
+ 						 replace("#CONTEXTSTR", contextStr).
+			 			 replace("#JOBNAME", jobName);
+		}
+	}
+	
+	/**
+	 * Parses the supplied String and replaces the Context Tokens.
+	 *  
+	 * @param value
+	 * @return
+	 */
+	public String replaceContextTokens(String value) {
+		return replaceContextTokens(value, baseDir, contextStr, projectName, jobName);
+	}
+
+	/**
+	 * Parses the supplied String and replaces the Context Tokens.
+	 *  
+	 * @param value
+	 * @param baseDir
+	 * @return
+	 */
+	public String replaceContextTokens(String value, String baseDir) {
+		return replaceContextTokens(value, (FieldHelper.isEmpty(baseDir) ? this.baseDir : baseDir), contextStr, projectName, jobName);
+	}
+	
+	
+	/**
+	 * 
+	 * @param statsDir
+	 * @param projectName
+	 * @param jobName
+	 * @return
+	 */
+	public static String getDefaultStatsDir(String statsDir, String baseDir, String contextStr, String projectName, String jobName) {		
+
+		String retVal = null;
+		
+		/*
+		 * If no statsDir is passed, determine from supplied parameters.
+		 */
+		if(statsDir == null || "".equals(statsDir.trim()) || "null".equals(statsDir.trim())) {
+			//System.err.println("Framework.getDefaultStatsDir: baseDir: " + baseDir);
+
+			/*
+			 * If no baseDir is supplied, use default.
+			 */
+			if(baseDir == null || "".equals(baseDir.trim()) || "null".equals(baseDir.trim())) {
+				retVal = String.format("%s/talend/project/%s/%s/%s/stats", getHomeDir(), contextStr, projectName, jobName);
+			}
+			else {
+				//retVal = replaceContextTokens(String.format("%s/%s/%s/%s/stats", baseDir, contextStr, projectName, jobName), baseDir, contextStr, projectName, jobName);
+				retVal = replaceContextTokens(String.format("%s/stats", baseDir), baseDir, contextStr, projectName, jobName);
+				//System.out.println("   ***getDefaultStatsDir: " + retVal);
+			}
+		}
+		
+		/*
+		 * We have a statsDir, so parse, using supplied parameters.
+		 * 
+		 * We do expect statsDir to specify its own baseDir, or use #BASEDIR.
+		 */
+		else {
+				//System.err.println("getDefaultStatsDir: " + statsDir);
+				retVal = replaceContextTokens(statsDir, replaceContextTokens(baseDir, String.format("%s/talend/project/%s", getHomeDir(), contextStr), contextStr, projectName, jobName), contextStr, projectName, jobName);
+		}
+		
+		//System.err.println("getDefaultStatsDir: " + retVal);
+		//System.err.println("Framework.getDefaultStatsDir: " + retVal);
+		return retVal;
+	}
+}

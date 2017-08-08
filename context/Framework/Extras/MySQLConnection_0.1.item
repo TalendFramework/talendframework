@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" confirmationNeeded="false" name="Default">
+  <contextParameter comment="" name="mySQLConnectionDBVersion" prompt="mySQLConnectionDBVersion?" promptNeeded="false" type="id_String" value="Mysql5"/>
+  <contextParameter comment="" name="mySQLConnectionHost" prompt="mySQLConnectionHost?" promptNeeded="false" type="id_String" value="localhost"/>
+  <contextParameter comment="" name="mySQLConnectionPort" prompt="mySQLConnectionPort?" promptNeeded="false" type="id_String" value="3306"/>
+  <contextParameter comment="" name="mySQLConnectionDatabase" prompt="mySQLConnectionDatabase?" promptNeeded="false" type="id_String" value="MyDatabase"/>
+  <contextParameter comment="" name="mySQLConnectionAdditionalJDBCParameters" prompt="mySQLConnectionAdditionalJDBCParameters?" promptNeeded="false" type="id_String" value="noDatetimeStringSync=true"/>
+  <contextParameter comment="" name="mySQLConnectionUsername" prompt="mySQLConnectionUsername?" promptNeeded="false" type="id_String" value="MyUsername"/>
+  <contextParameter comment="" name="mySQLConnectionPassword" prompt="mySQLConnectionPassword?" promptNeeded="false" type="id_String" value="MyPasword"/>
+  <contextParameter comment="" name="mySQLConnectionUseOrRegisterASharedDBConnection" prompt="mySQLConnectionUseOrRegisterASharedDBConnection?" promptNeeded="false" type="id_Boolean" value="false"/>
+  <contextParameter comment="" name="mySQLConnectionSharedDBConnectionName" prompt="mySQLConnectionSharedDBConnectionName?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter comment="" name="mySQLConnectionAutoCommit" prompt="mySQLConnectionAutoCommit?" promptNeeded="false" type="id_Boolean" value="false"/>
+</talendfile:ContextType>
