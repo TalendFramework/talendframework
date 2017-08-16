@@ -17,6 +17,7 @@ In the coming weeks, we're going to map out some areas we'd like to see improved
 - Better internal Documentation for jobs and components (ideally generating much of the documentation here)
 - Migrate documentation from TalendFramework.com to GitHub Pages
 - New functionality to assist in setting up ESB jobs, routes, and services
+- Redo structure so that this repo can be easily imported as a proper Talend Project
 
 # Contributing
 Pull Requests are very welcome.
